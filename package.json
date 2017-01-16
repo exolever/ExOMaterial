@@ -1,6 +1,6 @@
 {
-  "name": "exo-material",
-  "version": "1.0.1",
+  "name": "exo_material",
+  "version": "0.0.2",
   "scripts": {
     "tsc": "tsc"
   },
@@ -20,7 +20,7 @@
     "ExO Works"
   ],
   "license": "MIT",
-  "main": "./index.js",
+  "main": "./index.ts",
   "dependencies": {
     "@angular/common": "^2.4.3",
     "@angular/compiler": "^2.4.2",
