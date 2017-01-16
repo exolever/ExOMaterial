@@ -1,11 +1,11 @@
-# exo-material
+# exo_material
 
 ## Steppers Example
 
 ```typescript
 ...
 // Import your library
-import { ExoStepperComponent } from 'exo-material';
+import { ExoStepperComponent } from 'exo_material';
 
 @NgModule({
   declarations: [
