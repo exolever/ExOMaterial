@@ -1,0 +1,45 @@
+{
+  "name": "exo-material",
+  "version": "1.0.1",
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ExOLever/ExOMaterial"
+  },
+  "author": {
+    "name": "Rafael Montaño",
+    "email": "rafael@exo.works.es"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "Material 2",
+    "Steppers",
+    "ExO Works"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "dependencies": {
+    "@angular/common": "^2.4.3",
+    "@angular/compiler": "^2.4.2",
+    "@angular/core": "^2.4.2",
+    "@angular/forms": "^2.4.2",
+    "@angular/http": "^2.4.2",
+    "@angular/material": "^2.0.0-beta.1",
+    "@angular/platform-browser": "^2.4.2",
+    "@angular/router": "^3.4.3"
+  },
+  "devDependencies": {
+    "codelyzer": "^2.0.0-beta.4",
+    "rxjs": "5.0.3",
+    "tslint": "^4.3.1",
+    "typescript": "2.0.10",
+    "typings": "^2.1.0",
+    "zone.js": "0.7.4"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

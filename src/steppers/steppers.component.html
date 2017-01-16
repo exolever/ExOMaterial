@@ -1,0 +1,7 @@
+<md-list>
+<ul class="stepper" [ngClass]="{'green': color === 'green','yellow': color === 'yellow','red': color === 'red','sz-table': size === 'table','content-blank': content === 'blank'}">
+  <li [routerLink]="[item.url]" (click)="active=item.position + 1" *ngFor="let item of arr; let i = index" [ngClass]="{'active': active >= i + 1}" [ngStyle]="{'width': (100 / elements) + '%'}" >
+  </li>
+</ul>
+</md-list>
+
