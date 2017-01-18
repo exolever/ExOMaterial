@@ -6,5 +6,5 @@ $warn:    md-palette($md-red, 600);
 $theme:   md-light-theme($primary, $accent, $warn);
 @include angular-material-theme($theme);
 
-@import "./src/button/style";
-@import "./src/button/style";
+@import "./src/button/style.scss";
+@import "./src/toolbar/style.scss";
