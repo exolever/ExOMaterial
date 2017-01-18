@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'exo-stepper',
   templateUrl: './steppers.component.html',
-  styleUrls: ['./steppers.component.css']
+  styleUrls: ['./steppers.component.scss']
 })
 export class ExoStepperComponent implements OnInit {
   arr: any = [];
