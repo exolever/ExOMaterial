@@ -2,3 +2,41 @@
 @import "./scss/tipography.scss";
 @import "./src/button/style.scss";
 @import "./src/toolbar/style.scss";
+
+
+
+
+/***********************/
+
+//$md-font-url: 'styles/font/';
+//@import "../@covalent/core/common/styles/variables";
+@import "./scss/variables.scss";
+//@import "../@covalent/core/common/styles/button";
+//@import "../@covalent/core/common/styles/font/font";
+//@import "../@covalent/core/common/styles/default-theme";
+//@import "../@covalent/core/common/styles/card";
+//@import "../@covalent/core/common/styles/card-colored";
+//@import "../@covalent/core/common/styles/content";
+//@import "../@covalent/core/common/styles/divider";
+//@import "../@covalent/core/common/styles/icons";
+//@import "../@covalent/core/common/styles/input";
+//@import "../@covalent/core/common/styles/mixins";
+//@import "../@covalent/core/common/styles/navigation-drawer";
+// @import "../@covalent/core/common/styles/theme-functions";
+// @import "../@covalent/core/common/styles/palette";
+// @import "../@covalent/core/common/styles/palette-dark";
+// @import "../@covalent/core/common/styles/colors";
+// @import "../@covalent/core/common/styles/colors-dark";
+// @import "../@covalent/core/common/styles/layout";
+// @import "../@covalent/core/common/styles/list";
+// @import "../@covalent/core/common/styles/structure";
+// @import "../@covalent/core/common/styles/shadows";
+// @import "../@covalent/core/common/styles/sidenav";
+// @import "../@covalent/core/common/styles/toolbar";
+// @import "../@covalent/core/common/styles/typography";
+// @import "../@covalent/core/common/styles/whiteframe";
+// @import "../@covalent/core/common/styles/utilities/utilities";
+
+$app-content-lg: 940px;
+$app-content-md: 580px;
+$app-content-sm: 360px;
