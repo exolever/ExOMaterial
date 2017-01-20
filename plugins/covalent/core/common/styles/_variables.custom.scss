@@ -1,0 +1,23 @@
+@import 'theme-functions';
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+// Typography
+// ------------------------------
+$font-family: 'Open Sans', Roboto, 'Helvetica Neue', sans-serif !default;
+$font-family-text: Lato, Roboto, 'Helvetica Neue', sans-serif !default;
+
+$display-4-font-size-base: rem(12.400) !default;
+$display-3-font-size-base: rem(7.200) !default;
+$display-2-font-size-base: rem(5.000) !default;
+$display-1-font-size-base: rem(3.400) !default;
+
+$weight-light:300;
+$weight-regular:400;
+$weight-semibold:600;
+$weight-bold:700;
+$weight-black:900;
+
+
+
