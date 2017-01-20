@@ -1,22 +1,46 @@
 @import '~@angular/material/core/theming/all-theme';
+// Plus imports for other components in your app.
 @import '~@covalent/core/theming/all-theme';
 
 // (optional) Additional themes
 @import '~@covalent/markdown/markdown-theme';
 @import '~@covalent/highlight/highlight-theme';
 
+
+// Include the base styles for Angular Material core. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
 @include md-core();
 
-$primary: md-palette($md-blue-grey, 800);
-$accent:  md-palette($md-light-blue, 600, A100, A400);
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+$exo-app-primary: md-palette($md-blue, 500, A100, 600);
+$exo-app-accent:  md-palette($md-pink, A700, 600, 800);
 
-$warn:    md-palette($md-red, 600);
+// The warn palette is optional (defaults to red).
+$exo-app-warn:    md-palette($md-red);
 
-$theme: md-light-theme($primary, $accent, $warn);
+// Create the theme object (a Sass map containing all of the palettes).
+$exo-app-theme: md-light-theme($exo-app-primary, $exo-app-accent, $exo-app-warn);
 
-@include angular-material-theme($theme);
-@include covalent-theme($theme);
 
-// (optional) Additional themes
-@include covalent-markdown-theme($theme);
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($exo-app-theme);
+@include covalent-theme($exo-app-theme);
+@include covalent-markdown-theme($exo-app-theme);
 @include covalent-highlight-theme();
+
+
+// Custom theme examples
+.blue-gray-blue {
+    $primary2: md-palette($md-blue-grey, 800, 400, 900);
+    $accent2:  md-palette($md-blue, 500, A100, 600);
+    $warn2:    md-palette($md-red);
+
+    $blue-gray-blue: md-light-theme($primary2, $accent2, $warn2);
+
+    @include angular-material-theme($blue-gray-blue);
+    @include covalent-theme($blue-gray-blue);
+}
