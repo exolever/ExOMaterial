@@ -25,7 +25,7 @@
     "@covalent/core": "./plugins/covalent/core",
     "@covalent/dynamic-forms": "./plugins/covalent/dynamic-forms",
     "@covalent/highlight": "./plugins/covalent/highlight",
-    "@covalent/http": "./plugins/covalent/platform/http",
+    "@covalent/http": "./plugins/covalent/http",
     "@covalent/markdown": "./plugins/covalent/markdown"
   },
   "devDependencies": {
