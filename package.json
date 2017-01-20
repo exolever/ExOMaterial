@@ -22,11 +22,11 @@
   "license": "MIT",
   "main": "./index.ts",
   "dependencies": {
-    "@covalent/core": "./plugins/covalent/core",
-    "@covalent/dynamic-forms": "./plugins/covalent/dynamic-forms",
-    "@covalent/highlight": "./plugins/covalent/highlight",
-    "@covalent/http": "./plugins/covalent/http",
-    "@covalent/markdown": "./plugins/covalent/markdown"
+    "@covalent/core": "file:./plugins/covalent/core",
+    "@covalent/dynamic-forms": "file:./plugins/covalent/dynamic-forms",
+    "@covalent/highlight": "file:./plugins/covalent/highlight",
+    "@covalent/http": "file:./plugins/covalent/http",
+    "@covalent/markdown": "file:./plugins/covalent/markdown"
   },
   "devDependencies": {
     "codelyzer": "^2.0.0-beta.4",
