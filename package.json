@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "scripts": {
     "tsc": "tsc",
-    "postinstall": "npm install 'file:./plugins/covalent/core';npm install 'file:./plugins/covalent/dynamic-forms';npm install 'file:./plugins/covalent/highlight';npm install 'file:./plugins/covalent/http';npm install 'file:./plugins/covalent/markdown';"
+    "postinstall": "./covalentDependencies.js"
   },
   "repository": {
     "type": "git",
