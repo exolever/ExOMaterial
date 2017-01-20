@@ -2,8 +2,7 @@
   "name": "exo_material",
   "version": "0.0.2",
   "scripts": {
-    "tsc": "tsc",
-    "postinstall": "./covalentDependencies.js"
+    "tsc": "tsc"
   },
   "repository": {
     "type": "git",
