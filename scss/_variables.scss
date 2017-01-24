@@ -1,7 +1,6 @@
 @import '~@angular/material/core/theming/all-theme';
 @import "theme";
 
-
 $primary: map-get($exo-app-theme, primary);
 $accent: map-get($exo-app-theme, accent);
 $warn: map-get($exo-app-theme, warn);
