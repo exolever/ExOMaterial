@@ -1,4 +1,6 @@
+@import "../plugins/covalent/core/common/styles/variables.custom";
+
 [md-menu-item]{
     font-size: 14px;
-    font-family: "Open Sans";
+    font-family: $font-family;
 }
