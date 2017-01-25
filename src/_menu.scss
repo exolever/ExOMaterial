@@ -1,6 +1,24 @@
-@import "../plugins/covalent/core/common/styles/variables.custom";
+@import '~@covalent/core/common/styles/variables.custom';
+@import '~@covalent/core/common/styles/mixins.custom';
+@import '../scss/theme';
+
+$primary: map-get($exo-app-theme, primary);
+$foreground: map-get($exo-app-theme, foreground);
 
 [md-menu-item]{
-    font-size: 14px;
+    font-size: $body-font-size-base;
     font-family: $font-family;
+    &.menu-title{
+        color: md-color($foreground, secondary-text);
+        @include md-body-2();
+        md-icon{
+            font-size: $body-font-size-base;
+        }
+    }
+    &.active{
+        color: md-color($primary);
+        md-icon{
+             color: md-color($primary);
+        }
+    }
 }
