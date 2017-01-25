@@ -1,3 +1,6 @@
-[md-raised-button]{
+@import '~@covalent/core/common/styles/variables.custom';
+
+[md-button], [md-raised-button]{
     box-shadow: none;
+    font-weight: $weight-semibold;
 }
