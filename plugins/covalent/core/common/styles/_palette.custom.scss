@@ -1,12 +1,15 @@
+@import './_theme-functions';
+
+$base: map-get($md-blue-grey, 900);
+
 $md-light-theme-foreground: (
-  $md-blue-grey 900 rgba(38, 50, 56, 100),
-  divider: rgba(38, 50, 56, 0.12),
-  dividers: rgba(38, 50, 56, 0.12),
-  disabled: rgba(38, 50, 56, 0.26),
-  disabled-text: rgba(38, 50, 56, 0.26),
-  hint-text: rgba(38, 50, 56, 0.26),
-  secondary-text: rgba(38, 50, 56, 0.64),
-  icon: rgba(38, 50, 56, 0.64),
-  icons: rgba(38, 50, 56, 0.64),
-  text: $md-blue-grey 900 rgba(38, 50, 56, 100)
+ divider: rgba($base, 0.12),
+ dividers: rgba($base, 0.12),
+ disabled: rgba($base, 0.26),
+ disabled-text: rgba($base, 0.26),
+ hint-text: rgba($base, 0.26),
+ secondary-text: rgba($base, 0.64),
+ icon: rgba($base, 0.64),
+ icons: rgba($base, 0.64),
+ text:  $base
 );
