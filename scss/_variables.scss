@@ -4,6 +4,9 @@
 $primary: map-get($exo-app-theme, primary);
 $accent: map-get($exo-app-theme, accent);
 $warn: map-get($exo-app-theme, warn);
+$foreground: map-get($exo-app-theme, foreground);
+$secondary-text: map-get($exo-app-theme, secondary-text);
+$base: map-get($exo-app-theme, base);
 
 
 //== Media queries breakpoints
