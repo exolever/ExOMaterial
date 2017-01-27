@@ -16,7 +16,7 @@
           <span *ngIf="(active || !isComplete())">{{number || ''}}</span>
         </div>
         <div class="td-complete" *ngIf="isComplete()">
-          <md-icon class="md-complete">check_circle</md-icon>
+          <md-icon class="md-complete">room</md-icon>
         </div>
         <div class="td-triangle"
             [class.bg-muted]="disabled"
@@ -34,7 +34,6 @@
           </div>
         </div>
         <span flex></span>
-        <md-icon class="td-edit-icon" *ngIf="isComplete() && !active && !disabled">mode_edit</md-icon>
       </div>
     </a>
   </md-nav-list>
