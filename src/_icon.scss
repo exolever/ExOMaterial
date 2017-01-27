@@ -1,0 +1,16 @@
+@import '../scss/variables';
+
+md-icon[md-list-avatar]{
+    
+    
+    &.md-primary{
+        background-color: md-color($primary, 0.26);
+    }
+    &.md-accent{
+        background-color: md-color($accent, 0.26);
+    }
+    &:not(.md-primary):not(.md-accent) {
+        $base-color: md-color($foreground, 'icon');
+        background-color: rgba($base-color, 0.26);
+    }
+}
