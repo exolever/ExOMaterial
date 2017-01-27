@@ -227,7 +227,7 @@ md-divider[md-inset] {
 
 md-list-item md-icon,
 .md-list-item md-icon {
-  color: rgba(38, 50, 56, 0.64); }
+  color: rgba(0, 0, 0, 0.54); }
   md-list-item md-icon[md-list-avatar],
   .md-list-item md-icon[md-list-avatar] {
     background-color: whitesmoke;
