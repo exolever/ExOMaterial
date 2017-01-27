@@ -20,6 +20,23 @@ $exo-app-accent:  md-palette($md-pink, A700, 600, 800);
 // The warn palette is optional (defaults to red).
 $exo-app-warn:    md-palette($md-red);
 
+
+// Overwrite the light theme 
+$md-light-theme-foreground: ( 
+    base:            rgba(38, 50, 56, 100),
+    divider:         rgba(38, 50, 56, 0.12),
+    dividers:        rgba(38, 50, 56, 0.12),
+    disabled:        rgba(38, 50, 56, 0.38),
+    disabled-button: rgba(38, 50, 56, 0.38),
+    disabled-text:   rgba(38, 50, 56, 0.38),
+    hint-text:       rgba(38, 50, 56, 0.38),
+    secondary-text:  rgba(38, 50, 56, 0.64),
+    icon:            rgba(38, 50, 56, 0.64),
+    icons:           rgba(38, 50, 56, 0.64),
+    text:            rgba(38, 50, 56, 100)
+);
+
+
 // Create the theme object (a Sass map containing all of the palettes).
 $exo-app-theme: md-light-theme($exo-app-primary, $exo-app-accent, $exo-app-warn);
 

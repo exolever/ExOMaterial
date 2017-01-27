@@ -1,0 +1,13 @@
+@import '../scss/variables';
+
+.foreground-secondary-text{
+    color: md-color($foreground, 'secondary-text');
+}
+
+.foreground-icon{
+    color: md-color($foreground, 'icon');
+}
+
+.foreground-text{
+    color: md-color($foreground, 'text');
+}
