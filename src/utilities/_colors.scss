@@ -1,4 +1,4 @@
-@import '../scss/variables';
+@import '../../scss/variables';
 
 .foreground-secondary-text{
     color: md-color($foreground, 'secondary-text');
@@ -10,4 +10,8 @@
 
 .foreground-text{
     color: md-color($foreground, 'text');
+}
+
+.primary-color{
+    color: md-color($primary);
 }
