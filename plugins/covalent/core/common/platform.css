@@ -16,6 +16,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
@@ -134,6 +136,38 @@
     -ms-flex-pack: center;
     justify-content: center;
     display: flex; }
+
+body md-card {
+  padding: 0;
+  margin: 0px; }
+  body md-card md-card-header {
+    height: auto; }
+  body md-card [md-card-avatar] {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 16px 0 0 15px; }
+  body md-card [md-card-image] {
+    width: 100%;
+    margin: 0; }
+  body md-card md-card-title {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px; }
+  body md-card md-card-subtitle {
+    padding-left: 16px;
+    padding-right: 16px; }
+  body md-card md-card-content {
+    padding: 16px; }
+  body md-card md-card-actions:last-child, body md-card .md-card md-card-actions:last-child {
+    padding: 8px;
+    margin: 0; }
+  body md-card form.md-card-search-box md-icon {
+    width: 24px;
+    color: #999;
+    padding: 13px 0 0 12px; }
+  body md-card form.md-card-search-box input {
+    border: none;
+    outline: 0; }
 
 .md-card-colored[href]:hover, .md-card-colored[ng-reflect-href]:hover {
   cursor: pointer;
