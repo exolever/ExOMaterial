@@ -1,0 +1,12 @@
+@import '~@covalent/core/common/styles/variables.custom';
+@import '../scss/variables';
+
+td-markdown{
+    h3{
+        font-weight: $weight-semibold !important;       
+        color: md-color($foreground, 'text') !important;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+}
+
