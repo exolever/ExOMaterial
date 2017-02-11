@@ -2,7 +2,8 @@
   padding-top: 0px; }
   :host /deep/ md-nav-list [md-list-item]:active,
   :host /deep/ md-nav-list [md-list-item]:focus {
-    outline: none; }
+    outline: none;
+    background-color: transparent; }
   :host /deep/ md-nav-list [md-list-item].md-interaction-disabled .md-list-item {
     background: none !important;
     cursor: auto; }

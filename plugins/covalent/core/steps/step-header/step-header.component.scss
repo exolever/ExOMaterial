@@ -6,6 +6,7 @@ $step-circle: 24px;
     [md-list-item]:active,
     [md-list-item]:focus {
       outline: none;
+      background-color: transparent;
     }
     [md-list-item].md-interaction-disabled .md-list-item {
       background: none !important;
