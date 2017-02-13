@@ -3,7 +3,6 @@
 @import '../common/styles/variables';
 
 @mixin td-steps-theme($theme) {
-  $primary: map-get($theme, primmary);
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
   $foreground: map-get($theme, foreground);
@@ -40,7 +39,7 @@
         }
       }
       .md-complete {
-        color: md-color($primary);
+        color: map-get($theme, $primary)
       }
     }
     .td-circle {
