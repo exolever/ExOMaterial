@@ -46,7 +46,7 @@
     .td-circle {
       color: md-color($background, card);
       &.md-active {
-        background-color: md-color($accent);
+        background-color: md-color($primary);
       }
       &.md-inactive {
         background-color: md-color($foreground, disabled);
