@@ -6,13 +6,15 @@
     background-color: transparent; }
   :host /deep/ md-nav-list [md-list-item].md-interaction-disabled .md-list-item {
     background: none !important;
-    cursor: auto;
-    background-color: transparent; }
+    cursor: auto; }
+    :host /deep/ md-nav-list [md-list-item].md-interaction-disabled .md-list-item:hover {
+      background-color: transparent; }
   :host /deep/ md-nav-list .md-list-item {
     flex: 1;
     height: 72px !important;
-    padding: 0px !important;
-    background-color: transparent; }
+    padding: 0px !important; }
+    :host /deep/ md-nav-list .md-list-item:hover {
+      background-color: transparent; }
 
 .md-ripple-boundary {
   position: relative;
