@@ -14,7 +14,7 @@
     height: 72px !important;
     padding: 0px !important; }
     :host /deep/ md-nav-list .md-list-item:hover {
-      background-color: transparent; }
+      background-color: transparent !important; }
 
 .md-ripple-boundary {
   position: relative;
