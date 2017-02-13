@@ -3,6 +3,7 @@
 @import '../common/styles/variables';
 
 @mixin td-steps-theme($theme) {
+  $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
   $foreground: map-get($theme, foreground);
