@@ -11,17 +11,14 @@ $step-circle: 24px;
     [md-list-item].md-interaction-disabled .md-list-item {
       background: none !important;
       cursor: auto;
-      &:hover{
-        background-color: transparent;
-      }
     }
     .md-list-item {
       flex: 1;
       height: 72px !important;
       padding: 0px !important;
-      &:hover{
-        background-color: transparent !important;
-      }
+    }
+    .md-list-item-focus{
+      background-color: transparent;
     }
   }
 }
