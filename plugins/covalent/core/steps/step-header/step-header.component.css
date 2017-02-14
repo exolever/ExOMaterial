@@ -13,6 +13,8 @@
     padding: 0px !important; }
   :host /deep/ md-nav-list .md-list-item-focus {
     background-color: transparent; }
+  :host /deep/ md-nav-list .md-list-item:hover {
+    background-color: transparent; }
 
 .md-ripple-boundary {
   position: relative;
