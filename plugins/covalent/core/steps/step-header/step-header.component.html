@@ -19,10 +19,11 @@
           <md-icon class="md-complete">room</md-icon>
         </div>
         <div class="td-triangle"
-            [class.bg-muted]="disabled"
-            *ngIf="isRequired()">
-          <md-icon class="md-warn">warning</md-icon>
-        </div>
+          [class.md-inactive]="(!active && !isComplete()) || disabled"
+          [class.md-active]="active && !disabled"
+          *ngIf="isRequired() && !isComplete()">
+         <md-icon >done</md-icon>
+       </div>
         <div class="td-step-label-wrapper"
               [class.md-disabled]="(!active && !isComplete()) || disabled"
               [class.md-warn]="isRequired() && !disabled">

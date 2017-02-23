@@ -43,7 +43,7 @@
         color: md-color($primary);
       }
     }
-    .td-circle {
+    .td-circle, .td-triangle {
       color: md-color($background, card);
       &.md-active {
         background-color: md-color($primary);
@@ -54,9 +54,6 @@
       & md-icon {
         fill: md-color($foreground, text);
       }
-    }
-    .td-triangle {
-      color: md-color($warn);
     }
   }
 }
