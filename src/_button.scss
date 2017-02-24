@@ -1,6 +1,31 @@
 @import '~@covalent/core/common/styles/variables.custom';
+@import '../scss/variables';
+
 
 [md-button], [md-raised-button]{
+    text-transform: uppercase;
     box-shadow: none;
     font-weight: $weight-semibold;
+    
+}
+
+
+[md-button].oulined{
+    border: 2px solid;
+    &:hover{
+        -webkit-transition-duration: 0.2s; /* Safari */
+        transition-duration: 0.2s;
+        color: white;
+    }
+    &.md-primary{
+        border-color: md-color($primary);
+        &:hover{
+            background-color: md-color($primary);
+        }
+    }&.md-accent{
+        border-color: md-color($accent);
+        &:hover{
+            background-color: md-color($accent);
+        }
+    } 
 }
