@@ -59,6 +59,11 @@ md-icon {
   & md-icon {
     margin-top: 2px;
     font-weight: bold;
+    color: white;
+    &[class*="td-triangle"] {
+      margin-top: 3px;
+      font-size: 18px;
+    }
   }
 }
 .td-complete {
