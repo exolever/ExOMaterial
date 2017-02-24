@@ -36,14 +36,14 @@ md-icon.md-complete {
   height: 24px;
   width: 24px; }
 
-.td-circle {
+.td-circle, .td-triangle {
   height: 24px;
   width: 24px;
   line-height: 24px;
   border-radius: 99%;
   text-align: center;
   flex: none; }
-  .td-circle md-icon {
+  .td-circle md-icon, .td-triangle md-icon {
     margin-top: 2px;
     font-weight: bold; }
 
