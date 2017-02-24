@@ -35,13 +35,13 @@
         }
       }
       .md-complete {
-        color: md-color($primary);
+        color: md-color($accent);
       }
     }
     .td-circle, .td-triangle {
       color: md-color($background, card);
       &.md-active {
-        background-color: md-color($primary);
+        background-color: md-color($accent);
       }
       &.md-inactive {
         background-color: md-color($foreground, disabled);
