@@ -45,11 +45,11 @@ md-icon.md-complete {
   flex: none; }
   .td-circle md-icon, .td-triangle md-icon {
     margin-top: 2px;
-    font-weight: bold;
     color: white; }
-    .td-circle md-icon[class*="td-triangle"], .td-triangle md-icon[class*="td-triangle"] {
-      margin-top: 3px;
-      font-size: 18px; }
+
+.td-triangle md-icon {
+  margin-top: 3px;
+  font-size: 18px; }
 
 .td-complete {
   font-size: 0; }
