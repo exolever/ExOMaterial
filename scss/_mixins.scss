@@ -9,3 +9,9 @@ $retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (
     background-size: $width $height;
   }
 }
+@mixin md-icon-color($base-color, $contrast){
+    $color: md-color($base-color, $contrast);
+    background-color:  rgba($color, 0.26);
+    color: $color;
+}
+
