@@ -3,7 +3,6 @@
 @import '~@covalent/core/theming/all-theme';
 
 // (optional) Additional themes
-@import '~@covalent/markdown/markdown-theme';
 @import '~@covalent/highlight/highlight-theme';
 
 
@@ -46,7 +45,6 @@ $exo-app-theme: md-light-theme($exo-app-primary, $exo-app-accent, $exo-app-warn)
 // that you are using.
 @include angular-material-theme($exo-app-theme);
 @include covalent-theme($exo-app-theme);
-@include covalent-markdown-theme($exo-app-theme);
 @include covalent-highlight-theme();
 
 
