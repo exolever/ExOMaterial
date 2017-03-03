@@ -9,9 +9,22 @@
     "url": "https://github.com/ExOLever/ExOMaterial"
   },
   "author": {
-    "name": "Rafael Montaño",
-    "email": "rafael@exo.works.es"
+    "name": "ExO Works"
   },
+  "contributors": [
+    {
+      "name": "Rafael Montaño",
+      "email": "rafael@exo.works.es"
+    },
+    {
+      "name": "Raúl Raya",
+      "email": "raul@exo.works.es"
+    },
+    {
+      "name": "Ana Panadero",
+      "email": "ana.panadero@exo.works.es"
+    }
+  ],
   "keywords": [
     "angular",
     "angular2",

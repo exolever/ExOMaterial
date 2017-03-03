@@ -9,7 +9,10 @@ md-icon[md-list-avatar]{
     &.md-accent{
         background-color: md-color($accent, 0.26);
     }
-    &:not(.md-primary):not(.md-accent) {
+    &.md-success{
+        @include md-icon-color($md-teal, A400);
+    }
+    &:not(.md-primary):not(.md-accent):not(.md-success) {
         $base-color: md-color($foreground, 'icon');
         background-color: rgba($base-color, 0.26);
     }
