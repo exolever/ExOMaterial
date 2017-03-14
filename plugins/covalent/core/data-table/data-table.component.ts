@@ -27,6 +27,7 @@ export interface ITdDataTableColumn {
   numeric?: boolean;
   format?: (value: any) => any;
   nested?: boolean;
+  sortable?: boolean;
 };
 
 export interface ITdDataTableSelectEvent {
@@ -77,6 +78,7 @@ export class TdDataTableComponent implements ControlValueAccessor, AfterContentI
     if (v !== this._value) {
       this._value = v;
       this._onChangeCallback(v);
+      this.refresh();
     }
   }
   get value(): any { return this._value; };
@@ -167,7 +169,7 @@ export class TdDataTableComponent implements ControlValueAccessor, AfterContentI
     }
     const column: ITdDataTableColumn = this.columns.find((c: any) => c.name === columnName);
     if (!column) {
-      throw '[sortBy] must be a valid column name';
+      throw new Error('[sortBy] must be a valid column name');
     }
 
     this._sortBy = column;
@@ -182,7 +184,7 @@ export class TdDataTableComponent implements ControlValueAccessor, AfterContentI
   set sortOrder(order: 'ASC' | 'DESC') {
     let sortOrder: string = order ? order.toUpperCase() : 'ASC';
     if (sortOrder !== 'DESC' && sortOrder !== 'ASC') {
-      throw '[sortOrder] must be empty, ASC or DESC';
+      throw new Error('[sortOrder] must be empty, ASC or DESC');
     }
 
     this._sortOrder = sortOrder === 'ASC' ?
@@ -256,15 +258,6 @@ export class TdDataTableComponent implements ControlValueAccessor, AfterContentI
    */
   refresh(): void {
     this._changeDetectorRef.markForCheck();
-  }
-
-  /**
-   * Workaround for https://github.com/angular/material2/issues/1825
-   */
-  tooltipRefresh(): void {
-    setTimeout(() => {
-      this.refresh();
-    }, 100);
   }
 
   /**

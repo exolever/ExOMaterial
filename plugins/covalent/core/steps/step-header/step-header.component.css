@@ -4,10 +4,10 @@
   :host /deep/ md-nav-list [md-list-item]:focus {
     outline: none;
     background-color: transparent; }
-  :host /deep/ md-nav-list [md-list-item].md-interaction-disabled .md-list-item {
+  :host /deep/ md-nav-list [md-list-item].mat-interaction-disabled .mat-list-item-content {
     background: none !important;
     cursor: auto; }
-  :host /deep/ md-nav-list .md-list-item {
+  :host /deep/ md-nav-list .mat-list-item-content {
     flex: 1;
     height: 72px !important;
     padding: 0px !important; }
@@ -16,19 +16,19 @@
   :host /deep/ md-nav-list .md-list-item:hover {
     background-color: transparent; }
 
-.md-ripple-boundary {
+.mat-ripple-boundary {
   position: relative;
   height: 72px; }
 
 .td-step-header md-icon.td-edit-icon {
   margin-right: 8px; }
 
-md-icon.md-warn {
+md-icon.mat-warn {
   font-size: 24px;
   height: 24px;
   width: 24px; }
 
-md-icon.md-complete {
+md-icon.mat-complete {
   position: relative;
   left: -2px;
   top: 2px;

@@ -40,7 +40,7 @@ export class TdJsonFormatterComponent {
   @Input('levelsOpen')
   set levelsOpen(levelsOpen: number) {
     if (!Number.isInteger(levelsOpen)) {
-      throw '[levelsOpen] needs to be an integer.';
+      throw new Error('[levelsOpen] needs to be an integer.');
     }
     this._levelsOpen = levelsOpen;
     this._open = levelsOpen > 0;
@@ -91,15 +91,6 @@ export class TdJsonFormatterComponent {
    */
   refresh(): void {
     this._changeDetectorRef.markForCheck();
-  }
-
-  /**
-   * Workaround for https://github.com/angular/material2/issues/1825
-   */
-  tooltipRefresh(): void {
-    setTimeout(() => {
-      this.refresh();
-    }, 100);
   }
 
   /**
