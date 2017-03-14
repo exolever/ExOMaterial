@@ -5,7 +5,7 @@
 /************
  * Headings
  ************/
-.md-display-4 {
+.mat-display-4 {
   font-family: $font-family-text;
   font-size: $display-4-font-size-base;
   font-weight: $weight-regular;
@@ -13,7 +13,7 @@
   line-height: $display-4-font-size-base;
 }
 
-.md-display-3 {
+.mat-display-3 {
   font-family: $font-family-text;
   font-size: $display-3-font-size-base;
   font-weight: $weight-regular;
@@ -21,14 +21,14 @@
   line-height: $display-3-font-size-base;
 }
 
-.md-display-2 {
+.mat-display-2 {
   font-family: $font-family-text;
   font-size: $display-2-font-size-base;
   font-weight: $weight-regular;
   line-height: rem(6.4);
 }
 
-.md-display-1 {
+.mat-display-1 {
   font-family: $font-family-text;
   font-size: $display-1-font-size-base;
   font-weight: $weight-regular;
@@ -36,55 +36,55 @@
 }
 
 
-.md-headline {
+.mat-headline {
   font-family: $font-family-text;
   font-size: $headline-font-size-base;
   font-weight: $weight-regular;
   line-height: rem(3.2);
 }
 
-.md-headline-2 {
+.mat-headline-2 {
   font-family: $font-family-text;
   font-size: $headline-font-size-base;
   font-weight: $weight-light;
   line-height: rem(3.2);
 }
 
-.md-title {
+.mat-title {
   @include md-title();
 }
 
-.md-subhead {
+.mat-subhead {
   @include md-subhead();
 }
 
-.md-subhead-2 {
+.mat-subhead-2 {
   @include md-subhead-2();
 }
 
 /************
  * Body Copy
  ************/
-.md-body-1 {
+.mat-body-1 {
   @include md-body-1();
 }
 
-.md-body-2 {
+.mat-body-2 {
   @include md-body-2();
 }
 
-.md-body-3 {
+.mat-body-3 {
   @include md-body-3();
 }
 
-.md-caption {
+.mat-caption {
   font-size: $caption-font-size-base;
   font-weight: $weight-regular;
   letter-spacing: 0.020em;
   font-family: $font-family;
 }
 
-.md-button {
+.mat-button {
   font-size: $body-font-size-base;
   font-weight: $weight-semibold;
   letter-spacing: 0.010em;
