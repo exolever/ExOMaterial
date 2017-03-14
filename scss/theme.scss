@@ -50,9 +50,9 @@ $exo-app-theme: mat-light-theme($exo-app-primary, $exo-app-accent, $exo-app-warn
 
 // Custom theme examples
 .blue-gray-blue {
-    $primary2: mat-palette($md-blue-grey, 800, 400, 900);
-    $accent2:  mat-palette($md-blue, 500, A100, 600);
-    $warn2:    mat-palette($md-red);
+    $primary2: mat-palette($mat-blue-grey, 800, 400, 900);
+    $accent2:  mat-palette($mat-blue, 500, A100, 600);
+    $warn2:    mat-palette($mat-red);
 
     $blue-gray-blue: mat-light-theme($primary2, $accent2, $warn2);
 
