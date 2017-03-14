@@ -7,7 +7,7 @@
     font-family: $font-family;
     &.menu-title{
         color: mat-color($foreground, secondary-text);
-        @include mat-body-2();
+        @include md-body-2();
         md-icon{
             font-size: $body-font-size-base;
         }
