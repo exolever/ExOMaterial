@@ -13,15 +13,15 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue.
-$exo-app-primary: md-palette($md-blue, 500, A100, 600);
-$exo-app-accent:  md-palette($md-pink, A700, 600, 800);
+$exo-app-primary: mat-palette($md-blue, 500, A100, 600);
+$exo-app-accent:  mat-palette($md-pink, A700, 600, 800);
 
 // The warn palette is optional (defaults to red).
-$exo-app-warn:    md-palette($md-red);
+$exo-app-warn:    mat-palette($md-red);
 
 
 // Overwrite the light theme 
-$md-light-theme-foreground: ( 
+$mat-light-theme-foreground: ( 
     base:            rgba(38, 50, 56, 100),
     divider:         rgba(38, 50, 56, 0.12),
     dividers:        rgba(38, 50, 56, 0.12),
@@ -37,7 +37,7 @@ $md-light-theme-foreground: (
 
 
 // Create the theme object (a Sass map containing all of the palettes).
-$exo-app-theme: md-light-theme($exo-app-primary, $exo-app-accent, $exo-app-warn);
+$exo-app-theme: mat-light-theme($exo-app-primary, $exo-app-accent, $exo-app-warn);
 
 
 // Include theme styles for core and each component used in your app.
@@ -50,11 +50,11 @@ $exo-app-theme: md-light-theme($exo-app-primary, $exo-app-accent, $exo-app-warn)
 
 // Custom theme examples
 .blue-gray-blue {
-    $primary2: md-palette($md-blue-grey, 800, 400, 900);
-    $accent2:  md-palette($md-blue, 500, A100, 600);
-    $warn2:    md-palette($md-red);
+    $primary2: mat-palette($md-blue-grey, 800, 400, 900);
+    $accent2:  mat-palette($md-blue, 500, A100, 600);
+    $warn2:    mat-palette($md-red);
 
-    $blue-gray-blue: md-light-theme($primary2, $accent2, $warn2);
+    $blue-gray-blue: mat-light-theme($primary2, $accent2, $warn2);
 
     @include angular-material-theme($blue-gray-blue);
     @include covalent-theme($blue-gray-blue);
