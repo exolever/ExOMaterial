@@ -1,14 +1,14 @@
 @import '../scss/variables';
 
-[md-dialog-title] {
-    color: md-color($foreground, 'secondary-text');
-    md-icon {
+[mat-dialog-title] {
+    color: mat-color($foreground, 'secondary-text');
+    mat-icon {
         cursor: pointer;
     }
 }
 
-md-dialog-actions {
-    background-color: md-color($md-grey, 50);
+mat-dialog-actions {
+    background-color: mat-color($md-grey, 50);
     margin-left: -24px;
     margin-right: -24px;
     min-height: 24px;

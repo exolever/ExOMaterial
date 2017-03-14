@@ -13,11 +13,11 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue.
-$exo-app-primary: mat-palette($md-blue, 500, A100, 600);
-$exo-app-accent:  mat-palette($md-pink, A700, 600, 800);
+$exo-app-primary: mat-palette($mat-blue, 500, A100, 600);
+$exo-app-accent:  mat-palette($mat-pink, A700, 600, 800);
 
 // The warn palette is optional (defaults to red).
-$exo-app-warn:    mat-palette($md-red);
+$exo-app-warn:    mat-palette($mat-red);
 
 
 // Overwrite the light theme 

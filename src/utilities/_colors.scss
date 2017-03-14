@@ -1,21 +1,21 @@
 @import '../../scss/variables';
 
 .foreground-secondary-text{
-    color: md-color($foreground, 'secondary-text');
+    color: mat-color($foreground, 'secondary-text');
 }
 
 .foreground-icon{
-    color: md-color($foreground, 'icon');
+    color: mat-color($foreground, 'icon');
 }
 
 .foreground-text{
-    color: md-color($foreground, 'text');
+    color: mat-color($foreground, 'text');
 }
 
 .primary-color{
-    color: md-color($primary);
+    color: mat-color($primary);
 }
 
 .accent-color{
-    color: md-color($accent);
+    color: mat-color($accent);
 }

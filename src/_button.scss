@@ -2,7 +2,7 @@
 @import '../scss/variables';
 
 
-[md-button], [md-raised-button]{
+[mat-button], [mat-raised-button]{
     text-transform: uppercase;
     box-shadow: none;
     font-weight: $weight-semibold;
@@ -10,22 +10,22 @@
 }
 
 
-[md-button].oulined{
+[mat-button].oulined{
     border: 2px solid;
     &:hover{
         -webkit-transition-duration: 0.2s; /* Safari */
         transition-duration: 0.2s;
         color: white;
     }
-    &.md-primary{
-        border-color: md-color($primary);
+    &.mat-primary{
+        border-color: mat-color($primary);
         &:hover{
-            background-color: md-color($primary);
+            background-color: mat-color($primary);
         }
-    }&.md-accent{
-        border-color: md-color($accent);
+    }&.mat-accent{
+        border-color: mat-color($accent);
         &:hover{
-            background-color: md-color($accent);
+            background-color: mat-color($accent);
         }
     } 
 }

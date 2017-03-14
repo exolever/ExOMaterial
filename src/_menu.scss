@@ -6,16 +6,16 @@
     font-size: $body-font-size-base;
     font-family: $font-family;
     &.menu-title{
-        color: md-color($foreground, secondary-text);
-        @include md-body-2();
+        color: mat-color($foreground, secondary-text);
+        @include mat-body-2();
         md-icon{
             font-size: $body-font-size-base;
         }
     }
     &.active{
-        color: md-color($primary);
+        color: mat-color($primary);
         md-icon{
-             color: md-color($primary);
+             color: mat-color($primary);
         }
     }
 }

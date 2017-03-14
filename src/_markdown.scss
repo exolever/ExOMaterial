@@ -4,9 +4,9 @@
 
 markdown{
     h3{      
-        @include md-title();
+        @include mat-title();
         margin-top: 0px;
-        color: md-color($foreground, 'text');
+        color: mat-color($foreground, 'text');
         line-height: 1.5;
     }
     p{

@@ -3,17 +3,17 @@
 md-icon[md-list-avatar]{
     
     
-    &.md-primary{
-        background-color: md-color($primary, 0.26);
+    &.mat-primary{
+        background-color: mat-color($primary, 0.26);
     }
-    &.md-accent{
-        background-color: md-color($accent, 0.26);
+    &.mat-accent{
+        background-color: mat-color($accent, 0.26);
     }
-    &.md-success{
-        @include md-icon-color($md-teal, A400);
+    &.mat-success{
+        @include mat-icon-color($mat-teal, A400);
     }
-    &:not(.md-primary):not(.md-accent):not(.md-success) {
-        $base-color: md-color($foreground, 'icon');
+    &:not(.mat-primary):not(.mat-accent):not(.mat-success) {
+        $base-color: mat-color($foreground, 'icon');
         background-color: rgba($base-color, 0.26);
     }
 }
