@@ -2,15 +2,15 @@
 @import '../scss/variables';
 
 
-[mat-button], [mat-raised-button]{
+[md-button], [md-raised-button]{
     text-transform: uppercase;
     box-shadow: none;
     font-weight: $weight-semibold;
-    
+
 }
 
 
-[mat-button].oulined{
+[md-button].oulined{
     border: 2px solid;
     &:hover{
         -webkit-transition-duration: 0.2s; /* Safari */
@@ -27,5 +27,5 @@
         &:hover{
             background-color: mat-color($accent);
         }
-    } 
+    }
 }

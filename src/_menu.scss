@@ -2,7 +2,7 @@
 @import '~@covalent/core/common/styles/mixins.custom';
 @import '../scss/variables';
 
-[mat-menu-item]{
+[md-menu-item]{
     font-size: $body-font-size-base;
     font-family: $font-family;
     &.menu-title{

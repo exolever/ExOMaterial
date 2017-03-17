@@ -1,6 +1,6 @@
 @import '../scss/variables';
 
-mat-icon[md-list-avatar]{
+md-icon[md-list-avatar]{
     &.mat-primary{
         background-color: mat-color($primary, 0.26);
     }
