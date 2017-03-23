@@ -670,17 +670,17 @@ td-steps .td-vertical-line {
 td-steps .td-step-header .md-caption {
   color: rgba(0, 0, 0, 0.54); }
 
-td-steps .td-step-header .mat-disabled, td-steps .td-step-header .mat-disabled * {
+td-steps .td-step-header .md-disabled, td-steps .td-step-header .md-disabled * {
   color: rgba(0, 0, 0, 0.38); }
 
-td-steps .td-step-header .mat-warn, td-steps .td-step-header .mat-warn * {
+td-steps .td-step-header .md-warn, td-steps .td-step-header .md-warn * {
   color: #e53935; }
 
 td-steps .td-circle, td-steps .td-triangle {
   color: white; }
-  td-steps .td-circle.mat-active, td-steps .td-triangle.mat-active {
+  td-steps .td-circle.md-active, td-steps .td-triangle.md-active {
     background-color: #039be5; }
-  td-steps .td-circle.mat-inactive, td-steps .td-triangle.mat-inactive {
+  td-steps .td-circle.md-inactive, td-steps .td-triangle.md-inactive {
     background-color: rgba(0, 0, 0, 0.38); }
   td-steps .td-circle md-icon, td-steps .td-triangle md-icon {
     fill: rgba(0, 0, 0, 0.87); }
