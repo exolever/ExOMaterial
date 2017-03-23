@@ -1,16 +1,27 @@
 @import '../scss/variables';
+@import '~@covalent/core/common/styles/mixins.custom';
 
-[md-dialog-title] {
+.mat-dialog-title {
     color: mat-color($foreground, 'secondary-text');
+    @include md-headline-2();
     md-icon {
         cursor: pointer;
     }
 }
-
-md-dialog-actions {
+md-dialog-content{
+    padding: 24px;
+}
+.mat-dialog-actions {
+    padding: 8px;
     background-color: mat-color($mat-grey, 50);
     margin-left: -24px;
     margin-right: -24px;
     min-height: 24px;
-    padding:0px 20px;
+    button{
+        margin-left: 8px;
+        &:not(.mat-primary):not(.mat-accent):not(.mat-success){
+            color: mat-color($foreground, 'secondary-text');
+        }
+    }
+    
 }
