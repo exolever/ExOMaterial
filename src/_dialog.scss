@@ -11,6 +11,9 @@
 md-dialog-content{
     padding: 24px;
 }
+.del-margin-dialog{
+    margin: -24px;
+}
 .mat-dialog-actions {
     padding: 8px;
     background-color: mat-color($mat-grey, 50);
@@ -24,4 +27,14 @@ md-dialog-content{
         }
     }
     
+}
+body.modal-open {
+    overflow: hidden;
+}
+body.fullscreen-dialog .mat-dialog-container{
+    max-width: none !important;
+    md-dialog-content{
+        max-height: none;
+        padding-top: 40px;
+    }
 }
