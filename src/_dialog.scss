@@ -25,3 +25,13 @@ md-dialog-content{
     }
     
 }
+body.modal-open {
+    overflow: hidden;
+}
+body.fullscreen-dialog .mat-dialog-container{
+    max-width: none !important;
+    md-dialog-content{
+        max-height: none;
+        padding-top: 40px;
+    }
+}
