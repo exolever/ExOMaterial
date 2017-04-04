@@ -4,9 +4,11 @@
 .mat-dialog-title {
     color: mat-color($foreground, 'secondary-text');
     @include md-headline-2();
+    z-index: 1;
     md-icon {
         cursor: pointer;
     }
+
 }
 md-dialog-content{
     padding: 24px;
