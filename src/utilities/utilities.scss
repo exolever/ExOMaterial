@@ -1,7 +1,14 @@
 @import "colors";
-
+@import '~@covalent/core/common/styles/mixins.custom';
 
 //Useful class
 .pointer{
     cursor: pointer;
 }
+
+.help-text{
+    @include md-caption();
+    color: mat-color($foreground, 'text');
+    margin-top: 5px;
+}
+
