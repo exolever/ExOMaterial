@@ -1,0 +1,18 @@
+@import '~@covalent/core/common/styles/mixins.custom';
+td-chips{
+    padding: 0px;
+    .mat-input-wrapper {
+        margin-bottom: 0px;
+    }
+    .mat-input-underline{
+        border-color: mat-color($foreground, divider);
+    }
+    .td-chip {
+        background-color: mat-color($mat-blue-grey, 50);
+        color: mat-color($mat-blue-grey, 400);
+        @include md-caption();
+        md-icon{
+            color: mat-color($mat-blue-grey, 400);
+        }
+    }
+}
