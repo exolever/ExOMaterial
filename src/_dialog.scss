@@ -26,22 +26,3 @@ md-dialog-content{
     }
     
 }
-body.modal-open {
-    overflow: hidden;
-}
-
-body.fullscreen-dialog .mat-dialog-container{
-    max-width: none !important;
-    md-dialog-content{
-        background-color: mat-color($mat-grey, 50);
-        .container{
-            padding-top: 64px;
-            width: 90%;
-            @media (min-width: $screen-md-min){
-                width: 60%;
-            }
-        }
-        max-height: none;
-    }
-}
-
