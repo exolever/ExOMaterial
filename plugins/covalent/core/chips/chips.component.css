@@ -1,7 +1,17 @@
+/**
+ * Mixin that creates a new stacking context.
+ * see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
+ */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
 :host {
   display: block;
   padding: 0px 5px 0px 5px; }
-  :host /deep/ .td-chip {
+  :host /deep/ .mat-input-wrapper {
+    margin-bottom: 2px; }
+  :host /deep/ .mat-input-container {
+    margin-top: 8px; }
+  :host /deep/ .mat-basic-chip {
     display: inline-block;
     cursor: default;
     border-radius: 16px;
@@ -11,21 +21,57 @@
     box-sizing: border-box;
     max-width: 100%;
     position: relative; }
-    :host /deep/ .td-chip md-icon {
+    html[dir=rtl] :host /deep/ .mat-basic-chip {
+      margin: 8px 0 0 8px;
+      unicode-bidi: embed; }
+    body[dir=rtl] :host /deep/ .mat-basic-chip {
+      margin: 8px 0 0 8px;
+      unicode-bidi: embed; }
+    :host /deep/ .mat-basic-chip bdo[dir=rtl] {
+      direction: rtl;
+      unicode-bidi: bidi-override; }
+    :host /deep/ .mat-basic-chip bdo[dir=ltr] {
+      direction: ltr;
+      unicode-bidi: bidi-override; }
+    :host /deep/ .mat-basic-chip md-icon {
       position: relative;
       top: 5px;
       left: 5px;
+      right: auto;
       height: 18px;
       width: 18px;
       font-size: 19px; }
-      :host /deep/ .td-chip md-icon:hover {
+      html[dir=rtl] :host /deep/ .mat-basic-chip md-icon {
+        left: auto;
+        unicode-bidi: embed; }
+      body[dir=rtl] :host /deep/ .mat-basic-chip md-icon {
+        left: auto;
+        unicode-bidi: embed; }
+      :host /deep/ .mat-basic-chip md-icon bdo[dir=rtl] {
+        direction: rtl;
+        unicode-bidi: bidi-override; }
+      :host /deep/ .mat-basic-chip md-icon bdo[dir=ltr] {
+        direction: ltr;
+        unicode-bidi: bidi-override; }
+      html[dir=rtl] :host /deep/ .mat-basic-chip md-icon {
+        right: 5px;
+        unicode-bidi: embed; }
+      body[dir=rtl] :host /deep/ .mat-basic-chip md-icon {
+        right: 5px;
+        unicode-bidi: embed; }
+      :host /deep/ .mat-basic-chip md-icon bdo[dir=rtl] {
+        direction: rtl;
+        unicode-bidi: bidi-override; }
+      :host /deep/ .mat-basic-chip md-icon bdo[dir=ltr] {
+        direction: ltr;
+        unicode-bidi: bidi-override; }
+      :host /deep/ .mat-basic-chip md-icon:hover {
         cursor: pointer; }
 
 .mat-input-underline {
   position: relative;
   height: 1px;
-  width: 100%;
-  margin-top: 4px; }
+  width: 100%; }
   .mat-input-underline.mat-disabled {
     border-top: 0;
     background-position: 0;
