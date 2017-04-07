@@ -1,0 +1,22 @@
+
+.mat-hint{
+    @include md-caption();
+    color: mat-color($foreground, 'secondary-text');
+    line-height: 8px;
+    div.error{
+        color: mat-color($mat-red, A200);
+    }
+}
+
+.mat-input-container.ng-invalid.has-error, 
+.chips-container.has-error {
+    .mat-input-underline{
+        border-top-color: mat-color($mat-red, A200);
+    }
+}
+
+.datepicker-container.has-error .md2-datepicker-input{
+    border-color: mat-color($mat-red, A200);
+    color: mat-color($mat-red, A200);
+}
+
