@@ -12,6 +12,10 @@
     color: mat-color($foreground, 'text');
 }
 
+.foreground-disabled-text{
+    color: mat-color($foreground, 'disabled-text');
+}
+
 .primary-color{
     color: mat-color($primary);
 }
