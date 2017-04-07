@@ -6,13 +6,13 @@
       <div class="mat-ripple-boundary"
           md-ripple
           [mdRippleSpeedFactor]="10"
-          [mdRippleDisabled]="disabled"
-          layout="row" 
+          [mdRippleDisabled]="true"
+          layout="row"
           layout-align="start center"
           flex>
         <div class="td-circle"
-            [class.mat-inactive]="(!active && !isComplete()) || disabled"
-            [class.mat-active]="active && !disabled"
+            [class.md-inactive]="(!active && !isComplete()) || disabled"
+            [class.md-active]="active && !disabled"
             *ngIf="!isRequired() && !isComplete()">
           <span *ngIf="(active || !isComplete())">{{number || ''}}</span>
         </div>
