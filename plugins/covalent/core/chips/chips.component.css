@@ -27,6 +27,9 @@
     body[dir=rtl] :host /deep/ .mat-basic-chip {
       margin: 8px 0 0 8px;
       unicode-bidi: embed; }
+    [dir=rtl] :host /deep/ .mat-basic-chip {
+      margin: 8px 0 0 8px;
+      unicode-bidi: embed; }
     :host /deep/ .mat-basic-chip bdo[dir=rtl] {
       direction: rtl;
       unicode-bidi: bidi-override; }
@@ -47,6 +50,9 @@
       body[dir=rtl] :host /deep/ .mat-basic-chip md-icon {
         left: auto;
         unicode-bidi: embed; }
+      [dir=rtl] :host /deep/ .mat-basic-chip md-icon {
+        left: auto;
+        unicode-bidi: embed; }
       :host /deep/ .mat-basic-chip md-icon bdo[dir=rtl] {
         direction: rtl;
         unicode-bidi: bidi-override; }
@@ -57,6 +63,9 @@
         right: 5px;
         unicode-bidi: embed; }
       body[dir=rtl] :host /deep/ .mat-basic-chip md-icon {
+        right: 5px;
+        unicode-bidi: embed; }
+      [dir=rtl] :host /deep/ .mat-basic-chip md-icon {
         right: 5px;
         unicode-bidi: embed; }
       :host /deep/ .mat-basic-chip md-icon bdo[dir=rtl] {

@@ -21,7 +21,7 @@
   height: 72px; }
 
 .td-step-header md-icon.td-edit-icon {
-  margin-right: 8px; }
+  margin: 0 8px; }
 
 md-icon.mat-warn {
   font-size: 24px;
@@ -51,13 +51,19 @@ md-icon.mat-complete {
   margin-top: 3px;
   font-size: 18px; }
 
+.td-triangle > md-icon {
+  font-size: 25px; }
+
 .td-complete {
   font-size: 0; }
 
 .td-circle, .td-triangle,
 .td-complete {
-  margin-left: 8px;
+  margin-inline-start: 8px;
   font-size: 14px; }
+
+.td-triangle {
+  margin-inline-start: 8px; }
 
 .td-step-label-wrapper {
   padding-left: 8px;

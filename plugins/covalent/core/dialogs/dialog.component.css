@@ -9,6 +9,9 @@
   position: relative;
   top: 16px;
   left: 16px; }
+  /deep/ [dir='rtl'] .td-dialog-actions {
+    right: 16px;
+    left: auto; }
 
 :host {
   display: block; }
@@ -18,3 +21,6 @@
     padding-left: 8px;
     padding-right: 8px;
     min-width: 64px; }
+    [dir='rtl'] :host .td-dialog-actions /deep/ button {
+      margin-right: 8px;
+      margin-left: inherit; }
