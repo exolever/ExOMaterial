@@ -15,3 +15,8 @@ $retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (
     color: $color;
 }
 
+@mixin text-truncate(){
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
