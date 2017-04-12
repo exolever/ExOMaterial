@@ -1,9 +1,6 @@
-@import '~@angular/material/core/theming/all-theme';
+@import '~@angular/material/theming';
 // Plus imports for other components in your app.
 @import '~@covalent/core/theming/all-theme';
-
-// (optional) Additional themes
-@import '~@covalent/highlight/highlight-theme';
 
 
 // Include the base styles for Angular Material core. We include this here so that you only
@@ -20,8 +17,8 @@ $exo-app-accent:  mat-palette($mat-pink, A700, 600, 800);
 $exo-app-warn:    mat-palette($mat-red);
 
 
-// Overwrite the light theme 
-$mat-light-theme-foreground: ( 
+// Overwrite the light theme
+$mat-light-theme-foreground: (
     base:            rgba(38, 50, 56, 100),
     divider:         rgba(38, 50, 56, 0.12),
     dividers:        rgba(38, 50, 56, 0.12),
@@ -45,7 +42,6 @@ $exo-app-theme: mat-light-theme($exo-app-primary, $exo-app-accent, $exo-app-warn
 // that you are using.
 @include angular-material-theme($exo-app-theme);
 @include covalent-theme($exo-app-theme);
-@include covalent-highlight-theme();
 
 
 // Custom theme examples
