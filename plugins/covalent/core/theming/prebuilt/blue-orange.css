@@ -726,6 +726,12 @@ td-steps .td-circle {
 
 td-steps .td-triangle {
   color: #e53935; }
+  td-steps .td-triangle.md-active {
+    background-color: #ef6c00; }
+  td-steps .td-triangle.md-inactive {
+    background-color: rgba(0, 0, 0, 0.38); }
+  td-steps .td-triangle md-icon {
+    fill: rgba(0, 0, 0, 0.87); }
 
 td-expansion-panel {
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);

@@ -66,6 +66,15 @@
     }
     .td-triangle {
       color: mat-color($warn);
+      &.md-active {
+        background-color: mat-color($accent);
+      }
+      &.md-inactive {
+        background-color: mat-color($foreground, disabled);
+      }
+      & md-icon {
+        fill: mat-color($foreground, text);
+      }
     }
   }
 }
