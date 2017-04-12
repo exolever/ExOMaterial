@@ -45,19 +45,19 @@
     }
     .td-circle, .td-triangle {
       color: mat-color($background, card);
-      &.mat-active {
+      &.md-active {
         background-color: mat-color($accent);
       }
-      &.mat-complete {
+      &.md-complete {
         color: mat-color($accent);
       }
     }
     .td-circle {
       color: mat-color($background, card);
-      &.mat-active {
+      &.md-active {
         background-color: mat-color($accent);
       }
-      &.mat-inactive {
+      &.md-inactive {
         background-color: mat-color($foreground, disabled);
       }
       & md-icon {

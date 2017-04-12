@@ -710,16 +710,16 @@ td-steps .td-step-header .md-warn, td-steps .td-step-header .md-warn * {
 
 td-steps .td-circle, td-steps .td-triangle {
   color: white; }
-  td-steps .td-circle.mat-active, td-steps .td-triangle.mat-active {
+  td-steps .td-circle.md-active, td-steps .td-triangle.md-active {
     background-color: #039be5; }
-  td-steps .td-circle.mat-complete, td-steps .td-triangle.mat-complete {
+  td-steps .td-circle.md-complete, td-steps .td-triangle.md-complete {
     color: #039be5; }
 
 td-steps .td-circle {
   color: white; }
-  td-steps .td-circle.mat-active {
+  td-steps .td-circle.md-active {
     background-color: #039be5; }
-  td-steps .td-circle.mat-inactive {
+  td-steps .td-circle.md-inactive {
     background-color: rgba(0, 0, 0, 0.38); }
   td-steps .td-circle md-icon {
     fill: rgba(0, 0, 0, 0.87); }
