@@ -5,7 +5,7 @@ td-chips{
         margin-bottom: 0px;
     }
     .mat-input-underline{
-        border-color: mat-color($foreground, divider);
+        border-color: mat-color($foreground, divider) !important;
     }
     .td-chip {
         background-color: mat-color($mat-blue-grey, 50);
@@ -21,7 +21,7 @@ td-chips{
 .chips-container {
     position: relative;
     .chips-wrapper {
-        padding-bottom: 10px;
+        padding-bottom: 15px;
     }
 }
 
