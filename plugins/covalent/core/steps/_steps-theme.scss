@@ -44,9 +44,9 @@
       }
     }
     .td-circle, .td-triangle {
-      color: md-color($background, card);
+      color: mat-color($background, card);
       &.mat-active {
-        background-color: md-color($accent);
+        background-color: mat-color($accent);
       }
       &.mat-complete {
         color: mat-color($accent);

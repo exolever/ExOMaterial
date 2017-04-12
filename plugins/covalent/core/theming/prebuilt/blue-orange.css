@@ -709,9 +709,9 @@ td-steps .td-step-header .md-warn, td-steps .td-step-header .md-warn * {
   color: #e53935; }
 
 td-steps .td-circle, td-steps .td-triangle {
-  color: md-color((status-bar: #e0e0e0, app-bar: #f5f5f5, background: #fafafa, hover: rgba(0, 0, 0, 0.04), card: white, dialog: white, disabled-button: rgba(0, 0, 0, 0.12), raised-button: white, focused-button: rgba(0, 0, 0, 0.06), selected-button: #e0e0e0, selected-disabled-button: #bdbdbd, disabled-button-toggle: #eeeeee), card); }
+  color: white; }
   td-steps .td-circle.mat-active, td-steps .td-triangle.mat-active {
-    background-color: md-color((50: #fff3e0, 100: #ffe0b2, 200: #ffcc80, 300: #ffb74d, 400: #ffa726, 500: #ff9800, 600: #fb8c00, 700: #f57c00, 800: #ef6c00, 900: #e65100, A100: #ffd180, A200: #ffab40, A400: #ff9100, A700: #ff6d00, contrast: (50: rgba(0, 0, 0, 0.87), 100: rgba(0, 0, 0, 0.87), 200: rgba(0, 0, 0, 0.87), 300: rgba(0, 0, 0, 0.87), 400: rgba(0, 0, 0, 0.87), 500: rgba(0, 0, 0, 0.87), 600: rgba(0, 0, 0, 0.87), 700: rgba(0, 0, 0, 0.87), 800: white, 900: white, A100: rgba(0, 0, 0, 0.87), A200: rgba(0, 0, 0, 0.87), A400: rgba(0, 0, 0, 0.87), A700: black), default: #ef6c00, lighter: #ffd180, darker: #ff9100, default-contrast: white, lighter-contrast: rgba(0, 0, 0, 0.87), darker-contrast: rgba(0, 0, 0, 0.87), "50-contrast": rgba(0, 0, 0, 0.87), "100-contrast": rgba(0, 0, 0, 0.87), "200-contrast": rgba(0, 0, 0, 0.87), "300-contrast": rgba(0, 0, 0, 0.87), "400-contrast": rgba(0, 0, 0, 0.87), "500-contrast": rgba(0, 0, 0, 0.87), "600-contrast": rgba(0, 0, 0, 0.87), "700-contrast": rgba(0, 0, 0, 0.87), "800-contrast": white, "900-contrast": white, "A100-contrast": rgba(0, 0, 0, 0.87), "A200-contrast": rgba(0, 0, 0, 0.87), "A400-contrast": rgba(0, 0, 0, 0.87), "A700-contrast": black, "contrast-contrast": null)); }
+    background-color: #ef6c00; }
   td-steps .td-circle.mat-complete, td-steps .td-triangle.mat-complete {
     color: #ef6c00; }
 
