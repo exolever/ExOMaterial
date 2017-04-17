@@ -64,6 +64,11 @@
     .td-triangle {
       //color: mat-color($warn);
     }
+    .td-complete {
+       & md-icon {
+           color: mat-color($accent);
+     }
+    }
     .td-edit-icon {
       color: mat-color($foreground, icon);
     }

@@ -720,6 +720,9 @@ td-steps .td-circle, td-steps .td-triangle {
   td-steps .td-circle md-icon, td-steps .td-triangle md-icon {
     fill: rgba(0, 0, 0, 0.87); }
 
+td-steps .td-complete md-icon {
+  color: #039be5; }
+
 td-steps .td-edit-icon {
   color: rgba(0, 0, 0, 0.54); }
 

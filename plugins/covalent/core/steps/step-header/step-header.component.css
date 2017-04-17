@@ -1,6 +1,12 @@
 .td-step-header {
   position: relative;
-  outline: none; }
+  outline: none;
+  /* .td-triangle {
+    & > md-icon {
+      font-size: 25px;
+    }
+  }
+  */ }
   .td-step-header:focus, .td-step-header:hover {
     cursor: pointer; }
   .td-step-header.mat-disabled {
@@ -31,8 +37,6 @@
     .td-step-header .td-circle md-icon, .td-step-header .td-triangle md-icon {
       margin-top: 2px;
       font-weight: bold; }
-  .td-step-header .td-triangle > md-icon {
-    font-size: 25px; }
   .td-step-header .td-complete {
     font-size: 0; }
   /deep/ :not([dir='rtl']) .td-step-header .td-circle, /deep/ :not([dir='rtl'])
