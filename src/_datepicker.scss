@@ -1,9 +1,16 @@
 
-.md2-datepicker-header, .md2-calendar-day.today, .md2-calendar-day.selected{
+.md2-datepicker-header, .md2-calendar-day.selected{
     background-color:  mat-color($primary)!important;
 }
-.md2-calendar-day.today, .md2-calendar-day.selected{
+.md2-calendar-day.selected{
     color: white !important;
+}
+
+.md2-calendar-day.today{
+    background:none !important;
+}
+.md2-calendar-day.today{
+    color: mat-color($primary)!important;
 }
 .md2-datepicker-actions .md2-button{
     color: mat-color($primary) !important;
