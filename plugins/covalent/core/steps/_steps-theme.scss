@@ -26,38 +26,35 @@
     }
     // header
     .td-step-header {
-      .md-caption {
-        color: mat-color($foreground, secondary-text);
+      &:focus,
+      &:hover {
+        background: mat-color($background, 'hover');
       }
-      .md-disabled {
-        &, & * {
-          color: mat-color($foreground, disabled);
+      .td-step-label-wrapper {
+        .md-caption {
+          color: mat-color($foreground, secondary-text);
+        }
+        &.mat-disabled {
+          &, & * {
+            color: mat-color($foreground, disabled);
+          }
+        }
+        &.mat-warn {
+          &, & * {
+            color: mat-color($warn);
+          }
         }
       }
-      .md-complete {
-        //color: md-color($accent);
-      }
-      .md-warn {
-        &, & * {
-          color: mat-color($warn);
-        }
+      .mat-complete {
+        //color: mat-color($accent);
       }
     }
     .td-circle, .td-triangle {
       color: mat-color($background, card);
-      &.md-active {
+      &.mat-active {
         background-color: mat-color($accent);
       }
-      &.md-complete {
-        color: mat-color($accent);
-      }
-    }
-    .td-circle {
-      color: mat-color($background, card);
-      &.md-active {
-        background-color: mat-color($accent);
-      }
-      &.md-inactive {
+      &.mat-inactive {
         background-color: mat-color($foreground, disabled);
       }
       & md-icon {
@@ -65,16 +62,11 @@
       }
     }
     .td-triangle {
-      color: mat-color($warn);
-      &.md-active {
-        background-color: mat-color($accent);
-      }
-      &.md-inactive {
-        background-color: mat-color($foreground, disabled);
-      }
-      & md-icon {
-        fill: mat-color($foreground, text);
-      }
+      //color: mat-color($warn);
+    }
+    .td-edit-icon {
+      color: mat-color($foreground, icon);
     }
   }
 }
+
