@@ -702,14 +702,16 @@ td-steps .td-vertical-line {
 td-steps .td-step-header:focus, td-steps .td-step-header:hover {
   background: rgba(0, 0, 0, 0.04); }
 
-td-steps .td-step-header .td-step-label-wrapper .md-caption {
-  color: rgba(0, 0, 0, 0.54); }
-
-td-steps .td-step-header .td-step-label-wrapper.mat-disabled, td-steps .td-step-header .td-step-label-wrapper.mat-disabled * {
-  color: rgba(0, 0, 0, 0.38); }
-
-td-steps .td-step-header .td-step-label-wrapper.mat-warn, td-steps .td-step-header .td-step-label-wrapper.mat-warn * {
-  color: #e53935; }
+td-steps .td-step-header .td-step-label-wrapper {
+  /*&.mat-warn {
+          &, & * {
+            color: mat-color($warn);
+          }
+        }*/ }
+  td-steps .td-step-header .td-step-label-wrapper .md-caption {
+    color: rgba(0, 0, 0, 0.54); }
+  td-steps .td-step-header .td-step-label-wrapper.mat-disabled, td-steps .td-step-header .td-step-label-wrapper.mat-disabled * {
+    color: rgba(0, 0, 0, 0.38); }
 
 td-steps .td-circle, td-steps .td-triangle {
   color: white; }

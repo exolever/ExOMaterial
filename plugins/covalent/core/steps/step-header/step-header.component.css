@@ -36,7 +36,8 @@
     flex: none; }
     .td-step-header .td-circle md-icon, .td-step-header .td-triangle md-icon {
       margin-top: 2px;
-      font-weight: bold; }
+      font-weight: bold;
+      color: white; }
   .td-step-header .td-complete {
     font-size: 0; }
   /deep/ :not([dir='rtl']) .td-step-header .td-circle, /deep/ :not([dir='rtl'])

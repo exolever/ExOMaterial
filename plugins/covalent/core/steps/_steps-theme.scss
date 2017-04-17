@@ -39,11 +39,11 @@
             color: mat-color($foreground, disabled);
           }
         }
-        &.mat-warn {
+        /*&.mat-warn {
           &, & * {
             color: mat-color($warn);
           }
-        }
+        }*/
       }
       .mat-complete {
         //color: mat-color($accent);
