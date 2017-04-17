@@ -699,39 +699,34 @@ td-steps .td-horizontal-line {
 td-steps .td-vertical-line {
   border-left-color: rgba(0, 0, 0, 0.12); }
 
-td-steps .td-step-header .md-caption {
-  color: rgba(0, 0, 0, 0.54); }
+td-steps .td-step-header:focus, td-steps .td-step-header:hover {
+  background: rgba(0, 0, 0, 0.04); }
 
-td-steps .td-step-header .md-disabled, td-steps .td-step-header .md-disabled * {
-  color: rgba(0, 0, 0, 0.38); }
-
-td-steps .td-step-header .md-warn, td-steps .td-step-header .md-warn * {
-  color: #e53935; }
+td-steps .td-step-header .td-step-label-wrapper {
+  /*&.mat-warn {
+          &, & * {
+            color: mat-color($warn);
+          }
+        }*/ }
+  td-steps .td-step-header .td-step-label-wrapper .md-caption {
+    color: rgba(0, 0, 0, 0.54); }
+  td-steps .td-step-header .td-step-label-wrapper.mat-disabled, td-steps .td-step-header .td-step-label-wrapper.mat-disabled * {
+    color: rgba(0, 0, 0, 0.38); }
 
 td-steps .td-circle, td-steps .td-triangle {
   color: white; }
-  td-steps .td-circle.md-active, td-steps .td-triangle.md-active {
+  td-steps .td-circle.mat-active, td-steps .td-triangle.mat-active {
     background-color: #ef6c00; }
-  td-steps .td-circle.md-complete, td-steps .td-triangle.md-complete {
-    color: #ef6c00; }
-
-td-steps .td-circle {
-  color: white; }
-  td-steps .td-circle.md-active {
-    background-color: #ef6c00; }
-  td-steps .td-circle.md-inactive {
+  td-steps .td-circle.mat-inactive, td-steps .td-triangle.mat-inactive {
     background-color: rgba(0, 0, 0, 0.38); }
-  td-steps .td-circle md-icon {
+  td-steps .td-circle md-icon, td-steps .td-triangle md-icon {
     fill: rgba(0, 0, 0, 0.87); }
 
-td-steps .td-triangle {
-  color: #e53935; }
-  td-steps .td-triangle.md-active {
-    background-color: #ef6c00; }
-  td-steps .td-triangle.md-inactive {
-    background-color: rgba(0, 0, 0, 0.38); }
-  td-steps .td-triangle md-icon {
-    fill: rgba(0, 0, 0, 0.87); }
+td-steps .td-complete md-icon {
+  color: #ef6c00; }
+
+td-steps .td-edit-icon {
+  color: rgba(0, 0, 0, 0.54); }
 
 td-expansion-panel {
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
