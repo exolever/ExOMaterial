@@ -1,7 +1,6 @@
 .mat-hint{
     @include md-caption();
     color: mat-color($foreground, 'secondary-text');
-    line-height: 8px;
     &.error{
         color: mat-color($mat-red, A200);
     }

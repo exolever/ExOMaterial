@@ -1,4 +1,6 @@
 @import '~@covalent/core/common/styles/mixins.custom';
+@import '../scss/_mixins';
+
 td-chips{
     padding: 0px;
     .mat-input-wrapper {
@@ -25,3 +27,15 @@ td-chips{
     }
 }
 
+.chip {
+   padding: 6px 10px;
+   border-radius: 24px;
+   margin-left: 5px;
+   margin-right: 5px;
+   font-weight: $weight-semibold;
+   text-align: center;
+   background-color: mat-color($mat-blue-grey, 50);
+   color: mat-color($mat-blue-grey, 400);
+   @include md-caption();
+   @include text-truncate();
+}
