@@ -11,8 +11,8 @@ $retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (
 }
 @mixin mat-icon-color($base-color, $contrast){
     $color: mat-color($base-color, $contrast);
-    background-color:  rgba($color, 0.26);
-    color: $color;
+    background-color:  rgba($color, 0.26) !important;;
+    color: $color !important;
 }
 
 @mixin text-truncate(){
