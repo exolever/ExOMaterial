@@ -35,8 +35,6 @@
     text-align: center;
     flex: none; }
     .td-step-header .td-circle md-icon, .td-step-header .td-triangle md-icon {
-      margin-top: 2px;
-      font-weight: bold;
       color: white; }
   .td-step-header .td-complete {
     font-size: 0; }
