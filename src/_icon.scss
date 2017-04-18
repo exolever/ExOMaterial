@@ -1,11 +1,11 @@
 @import '../scss/variables';
 
-md-icon[md-list-avatar]{
+md-icon.mat-list-avatar{
     &.mat-primary{
-        background-color: mat-color($primary, 0.26);
+        background-color: mat-color($primary, 0.26) !important;
     }
     &.mat-accent{
-        background-color: mat-color($accent, 0.26);
+        background-color: mat-color($accent, 0.26) !important;
     }
     &.mat-success{
         @include mat-icon-color($mat-teal, A400);
