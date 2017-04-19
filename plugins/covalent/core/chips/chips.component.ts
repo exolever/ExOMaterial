@@ -156,7 +156,7 @@ export class TdChipsComponent implements ControlValueAccessor, DoCheck, OnInit {
    */
   filter(val: string): string[] {
     return this.items.filter((item: string) => {
-      return val ? item.indexOf(val) > -1 : true;
+      return val ? item.toLowerCase().indexOf(val.toLowerCase()) > -1 : true;
     });
   }
 
