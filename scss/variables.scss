@@ -1,5 +1,6 @@
+@import "~@covalent/core/common/styles/variables";
 @import '~@angular/material/theming';
-@import "theme";
+@import "./exo-theme";
 
 $primary: map-get($exo-app-theme, primary);
 $accent: map-get($exo-app-theme, accent);
@@ -7,9 +8,9 @@ $warn: map-get($exo-app-theme, warn);
 
 $foreground: map-get($exo-app-theme, foreground);
 
-//== Media queries breakpoints
-
-//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+/***********************************************************
+* Breakpoints variables
+***********************************************************/
 
 // Extra small screen / phone
 //** Deprecated `$screen-xs` as of v3.0.1
@@ -44,5 +45,3 @@ $screen-lg-desktop:          $screen-lg-min !default;
 $screen-xs-max:              ($screen-sm-min - 1) !default;
 $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
-
-

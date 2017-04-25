@@ -1,6 +1,3 @@
-@import '../scss/variables';
-@import '~@covalent/core/common/styles/mixins.custom';
-
 .mat-dialog-title {
     color: mat-color($foreground, 'secondary-text');
     @include md-headline-2();

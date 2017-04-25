@@ -1,45 +1,13 @@
 @import '~@angular/material/theming';
 // Plus imports for other components in your app.
 @import '~@covalent/core/theming/all-theme';
-
+@import './exo-theme';
 
 // Include the base styles for Angular Material core. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 @include mat-core();
 
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue.
-$exo-app-primary: mat-palette($mat-blue, 500, A100, 600);
-$exo-app-accent:  mat-palette($mat-pink, A700, 600, 800);
-
-// The warn palette is optional (defaults to red).
-$exo-app-warn:    mat-palette($mat-red);
-
-
-// Overwrite the light theme
-$mat-light-theme-foreground: (
-    base:            rgba(38, 50, 56, 100),
-    divider:         rgba(38, 50, 56, 0.12),
-    dividers:        rgba(38, 50, 56, 0.12),
-    disabled:        rgba(38, 50, 56, 0.38),
-    disabled-button: rgba(38, 50, 56, 0.38),
-    disabled-text:   rgba(38, 50, 56, 0.38),
-    hint-text:       rgba(38, 50, 56, 0.38),
-    secondary-text:  rgba(38, 50, 56, 0.64),
-    icon:            rgba(38, 50, 56, 0.64),
-    icons:           rgba(38, 50, 56, 0.64),
-    text:            rgba(38, 50, 56, 100)
-);
-
-
-// Create the theme object (a Sass map containing all of the palettes).
-$exo-app-theme: mat-light-theme($exo-app-primary, $exo-app-accent, $exo-app-warn);
-
-
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
+// Include exo-theme palette;
 @include angular-material-theme($exo-app-theme);
 @include covalent-theme($exo-app-theme);
 
