@@ -1,16 +1,18 @@
 .mat-dialog-title {
     color: mat-color($foreground, 'secondary-text');
     @include md-headline-2();
+    font-size: $headline-font-size-base !important;
+    font-weight: $weight-light !important;
     z-index: 1;
     md-icon {
         cursor: pointer;
     }
 }
 md-dialog-content{
-    padding: 24px;
+    padding: 24px !important;
 }
 .mat-dialog-actions {
-    padding: 8px;
+    padding: 8px !important;
     background-color: mat-color($mat-grey, 50);
     margin-left: -24px;
     margin-right: -24px;

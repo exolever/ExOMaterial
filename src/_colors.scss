@@ -3,7 +3,7 @@
 }
 
 .foreground-icon{
-    color: mat-color($foreground, 'icon');
+    color: mat-color($foreground, 'icon') !important;
 }
 
 .foreground-text{

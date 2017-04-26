@@ -1,12 +1,11 @@
-[md-button], [md-raised-button]{
+.mat-button, .mat-raised-button{
     text-transform: uppercase;
-    box-shadow: none;
-    font-weight: $weight-semibold;
-
+    box-shadow: none !important;
+    font-weight: $weight-semibold !important;
 }
 
 
-[md-button].oulined{
+.mat-button.oulined{
     border: 2px solid;
     &:hover{
         -webkit-transition-duration: 0.2s; /* Safari */
