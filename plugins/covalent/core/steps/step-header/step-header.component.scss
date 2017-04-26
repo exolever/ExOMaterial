@@ -1,0 +1,86 @@
+$step-circle: 24px;
+
+.td-step-header {
+  position: relative;
+  outline: none;
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+  &.mat-disabled {
+    background: none;
+    cursor: auto;
+  }
+  .td-step-header-content {
+    height: 72px;
+  }
+  md-icon.td-edit-icon {
+    margin: 0 8px;
+  }
+  md-icon {
+    &.mat-warn {
+      font-size: $step-circle;
+      height: $step-circle;
+      width: $step-circle;
+    }
+    &.mat-complete {
+      position: relative;
+      left: -2px;
+      top: 2px;
+      font-size: $step-circle + 4;
+      height: $step-circle;
+      width: $step-circle;
+    }
+  }
+  .td-circle, .td-triangle {
+    height: $step-circle;
+    width: $step-circle;
+    line-height: $step-circle;
+    border-radius: 99%;
+    text-align: center;
+    flex: none;
+    & md-icon {
+    //  margin-top: 2px;
+    //  font-weight: bold;
+      color: white;
+    }
+  }
+ /* .td-triangle {
+    & > md-icon {
+      font-size: 25px;
+    }
+  }
+  */
+  .td-complete {
+    font-size: 0;
+  }
+  .td-circle,
+  .td-triangle,
+  .td-complete {
+    /deep/ :not([dir='rtl']) & {
+      margin: {
+        left: 8px;
+        right: 0px;
+      }
+    }
+    /deep/ [dir='rtl'] & {
+      margin: {
+        left: 0px;
+        right: 8px;
+      }
+    }
+  }
+  .td-circle,
+  .td-triangle,
+  .td-complete {
+    font-size: 14px;
+  }
+  .td-step-label-wrapper {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .td-step-sublabel {
+    line-height: 14px;
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,17 @@
+@import '~@covalent/core/common/styles/variables.custom';
+@import '~@covalent/core/common/styles/mixins.custom';
+@import '../scss/variables';
+
+markdown{
+    h3{      
+        @include md-title();
+        margin-top: 0px;
+        color: mat-color($foreground, 'text');
+        line-height: 1.5;
+    }
+    p{
+        margin-top: 0px;
+        margin-bottom: 16px;
+    }
+}
+

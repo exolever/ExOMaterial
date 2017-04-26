@@ -1,0 +1,38 @@
+.mat-hint{
+    @include md-caption();
+    color: mat-color($foreground, 'secondary-text');
+    &.error{
+        color: mat-color($mat-red, A200);
+    }
+    div.error{
+        color: mat-color($mat-red, A200);
+    }
+}
+
+.datepicker-container.has-error .md2-datepicker-input{
+    border-color: mat-color($mat-red, A200);
+    color: mat-color($mat-red, A200);
+}
+
+.datepicker-container.has-error md2-datepicker:focus:not(.md2-datepicker-disabled) .md2-datepicker-input {
+    border-color: mat-color($mat-red, A200) !important;
+    color: mat-color($mat-red, A200) !important;
+}
+
+
+.mat-input-container.ng-invalid.has-error, 
+.chips-container.has-error {
+    .mat-input-underline{
+        border-top-color: mat-color($mat-red, A200) !important;
+    }
+}
+
+.mat-input-container.ng-invalid.has-error .mat-focused,
+.chips-container.has-error .mat-focused {
+    color: mat-color($mat-red, A200);
+}
+
+.mat-input-container.ng-invalid.has-error .mat-input-ripple,
+.chips-container.has-error .mat-input-ripple {
+    background-color: mat-color($mat-red, A200);
+}

@@ -1,0 +1,109 @@
+@import 'variables';
+// Typography mixins
+
+@mixin md-title() {
+  font-family: $font-family;
+  font-size: $title-font-size-base;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.005em;
+}
+
+@mixin md-body-1() {
+  font-family: $font-family;
+  font-size: $body-font-size-base;
+  font-weight: $weight-regular;
+  letter-spacing: 0.010em;
+  line-height: rem(2.4);
+}
+
+@mixin md-body-2() {
+  font-family: $font-family;
+  font-size: $body-font-size-base;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.010em;
+  line-height: rem(2.4);
+}
+
+@mixin md-body-3() {
+  font-family: $font-family;
+  font-size: $body-font-size-base;
+  font-weight: $weight-light;
+  letter-spacing: 0.010em;
+  line-height: rem(2.4);
+}
+
+@mixin md-subhead() {
+  font-family: $font-family;
+  font-size: $subhead-font-size-base;
+  font-weight: $weight-regular;
+  letter-spacing: 0.010em;
+  line-height: rem(2.4);
+}
+
+@mixin md-subhead-2() {
+  font-family: $font-family;
+  font-size: $subhead-font-size-base;
+  font-weight: $weight-light;
+  letter-spacing: 0.010em;
+  line-height: rem(2.4);
+}
+
+
+@mixin md-caption() {
+  font-size: $caption-font-size-base;
+  font-weight: $weight-regular;
+  letter-spacing: 0.020em;
+  font-family: $font-family;
+}
+
+@mixin md-button() {
+  font-size: $body-font-size-base;
+  font-weight: $weight-semibold;
+  letter-spacing: 0.010em;
+  font-family: $font-family;
+}
+
+@mixin md-display-4() {
+  font-family: $font-family-text;
+  font-size: $display-4-font-size-base;
+  font-weight: $weight-regular;
+  letter-spacing: -0.010em;
+  line-height: $display-4-font-size-base;
+}
+
+@mixin md-display-3() {
+  font-family: $font-family-text;
+  font-size: $display-3-font-size-base;
+  font-weight: $weight-regular;
+  letter-spacing: -0.005em;
+  line-height: $display-3-font-size-base;
+}
+
+@mixin md-display-2() {
+  font-family: $font-family-text;
+  font-size: $display-2-font-size-base;
+  font-weight: $weight-regular;
+  line-height: rem(6.4);
+}
+
+@mixin md-display-1() {
+  font-family: $font-family-text;
+  font-size: $display-1-font-size-base;
+  font-weight: $weight-regular;
+  line-height: rem(4);
+}
+
+
+@mixin md-headline() {
+  font-family: $font-family-text;
+  font-size: $headline-font-size-base;
+  font-weight: $weight-regular;
+  line-height: rem(3.2);
+}
+
+@mixin md-headline-2() {
+  font-family: $font-family-text;
+  font-size: $headline-font-size-base;
+  font-weight: $weight-light;
+  line-height: rem(3.2);
+}

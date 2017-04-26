@@ -1,0 +1,44 @@
+<div class="mat-table-container" title>
+  <table td-data-table
+         [class.mat-selectable]="isSelectable">
+    <th td-data-table-column class="mat-checkbox-column" *ngIf="isSelectable">
+      <md-checkbox
+        #checkBoxAll
+        *ngIf="isMultiple"
+        [disabled]="!hasData"
+        [checked]="areAllSelected() && hasData"
+        (click)="selectAll(!checkBoxAll.checked)">
+      </md-checkbox>
+    </th>
+    <th td-data-table-column
+        *ngFor="let column of columns"
+        [name]="column.name"
+        [numeric]="column.numeric"
+        [active]="(column.sortable || isSortable) && column === sortByColumn"
+        [sortable]="column.sortable ||  isSortable"
+        [sortOrder]="sortOrderEnum"
+        (sortChange)="handleSort(column)">
+        <span [mdTooltip]="column.tooltip">{{column.label}}</span>
+    </th>
+    <tr td-data-table-row
+        [class.mat-selected]="isSelectable && isRowSelected(row)"
+        *ngFor="let row of data"
+        (click)="isSelectable && select(row, !isRowSelected(row), $event)">
+      <td td-data-table-cell class="mat-checkbox-cell" *ngIf="isSelectable">
+        <md-pseudo-checkbox
+          [state]="isRowSelected(row) ? 'checked' : 'unchecked'">
+        </md-pseudo-checkbox>
+      </td>
+      <td td-data-table-cell
+          [numeric]="column.numeric"
+          *ngFor="let column of columns">
+        <span class="md-body-1" *ngIf="!getTemplateRef(column.name)">{{column.format ? column.format(getCellValue(column, row)) : getCellValue(column, row)}}</span>
+        <ng-template
+          *ngIf="getTemplateRef(column.name)"
+          [ngTemplateOutlet]="getTemplateRef(column.name)"
+          [ngOutletContext]="{ value: getCellValue(column, row), row: row, column: column.name }">
+        </ng-template>
+      </td>
+    </tr>
+  </table>
+</div>

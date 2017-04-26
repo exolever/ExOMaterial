@@ -9,9 +9,22 @@
     "url": "https://github.com/ExOLever/ExOMaterial"
   },
   "author": {
-    "name": "Rafael Montaño",
-    "email": "rafael@exo.works.es"
+    "name": "ExO Works"
   },
+  "contributors": [
+    {
+      "name": "Rafael Montaño",
+      "email": "rafael@exo.works.es"
+    },
+    {
+      "name": "Raúl Raya",
+      "email": "raul@exo.works.es"
+    },
+    {
+      "name": "Ana Panadero",
+      "email": "ana.panadero@exo.works.es"
+    }
+  ],
   "keywords": [
     "angular",
     "angular2",
@@ -21,13 +34,6 @@
   ],
   "license": "MIT",
   "main": "./index.ts",
-  "dependencies": {
-    "@covalent/core": "^0.10.2",
-    "@covalent/dynamic-forms": "^0.10.2",
-    "@covalent/highlight": "^0.10.2",
-    "@covalent/http": "^0.10.2",
-    "@covalent/markdown": "^0.10.2"
-  },
   "devDependencies": {
     "codelyzer": "^2.0.0-beta.4",
     "rxjs": "5.0.3",

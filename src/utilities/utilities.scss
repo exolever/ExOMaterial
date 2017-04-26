@@ -1,0 +1,14 @@
+@import '~@covalent/core/common/styles/mixins.custom';
+
+//Useful class
+.pointer{
+    cursor: pointer;
+}
+
+.mat-hint{
+    @include md-caption();
+    color: mat-color($foreground, 'secondary-text');
+    div.error{
+        color: mat-color($mat-red, A200);
+    }
+}

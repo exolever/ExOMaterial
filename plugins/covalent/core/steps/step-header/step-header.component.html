@@ -1,0 +1,38 @@
+<div class="td-step-header"
+      [class.mat-disabled]="disabled"
+      md-ripple
+      [mdRippleDisabled]="disabled"
+      [tabIndex]="disabled ? -1 : 0"
+      flex>
+  <div class="td-step-header-content"
+        layout="row"
+        layout-align="start center"
+        flex>
+    <div class="td-circle"
+        [class.mat-inactive]="(!active && !isComplete()) || disabled"
+        [class.mat-active]="active && !disabled"
+        *ngIf="!isRequired() && !isComplete()">
+      <span *ngIf="(active || !isComplete())">{{number || ''}}</span>
+    </div>
+    <div class="td-complete" *ngIf="isComplete()">
+      <md-icon class="mat-complete">room</md-icon>
+    </div>
+    <div class="td-triangle"
+        [class.mat-inactive]="(!active && !isComplete()) || disabled"
+        [class.mat-active]="active && !disabled"
+        *ngIf="isRequired() && !isComplete()">
+      <md-icon class="mat-warn">done</md-icon>
+    </div>
+    <div class="td-step-label-wrapper"
+          [class.mat-disabled]="(!active && !isComplete()) || disabled"
+          [class.mat-warn]="isRequired() && !disabled">
+      <div class="md-body-2 td-step-label">
+        <ng-content select="[td-step-header-label]"></ng-content>
+      </div>
+      <div class="md-caption td-step-sublabel">
+        <ng-content select="[td-step-header-sublabel]"></ng-content>
+      </div>
+    </div>
+    <span flex></span>
+  </div>
+</div>

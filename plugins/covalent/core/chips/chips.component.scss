@@ -1,0 +1,80 @@
+@import '../common/styles/mixins';
+
+:host {
+  display: block;
+  padding: 0px 5px 0px 5px;
+  /deep/ {
+    .mat-input-wrapper {
+      margin-bottom: 2px;
+    }
+    .mat-input-container {
+      margin-top: 8px;
+    }
+    .mat-basic-chip {
+      display: inline-block;
+      cursor: default;
+      border-radius: 16px;
+      line-height: 32px;    
+      @include rtl(margin, 8px 8px 0 0, 8px 0 0 8px);
+      padding: 0 12px;
+      box-sizing: border-box;
+      max-width: 100%;
+      position: relative;
+      md-icon {
+        position: relative;
+        top: 5px;
+        @include rtl(left, 5px, auto);
+        @include rtl(right, auto, 5px);
+        height: 18px;
+        width: 18px;
+        font-size: 19px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.mat-input-underline {
+  position: relative;
+  height: 1px;
+  width: 100%;
+
+  &.mat-disabled {
+    border-top: 0;
+    background-position: 0;
+    background-size: 4px 1px;
+    background-repeat: repeat-x;
+  }
+
+  .mat-input-ripple {
+    position: absolute;
+    height: 2px;
+    z-index: 1;
+    top: -1px;
+    width: 100%;
+    transform-origin: top;
+    opacity: 0;
+    transform: scaleY(0);
+    &.mat-warn {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+    &.mat-focused {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+}
+
+:host {
+   /deep/ md-input-container {
+    input::-webkit-calendar-picker-indicator { // removes input arrow for datalist in chrome
+      display: none;
+    }
+    .mat-input-underline {
+      display: none;
+    }
+  }
+}

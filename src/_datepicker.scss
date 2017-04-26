@@ -1,0 +1,40 @@
+
+.md2-datepicker-header, .md2-calendar-day.selected{
+    background-color:  mat-color($primary)!important;
+}
+.md2-calendar-day.selected{
+    color: white !important;
+}
+
+.md2-calendar-day.today{
+    background:none !important;
+}
+.md2-calendar-day.today{
+    color: mat-color($primary)!important;
+}
+.md2-datepicker-actions .md2-button{
+    color: mat-color($primary) !important;
+    &:hover{
+        background-color: rgba(33, 150, 243, 0.12) !important;
+    }
+    &:first-child {  // Cancel button
+        color: mat-color($foreground, 'secondary-text')!important;
+        &:hover{
+            background-color: rgba(38, 50, 56, 0.12) !important;
+        }
+    }
+}
+md2-datepicker:focus:not(.md2-datepicker-disabled) .md2-datepicker-input {
+    color:  mat-color($primary) !important;
+    border-color:  mat-color($primary) !important;
+}
+
+.datepicker-container {
+    position: relative;
+    .datepicker-wrapper {
+        padding-bottom: 10px;
+    }
+    .mat-hint {
+        left: 33px;
+    }
+}

@@ -1,0 +1,45 @@
+@import '../common/styles/variables';
+@import '../common/styles/elevation';
+@import '../common/styles/theme-functions';
+
+@mixin td-expansion-panel-theme($theme) {
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+  // panel
+  td-expansion-panel {
+    @include mat-elevation(1);
+    background-color: mat-color($background, card);
+    &:not(:last-of-type) {
+      & .td-expanded {
+        margin-bottom: $margin;
+      }
+    }
+    &:not(:first-of-type) {
+      & .td-expanded {
+        margin-top: $margin;
+      }
+    }
+    .mat-disabled {
+      &, & * {
+        color: mat-color($foreground, disabled);
+      }
+    }
+    md-nav-list {
+      padding: 0;
+    }
+    md-icon.td-expand-icon {
+      color: mat-color($foreground, icon);
+    }
+    .td-expansion-primary,
+    .td-expansion-secondary {
+      &, & * {
+        vertical-align: middle;
+      }
+    }
+    .td-expansion-secondary {
+      color: mat-color($foreground, secondary-text);
+    }
+  }
+}

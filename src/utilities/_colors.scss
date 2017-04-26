@@ -1,0 +1,25 @@
+@import '../../scss/variables';
+
+.foreground-secondary-text{
+    color: mat-color($foreground, 'secondary-text');
+}
+
+.foreground-icon{
+    color: mat-color($foreground, 'icon');
+}
+
+.foreground-text{
+    color: mat-color($foreground, 'text');
+}
+
+.foreground-disabled-text{
+    color: mat-color($foreground, 'disabled-text');
+}
+
+.primary-color{
+    color: mat-color($primary);
+}
+
+.accent-color{
+    color: mat-color($accent);
+}
