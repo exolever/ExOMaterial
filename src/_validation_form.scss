@@ -1,12 +1,12 @@
 .mat-hint{
     @include md-caption();
     color: mat-color($foreground, 'secondary-text');
-    &.error{
-        color: mat-color($mat-red, A200);
+    &.primary-color {
+        color: mat-color($primary);
     }
-    div.error{
-        color: mat-color($mat-red, A200);
-    }
+}
+.mat-input-error{
+    @include md-caption();
 }
 
 .datepicker-container.has-error .md2-datepicker-input{
