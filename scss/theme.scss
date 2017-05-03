@@ -23,3 +23,7 @@
     @include angular-material-theme($blue-gray-blue);
     @include covalent-theme($blue-gray-blue);
 }
+
+html, body {
+  color: rgba(38, 50, 56, 100) !important;
+}

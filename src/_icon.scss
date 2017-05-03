@@ -1,3 +1,6 @@
+md-icon {
+    color: mat-color($foreground, icon);
+}
 md-icon.mat-list-avatar{
     &.mat-primary{
         background-color: mat-color($primary, 0.26) !important;
@@ -12,4 +15,17 @@ md-icon.mat-list-avatar{
         $base-color: mat-color($foreground, 'icon');
         background-color: rgba($base-color, 0.26);
     }
+}
+
+
+md-icon.md-16 {
+  font-size: 16px;
+  height: 16px;
+  width: 16px; 
+}
+
+md-icon.md-14 {
+  font-size: 14px;
+  height: 14px;
+  width: 14px; 
 }

@@ -25,3 +25,12 @@ md-dialog-content{
     }
     
 }
+
+.mat-dialog-container{
+    max-width: 600px !important;
+}
+
+.dark-header {
+    margin: -24px -24px 24px -24px !important ;
+    background-color: mat-color($mat-blue-grey, 50);
+}
