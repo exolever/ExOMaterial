@@ -14,3 +14,7 @@
 .weight-black{
     font-weight: $weight-black;
 }
+
+.md-subhead-3{
+    @include md-subhead-3();
+}
