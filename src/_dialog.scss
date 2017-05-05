@@ -27,7 +27,10 @@ md-dialog-content{
 }
 
 .mat-dialog-container{
-    max-width: 600px !important;
+    @media (min-width: $screen-md-max){ // XS
+        max-width: 600px !important;
+        min-width: 350px !important;
+    }
 }
 
 .dark-header {
