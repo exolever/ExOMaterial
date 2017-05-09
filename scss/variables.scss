@@ -1,12 +1,19 @@
 @import "~@covalent/core/common/styles/variables";
 @import '~@angular/material/theming';
 @import "./exo-theme";
+@import "./exo-dark-theme";
 
 $primary: map-get($exo-app-theme, primary);
 $accent: map-get($exo-app-theme, accent);
 $warn: map-get($exo-app-theme, warn);
 
 $foreground: map-get($exo-app-theme, foreground);
+
+$dark-primary: map-get($exo-dark-theme, primary);
+$dark-accent: map-get($exo-dark-theme, accent);
+$dark-warn: map-get($exo-dark-theme, warn);
+
+$dark-foreground: map-get($exo-dark-theme, foreground);
 
 /***********************************************************
 * Breakpoints variables

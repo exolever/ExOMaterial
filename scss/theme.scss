@@ -2,26 +2,21 @@
 // Plus imports for other components in your app.
 @import '~@covalent/core/theming/all-theme';
 @import './exo-theme';
+@import './exo-dark-theme';
 
 // Include the base styles for Angular Material core. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 @include mat-core();
 
-// Include exo-theme palette;
+// Custom light theme;
 @include angular-material-theme($exo-app-theme);
 @include covalent-theme($exo-app-theme);
 
 
-// Custom theme examples
-.blue-gray-blue {
-    $primary2: mat-palette($mat-blue-grey, 800, 400, 900);
-    $accent2:  mat-palette($mat-blue, 500, A100, 600);
-    $warn2:    mat-palette($mat-red);
-
-    $blue-gray-blue: mat-light-theme($primary2, $accent2, $warn2);
-
-    @include angular-material-theme($blue-gray-blue);
-    @include covalent-theme($blue-gray-blue);
+// Custom dark theme
+.exo-dark-theme {
+    @include angular-material-theme($exo-dark-theme);
+    @include covalent-theme($exo-dark-theme);
 }
 
 html, body {

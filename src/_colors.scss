@@ -21,3 +21,27 @@
 .accent-color{
     color: mat-color($accent);
 }
+
+.dark-foreground-secondary-text{
+    color: mat-color($dark-foreground, 'secondary-text');
+}
+
+.dark-foreground-icon{
+    color: mat-color($dark-foreground, 'icon') !important;
+}
+
+.dark-foreground-text{
+    color: mat-color($dark-foreground, 'text');
+}
+
+.dark-foreground-disabled-text{
+    color: mat-color($dark-foreground, 'disabled-text');
+}
+
+.dark-primary-color{
+    color: mat-color($dark-primary);
+}
+
+.dark-accent-color{
+    color: mat-color($dark-accent);
+}

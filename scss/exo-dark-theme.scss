@@ -1,0 +1,27 @@
+@import '~@angular/material/theming';
+
+$exo-dark-primary: mat-palette($mat-blue-grey, 800, 400, 900);
+$exo-dark-accent: mat-palette($mat-blue, 500, A100, 600);
+
+// The warn palette is optional (defaults to red).
+$exo-dark-warn:    mat-palette($mat-red);
+
+
+// Overwrite the light theme
+ $mat-dark-theme-foreground: (
+    base:            white,
+    divider:         $white-12-opacity,
+    dividers:        $white-12-opacity,
+    disabled:        rgba(white, 0.3),
+    disabled-button: rgba(white, 0.3),
+    disabled-text:   rgba(white, 0.3),
+    hint-text:       rgba(white, 0.3),
+    secondary-text:  rgba(white, 0.7),
+    icon:            white,
+    icons:           white,
+    text:            white
+);
+
+
+// Create the theme object (a Sass map containing all of the palettes).
+$exo-dark-theme: mat-dark-theme($exo-dark-primary, $exo-dark-accent, $exo-dark-warn);

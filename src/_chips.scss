@@ -36,3 +36,13 @@ td-chips{
    @include md-caption();
    @include text-truncate();
 }
+
+.mat-chip{
+    &.outlined{
+        background-color: transparent;
+        border: 1px solid;
+        border-color: mat-color($mat-blue-grey, 300);
+        color: mat-color($mat-blue-grey, 300);
+        margin-bottom: 10px !important;
+    }
+}

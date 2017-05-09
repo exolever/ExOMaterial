@@ -1,6 +1,11 @@
 md-icon {
     color: mat-color($foreground, icon);
 }
+.exo-dark-theme{
+    md-icon {
+        color: mat-color($dark-foreground, icon);
+    }   
+}
 md-icon.mat-list-avatar{
     &.mat-primary{
         background-color: mat-color($primary, 0.26) !important;
