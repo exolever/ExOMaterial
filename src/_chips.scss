@@ -42,7 +42,9 @@ td-chips{
         background-color: transparent;
         border: 1px solid;
         border-color: mat-color($mat-blue-grey, 300);
-        color: mat-color($mat-blue-grey, 300);
+        color: mat-color($mat-blue-grey, 500);
         margin-bottom: 10px !important;
+        @include md-body-1();
+        font-size: $body-font-size-base !important;
     }
 }

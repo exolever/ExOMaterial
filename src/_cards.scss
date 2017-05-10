@@ -1,3 +1,13 @@
 md-card-title-group > div:first-child{
   width: 100%; // It's necessary for ellipsis in the title of cards
 }
+.mat-card md-card-content {
+  @media (min-width: $screen-md-min){
+      padding: 24px !important;
+  }
+}
+.mat-card md-card-title {
+    @media (min-width: $screen-md-min){
+        padding: 24px 24px 0px 24px !important;
+    }
+}
