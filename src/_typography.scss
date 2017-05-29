@@ -18,7 +18,7 @@
 .md-subhead-3{
     @include md-subhead-3();
 }
-.text-truncate {
+.exo-text-truncate {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
