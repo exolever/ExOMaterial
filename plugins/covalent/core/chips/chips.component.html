@@ -9,11 +9,11 @@
         </md-icon>
       </md-basic-chip>
     </ng-template>
-    <md-input-container floatPlaceholder="never"
+    <md-input-container floatPlaceholder="float"
                         [style.width.px]="canAddChip ? null : 0"
                         [color]="matches ? 'primary' : 'warn'">
       <input mdInput
-              flex="100" 
+              flex="100"
               #input
               [mdAutocomplete]="autocomplete"
               [formControl]="inputControl"
