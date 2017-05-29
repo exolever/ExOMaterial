@@ -18,10 +18,3 @@
 .md-subhead-3{
     @include md-subhead-3();
 }
-.exo-text-truncate {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-}
