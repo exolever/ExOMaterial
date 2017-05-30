@@ -10,8 +10,10 @@
 }
 
 md-dialog-content{
-    padding-top: 24px !important;
-    padding-bottom: 24px !important;
+    padding: 16px !important;
+    @media (min-width: $screen-sm-min){
+        padding:24px !important;
+    }
 }
 
 .mat-dialog-actions {
