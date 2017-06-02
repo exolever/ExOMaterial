@@ -8,9 +8,14 @@
         cursor: pointer;
     }
 }
+
 md-dialog-content{
-    padding: 24px !important;
+    padding: 16px !important;
+    @media (min-width: $screen-sm-min){
+        padding:24px !important;
+    }
 }
+
 .mat-dialog-actions {
     padding: 8px !important;
     background-color: mat-color($mat-grey, 50);
