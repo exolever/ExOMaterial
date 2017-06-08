@@ -1,16 +1,19 @@
-.md2-datepicker-header, .md2-calendar-day.selected{
+.md2-datepicker-header{
     background-color:  mat-color($primary)!important;
 }
-.md2-calendar-day.selected{
+.md2-calendar-date.md2-calendar-date-selected,
+.md2-calendar-date.md2-calendar-date-selected:hover,
+.md2-clock-cell.md2-clock-cell-selected{
     color: white !important;
+    background-color:  mat-color($primary)!important;
 }
 
-.md2-calendar-day.today{
+.md2-calendar-date.md2-calendar-date-today{
     background:none !important;
-}
-.md2-calendar-day.today{
     color: mat-color($primary)!important;
+    border: 0;
 }
+
 .md2-datepicker-actions .md2-button{
     color: mat-color($primary) !important;
     &:hover{
@@ -37,3 +40,4 @@
         left: 33px;
     }
 }
+
