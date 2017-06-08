@@ -11,7 +11,7 @@
 .md2-calendar-date.md2-calendar-date-today{
     background:none !important;
     color: mat-color($primary)!important;
-    border: 0;
+    border: 0 !important;
 }
 
 .md2-datepicker-actions .md2-button{
