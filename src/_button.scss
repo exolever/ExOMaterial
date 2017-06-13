@@ -1,26 +1,28 @@
 .mat-button, .mat-raised-button{
     text-transform: uppercase;
-    box-shadow: none !important;
     font-weight: $weight-semibold !important;
+    &:not(.outlined){
+        box-shadow: none !important;
+    }
 }
 
 
 .mat-button.outlined{
-    border: 2px solid;
     &:hover{
         -webkit-transition-duration: 0.2s; /* Safari */
         transition-duration: 0.2s;
         color: white;
     }
     &.mat-primary{
-        border-color: mat-color($primary);
+        box-shadow: 0 0 0 1px mat-color($primary) inset;
         &:hover{
             background-color: mat-color($primary);
         }
     }&.mat-accent{
-        border-color: mat-color($accent);
+        box-shadow: 0 0 0 1px mat-color($accent) inset;
         &:hover{
             background-color: mat-color($accent);
         }
     }
 }
+
