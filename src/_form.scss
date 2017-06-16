@@ -36,3 +36,25 @@
 .chips-container.has-error .mat-input-ripple {
     background-color: mat-color($mat-red, A200);
 }
+
+
+// Margin in container of field
+.mat-input-container, .datepicker-container, .chips-container {
+    margin-bottom: 30px;
+}
+
+.chips-container{
+    .mat-input-container{
+        margin-bottom: 0px;
+    }
+}
+
+// Fix problem with multiline in md-hint / md-errors
+.mat-input-subscript-wrapper{
+    position: relative !important;
+    margin-top: 10px !important;
+}
+
+.mat-input-wrapper, .datepicker-wrapper {
+    margin-bottom: 0px !important;
+}
