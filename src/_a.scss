@@ -1,3 +1,4 @@
 a{
-    color: mat-color($primary)
+    color: mat-color($mat-blue, 700);
+    font-weight: $weight-bold;
 }

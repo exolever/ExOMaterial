@@ -18,3 +18,10 @@
 .md-subhead-3{
     @include md-subhead-3();
 }
+
+.md-link{
+    color: mat-color($mat-blue, 700);
+    font-weight: $weight-bold;
+    cursor: pointer;
+    text-decoration: none;
+}
