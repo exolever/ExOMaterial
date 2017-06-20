@@ -24,3 +24,19 @@
         }
     }
 }
+
+.social-network{
+    .mat-icon{
+        width: auto;
+        height: auto;
+        font-size: 2em;
+    }
+    label{
+        color: white;
+        padding-left: 20px;
+        font-weight: $weight-bold;
+    }
+    &.linkedin{
+        background-color: #0077B5;
+    }
+}
