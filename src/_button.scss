@@ -4,6 +4,15 @@
     font-weight: $weight-semibold !important;
 }
 
+.mat-button {
+    &:not(.mat-primary):not(.mat-accent){
+        color: mat-color($foreground, 'secondary-text');
+        &:hover{
+            $base-color: mat-color($foreground, 'secondary-text');
+            background-color: transparent;
+        }
+    }
+}
 
 .mat-button.outlined{
     border: 2px solid;
