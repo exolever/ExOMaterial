@@ -1,0 +1,27 @@
+.capitalize{
+    text-transform: capitalize;
+}
+.upper-first-letter::first-letter,
+.text-upper{
+    text-transform: uppercase;
+}
+.text-lower{
+    text-transform: lowercase;
+}
+.mat-autocomplete-panel{
+    md-option::first-letter{
+        text-transform: uppercase;
+    }
+}
+.mat-tooltip::first-letter{
+    text-transform: uppercase;
+}
+.mat-input-container{
+    .mat-input-placeholder:not(.not-transform-text)::first-letter,
+    .mat-hint:not(.not-transform-text)::first-letter,
+    .md2-datepicker-placeholder:not(.not-transform-text)::first-letter
+    .mat-input-element:not(.not-transform-text)::first-letter,
+    {
+        text-transform: uppercase;
+    }
+}
