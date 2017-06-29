@@ -13,9 +13,6 @@
         text-transform: uppercase;
     }
 }
-.mat-tooltip::first-letter{
-    text-transform: uppercase;
-}
 .mat-input-container{
     .mat-input-placeholder:not(.not-transform-text)::first-letter,
     .mat-hint:not(.not-transform-text)::first-letter,
