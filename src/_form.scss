@@ -58,3 +58,12 @@
 .mat-input-wrapper, .datepicker-wrapper {
     margin-bottom: 0px !important;
 }
+.mat-input-container{
+    .mat-input-placeholder:not(.not-transform-text)::first-letter,
+    .mat-hint:not(.not-transform-text)::first-letter,
+    .md2-datepicker-placeholder:not(.not-transform-text)::first-letter
+    .mat-input-element:not(.not-transform-text)::first-letter,
+    {
+        text-transform: uppercase;
+    }
+}
