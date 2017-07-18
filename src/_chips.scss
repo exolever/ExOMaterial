@@ -13,6 +13,7 @@ td-chips{
         md-icon{
             color: mat-color($mat-blue-grey, 400);
         }
+        text-transform: capitalize;
     }
 }
 
@@ -33,6 +34,7 @@ td-chips{
    text-align: center;
    background-color: mat-color($mat-blue-grey, 50);
    color: mat-color($mat-blue-grey, 400);
+   text-transform: capitalize;
    @include md-caption();
    @include text-truncate();
 }
@@ -41,6 +43,7 @@ td-chips{
     margin-bottom: 10px !important;
     color: mat-color($mat-blue-grey, 600) !important;
     background-color: mat-color($mat-blue-grey, 50) !important;
+    text-transform: capitalize;
     &.outlined{
         background-color: transparent !important;
         border: 1px solid;
@@ -49,4 +52,7 @@ td-chips{
         @include md-body-1();
         font-size: $body-font-size-base !important;
     }
+}
+.chips-help{
+    text-transform: capitalize;
 }

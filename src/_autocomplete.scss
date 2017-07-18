@@ -7,3 +7,8 @@
     height: auto;
     border-radius: 12px;
 }
+.mat-autocomplete-panel{
+    md-option::first-letter{
+        text-transform: uppercase;
+    }
+}

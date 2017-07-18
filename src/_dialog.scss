@@ -32,7 +32,8 @@ md-dialog-content{
 }
 
 .mat-dialog-container{
-    @media (min-width: $screen-md-max){ // XS
+    min-width: 80vw !important;
+    @media (min-width: $screen-sm-min){ // XS
         max-width: 600px !important;
         min-width: 350px !important;
     }
