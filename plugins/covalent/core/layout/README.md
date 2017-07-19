@@ -3,6 +3,48 @@
 `<td-layout>` is a blank main sidenav component that gets hooked as parent of all the other layouts. (triggered by their menu buttons)
 
 
+## API Summary
+
+| Name | Type | Description |
+| --- | --- | --- |
+| mode | 'over', 'side' or 'push' | The mode or styling of the sidenav. Defaults to 'over'.
+| opened | boolean | Whether or not the sidenav is opened. Use this binding to open/close the sidenav. Defaults to 'false'.
+| sidenavWidth | string | Sets the 'width' of the sidenav in either 'px' or '%'. Defaults to '320px'.
+
+
+## Usage
+
+`[td-sidenav-content]` is used to include content in the main sidenav.
+
+Example for Main Layout:
+
+```html
+<td-layout [mode]="side" [opened]="true" [sidenavWidth]="257px">
+  <div td-sidenav-content>
+   .. more sidenav content
+  </div>
+  .. main content
+</td-layout>
+```
+
+To toggle/close/open the main sidenav from child layouts/components, you can use the `[tdLayoutToggle]`, `[tdLayoutClose]` or `[tdLayoutOpen]` directives on any element and its click event will trigger the sidenav action.
+
+Example:
+
+```html
+<button md-icon-button [tdLayoutToggle]="true"> // or tdLayoutOpen / tdLayoutClose
+  <md-icon>menu</md-icon>
+</button>
+```
+
+To disable the sidenav action, just set the input to false.
+
+```html
+<button md-icon-button [tdLayoutToggle]="false">
+  <md-icon>menu</md-icon>
+</button>
+```
+
 ## Installation
 
 This component can be installed as npm package.

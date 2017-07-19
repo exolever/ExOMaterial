@@ -3,7 +3,7 @@ import { Component, Input, Output, EventEmitter, forwardRef, ChangeDetectionStra
 import { DOCUMENT } from '@angular/platform-browser';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 
-import { ENTER, SPACE, UP_ARROW, DOWN_ARROW } from '@angular/material';
+import { ENTER, SPACE, UP_ARROW, DOWN_ARROW } from '@angular/cdk';
 
 import { TdDataTableRowComponent } from './data-table-row/data-table-row.component';
 import { ITdDataTableSortChangeEvent } from './data-table-column/data-table-column.component';
@@ -122,12 +122,6 @@ export class TdDataTableComponent implements ControlValueAccessor, AfterContentI
     }
   }
   get value(): any { return this._value; }
-
-  /**
-   * uniqueId?: string
-   * Allows selection by [uniqueId] property.
-   */
-  @Input('uniqueId') uniqueId: string;
 
   /**
    * data?: {[key: string]: any}[]
@@ -300,6 +294,15 @@ export class TdDataTableComponent implements ControlValueAccessor, AfterContentI
               private _changeDetectorRef: ChangeDetectorRef) {}
 
   /**
+   * compareWith?: function(row, model): boolean
+   * Allows custom comparison between row and model to see if row is selected or not
+   * Default comparation is by object reference
+   */
+  @Input('compareWith') compareWith: (row: any, model: any) => boolean = (row: any, model: any) => {
+    return row === model;
+  }
+
+  /**
    * Loads templates and sets them in a map for faster access.
    */
   ngAfterContentInit(): void {
@@ -344,34 +347,40 @@ export class TdDataTableComponent implements ControlValueAccessor, AfterContentI
    * Selects or clears all rows depending on 'checked' value.
    */
   selectAll(checked: boolean): void {
+    let toggledRows: any[] = [];
     if (checked) {
       this._data.forEach((row: any) => {
         // skiping already selected rows
         if (!this.isRowSelected(row)) {
           this._value.push(row);
+          // checking which ones are being toggled
+          toggledRows.push(row);
         }
       });
       this._allSelected = true;
       this._indeterminate = true;
     } else {
+      this._data.forEach((row: any) => {
+        // checking which ones are being toggled
+        if (this.isRowSelected(row)) {
+          toggledRows.push(row);
+        }
+      });
       this.clearModel();
       this._allSelected = false;
       this._indeterminate = false;
     }
-    this.onSelectAll.emit({rows: this._value, selected: checked});
+    this.onSelectAll.emit({rows: toggledRows, selected: checked});
   }
 
   /**
    * Checks if row is selected
    */
   isRowSelected(row: any): boolean {
-    // if selection is done by a [uniqueId] it uses it to compare, else it compares by reference.
-    if (this.uniqueId) {
-      return this._value ? this._value.filter((val: any) => {
-        return val[this.uniqueId] === row[this.uniqueId];
-      }).length > 0 : false;
-    }
-    return this._value ? this._value.indexOf(row) > -1 : false;
+    // compare items by [compareWith] function
+    return this._value ? this._value.filter((val: any) => {
+      return this.compareWith(row, val);
+    }).length > 0 : false;
   }
 
   /**
@@ -435,9 +444,15 @@ export class TdDataTableComponent implements ControlValueAccessor, AfterContentI
    * emits the onRowClickEvent when a row is clicked
    * if clickable is true and selectable is false then select the row
    */
-  handleRowClick(row: any, event: Event, currentSelected: number): void {
+  handleRowClick(row: any, event: Event): void {
     if (this.isClickable) {
-      this.onRowClick.emit({row: row});
+      // ignoring linting rules here because attribute it actually null or not there
+      // can't check for undefined
+      const srcElement: any = event.srcElement || event.currentTarget;
+      /* tslint:disable-next-line */
+      if (srcElement.getAttribute('stopRowClick') === null) {
+        this.onRowClick.emit({row: row});
+      }
     }
   }
 
@@ -475,8 +490,8 @@ export class TdDataTableComponent implements ControlValueAccessor, AfterContentI
         if (this._lastArrowKeyDirection === TdDataTableArrowKeyDirection.Descending) {
           index++;
         }
-        /** 
-         * if users presses the up arrow, we focus the prev row 
+        /**
+         * if users presses the up arrow, we focus the prev row
          * unless its the first row, then we move to the last row
          */
         if (index === 0) {
@@ -501,8 +516,8 @@ export class TdDataTableComponent implements ControlValueAccessor, AfterContentI
         if (this._lastArrowKeyDirection === TdDataTableArrowKeyDirection.Ascending) {
           index--;
         }
-        /** 
-         * if users presses the down arrow, we focus the next row 
+        /**
+         * if users presses the down arrow, we focus the next row
          * unless its the last row, then we move to the first row
          */
         if (index === (length - 1)) {
@@ -572,12 +587,10 @@ export class TdDataTableComponent implements ControlValueAccessor, AfterContentI
     if (!wasSelected) {
       this._value.push(row);
     } else {
-      // if selection is done by a [uniqueId] it uses it to compare, else it compares by reference.
-      if (this.uniqueId) {
-        row = this._value.filter((val: any) => {
-          return val[this.uniqueId] === row[this.uniqueId];
-        })[0];
-      }
+      // compare items by [compareWith] function
+      row = this._value.filter((val: any) => {
+        return this.compareWith(row, val);
+      })[0];
       let index: number = this._value.indexOf(row);
       if (index > -1) {
         this._value.splice(index, 1);

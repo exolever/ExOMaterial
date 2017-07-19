@@ -1,8 +1,6 @@
 <div layout="column" layout-fill>
   <md-toolbar [color]="color">
-    <button md-icon-button class="td-menu-button" *ngIf="isMainSidenavAvailable" (click)="openMainSidenav()">
-      <md-icon class="md-24">menu</md-icon>
-    </button>
+    <ng-content select="[td-menu-button]"></ng-content>
     <span *ngIf="icon || logo || toolbarTitle"
           [class.cursor-pointer]="routerEnabled"
           (click)="handleNavigationClick()"
@@ -14,7 +12,7 @@
     </span>
     <ng-content select="[td-toolbar-content]"></ng-content>
   </md-toolbar>
-  <div flex layout="column" class="content md-content">
+  <div flex layout="column" class="content md-content" cdkScrollable>
     <ng-content></ng-content>
   </div>
   <ng-content select="td-layout-footer"></ng-content>
