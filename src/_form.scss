@@ -23,7 +23,7 @@
 .mat-input-container.ng-invalid.has-error, 
 .chips-container.has-error {
     .mat-input-underline{
-        border-top-color: mat-color($mat-red, A200) !important;
+        background-color: mat-color($mat-red, A200) !important;
     }
 }
 
@@ -47,6 +47,9 @@
     .mat-input-container{
         margin-bottom: 0px;
     }
+    .chips-help.mat-hint, .mat-input-error{
+         margin-top: 10px;
+    }
 }
 
 // Fix problem with multiline in md-hint / md-errors
@@ -54,6 +57,10 @@
     position: relative !important;
     margin-top: 10px !important;
     font-size: 1em !important;
+}
+.mat-input-underline{
+    position: relative !important;
+    bottom: 0;
 }
 
 .mat-input-wrapper, .datepicker-wrapper {
@@ -68,3 +75,4 @@
         text-transform: uppercase;
     }
 }
+

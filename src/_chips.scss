@@ -6,15 +6,6 @@ td-chips{
     .mat-input-underline{
         border-color: mat-color($foreground, divider) !important;
     }
-    .td-chip {
-        background-color: mat-color($mat-blue-grey, 50);
-        color: mat-color($mat-blue-grey, 400);
-        @include md-caption();
-        md-icon{
-            color: mat-color($mat-blue-grey, 400);
-        }
-        text-transform: capitalize;
-    }
 }
 
 
