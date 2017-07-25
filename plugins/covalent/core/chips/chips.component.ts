@@ -542,6 +542,10 @@ export class TdChipsComponent extends _TdChipsMixinBase implements ControlValueA
           event.preventDefault();
         }
         break;
+      case ENTER:
+        event.preventDefault();
+        this._handleAddChip();
+        break;
       default:
         // default
     }
@@ -596,10 +600,6 @@ export class TdChipsComponent extends _TdChipsMixinBase implements ControlValueA
         }
         // prevent default window scrolling
         event.preventDefault();
-        break;
-      case ENTER:
-        event.preventDefault();
-        this._handleAddChip();
         break;
       default:
         // default
