@@ -35,6 +35,9 @@ td-chips{
     color: mat-color($mat-blue-grey, 600) !important;
     background-color: mat-color($mat-blue-grey, 50) !important;
     text-transform: capitalize;
+    md-icon.td-chip-removal{
+        color: mat-color($foreground, 'disabled') !important;
+    }
     &.outlined{
         background-color: transparent !important;
         border: 1px solid;
