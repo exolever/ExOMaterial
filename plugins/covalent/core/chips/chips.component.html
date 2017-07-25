@@ -31,7 +31,6 @@
             [formControl]="inputControl"
             [placeholder]="canAddChip? placeholder : ''"
             (keydown)="_inputKeydown($event)"
-            (keyup.enter)="_handleAddChip()"
             (focus)="_handleFocus()">
   </md-input-container>
   <md-autocomplete #autocomplete="mdAutocomplete" [displayWith]="_removeInputDisplay">
