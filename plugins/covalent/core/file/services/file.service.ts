@@ -6,8 +6,9 @@ import { Subscriber } from 'rxjs/Subscriber';
 export interface IUploadOptions {
   url: string;
   method: 'post' | 'put';
-  file: File;
+  file?: File;
   headers?: {[key: string]: string};
+  formData?: FormData;
 }
 
 @Injectable()
@@ -33,8 +34,9 @@ export class TdFileService {
    * - options: IUploadOptions {
    *     url: string,
    *     method: 'post' | 'put',
-   *     file: File,
-   *     headers?: {[key: string]: string}
+   *     file?: File,
+   *     headers?: {[key: string]: string},
+   *     formData?: FormData
    * }
    *
    * Uses underlying [XMLHttpRequest] to upload a file to a url.
@@ -44,11 +46,18 @@ export class TdFileService {
     return new Observable<any>((subscriber: Subscriber<any>) => {
       let xhr: XMLHttpRequest = new XMLHttpRequest();
       let formData: FormData = new FormData();
-      formData.append('file', options.file);
 
-      xhr.onprogress = (event: ProgressEvent) => {
+      if (options.file !== undefined) {
+        formData.append('file', options.file);
+      } else if (options.formData !== undefined) {
+        formData = options.formData;
+      } else {
+        return subscriber.error('For [IUploadOptions] you have to set either the [file] or the [formData] property.');
+      }
+
+      xhr.upload.onprogress = (event: ProgressEvent) => {
         let progress: number = 0;
-        if (event.total > 0) {
+        if (event.lengthComputable) {
           progress = Math.round(event.loaded / event.total * 100);
         }
         this._progressSubject.next(progress);
@@ -56,8 +65,8 @@ export class TdFileService {
 
       xhr.onreadystatechange = () => {
         if (xhr.readyState === 4) {
-          if (xhr.status === 200 || xhr.status === 201) {
-            subscriber.next(JSON.parse(xhr.response));
+          if (xhr.status >= 200 && xhr.status < 300) {
+            subscriber.next(xhr.response);
             subscriber.complete();
           } else {
             subscriber.error(xhr.response);

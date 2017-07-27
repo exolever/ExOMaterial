@@ -19,7 +19,9 @@ $exo-dark-warn:    mat-palette($mat-red);
     secondary-text:  rgba(white, 0.7),
     icon:            white,
     icons:           white,
-    text:            white
+    text:            white,
+    slider-off:        rgba(white, 0.3),
+    slider-off-active: rgba(white, 0.3)
 );
 
 

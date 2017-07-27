@@ -26,6 +26,9 @@
     color: mat-color($accent);
 }
 
+.error-color{
+    color: mat-color($mat-red, A200);
+}
 
 /*** 
      DARK THEME

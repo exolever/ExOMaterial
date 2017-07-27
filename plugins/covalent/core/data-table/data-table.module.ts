@@ -8,8 +8,9 @@ import { TdDataTableColumnComponent } from './data-table-column/data-table-colum
 import { TdDataTableCellComponent } from './data-table-cell/data-table-cell.component';
 import { TdDataTableRowComponent } from './data-table-row/data-table-row.component';
 import { TdDataTableTableComponent } from './data-table-table/data-table-table.component';
-import { TdDataTableService } from './services/data-table.service';
 import { TdDataTableTemplateDirective } from './directives/data-table-template.directive';
+
+import { TdDataTableService, DATA_TABLE_PROVIDER } from './services/data-table.service';
 
 const TD_DATA_TABLE: Type<any>[] = [
   TdDataTableComponent,
@@ -21,7 +22,7 @@ const TD_DATA_TABLE: Type<any>[] = [
   TdDataTableTableComponent,
 ];
 
-export { TdDataTableComponent, TdDataTableSortingOrder,
+export { TdDataTableComponent, TdDataTableSortingOrder, ITdDataTableRowClickEvent,
          ITdDataTableColumn, ITdDataTableSelectEvent, ITdDataTableSelectAllEvent } from './data-table.component';
 export { TdDataTableService } from './services/data-table.service';
 export { TdDataTableColumnComponent,
@@ -45,19 +46,9 @@ export { TdDataTableTableComponent } from './data-table-table/data-table-table.c
     TD_DATA_TABLE,
   ],
   providers: [
-    TdDataTableService,
+    DATA_TABLE_PROVIDER,
   ],
 })
 export class CovalentDataTableModule {
-  /**
-   * @deprecated in 1.0.0-beta.3
-   *
-   * Please use without calling forRoot()
-   */
-  static forRoot(): ModuleWithProviders {
-    return {
-      ngModule: CovalentDataTableModule,
-      providers: [ ],
-    };
-  }
+
 }

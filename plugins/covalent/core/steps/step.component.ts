@@ -1,7 +1,9 @@
 import { Component, Directive, Input, Output, TemplateRef, ViewChild,
          ViewContainerRef, ContentChild, OnInit } from '@angular/core';
 import { EventEmitter } from '@angular/core';
-import { TemplatePortalDirective, TemplatePortal } from '@angular/material';
+import { TemplatePortalDirective, TemplatePortal } from '@angular/cdk';
+
+import { ICanDisable, mixinDisabled } from '../common/common.module';
 
 export enum StepState {
   None = <any>'none',
@@ -36,15 +38,21 @@ export class TdStepSummaryDirective extends TemplatePortalDirective {
   }
 }
 
+export class TdStepBase {}
+
+/* tslint:disable-next-line */
+export const _TdStepMixinBase = mixinDisabled(TdStepBase);
+
 @Component({
   selector: 'td-step',
+  inputs: ['disabled'],
   templateUrl: './step.component.html',
 })
-export class TdStepComponent implements OnInit {
+export class TdStepComponent extends _TdStepMixinBase implements OnInit, ICanDisable {
 
+  private _disableRipple: boolean = false;
   private _active: boolean = false;
   private _state: StepState = StepState.None;
-  private _disabled: boolean = false;
 
   private _contentPortal: TemplatePortal;
   get stepContent(): TemplatePortal {
@@ -70,32 +78,28 @@ export class TdStepComponent implements OnInit {
   @Input('sublabel') sublabel: string;
 
   /**
+   * disableRipple?: string
+   * Whether the ripple effect for this component is disabled.
+   */
+  @Input('disableRipple')
+  set disableRipple(disableRipple: boolean) {
+    this._disableRipple = <any>disableRipple !== '' ? (<any>disableRipple === 'true' || disableRipple === true) : true;
+  }
+  get disableRipple(): boolean {
+    return this._disableRipple;
+  }
+
+  /**
    * active?: boolean
    * Toggles [TdStepComponent] between active/deactive.
    */
   @Input('active')
   set active(active: boolean) {
-    this._setActive(active);
-  };
+    this._setActive(<any>active === 'true' || active === true);
+  }
   get active(): boolean {
     return this._active;
-  };
-
-  /**
-   * disabled?: boolean
-   * Disables icon and header, blocks click event and sets [TdStepComponent] to deactive if 'true'.
-   */
-  @Input('disabled')
-  set disabled(disabled: boolean) {
-    if (disabled && this._active) {
-      this._active = false;
-      this._onDeactivated();
-    }
-    this._disabled = disabled;
-  };
-  get disabled(): boolean {
-    return this._disabled;
-  };
+  }
 
   /**
    * state?: StepState or ['none' | 'required' | 'complete']
@@ -115,7 +119,7 @@ export class TdStepComponent implements OnInit {
         this._state = StepState.None;
         break;
     }
-  };
+  }
   get state(): StepState {
     return this._state;
   }
@@ -132,7 +136,9 @@ export class TdStepComponent implements OnInit {
    */
   @Output('deactivated') onDeactivated: EventEmitter<void> = new EventEmitter<void>();
 
-  constructor(private _viewContainerRef: ViewContainerRef) {}
+  constructor(private _viewContainerRef: ViewContainerRef) {
+    super();
+  }
 
   ngOnInit(): void {
     this._contentPortal = new TemplatePortal(this._content, this._viewContainerRef);
@@ -167,7 +173,15 @@ export class TdStepComponent implements OnInit {
    */
   isComplete(): boolean {
     return this._state === StepState.Complete;
-  };
+  }
+
+  /** Method executed when the disabled value changes */
+  onDisabledChange(v: boolean): void {
+    if (v && this._active) {
+      this._active = false;
+      this._onDeactivated();
+    }
+  }
 
   /**
    * Method to change active state internally and emit the [onActivated] event if 'true' or [onDeactivated]
@@ -175,7 +189,7 @@ export class TdStepComponent implements OnInit {
    * returns true if successfully changed state
    */
   private _setActive(newActive: boolean): boolean {
-    if (this._disabled) {
+    if (this.disabled) {
       return false;
     }
     if (this._active !== newActive) {
@@ -188,13 +202,13 @@ export class TdStepComponent implements OnInit {
       return true;
     }
     return false;
-  };
+  }
 
   private _onActivated(): void {
     this.onActivated.emit(undefined);
-  };
+  }
 
   private _onDeactivated(): void {
     this.onDeactivated.emit(undefined);
-  };
+  }
 }

@@ -3,6 +3,48 @@
 `<td-layout>` is a blank main sidenav component that gets hooked as parent of all the other layouts. (triggered by their menu buttons)
 
 
+## API Summary
+
+| Name | Type | Description |
+| --- | --- | --- |
+| mode | 'over', 'side' or 'push' | The mode or styling of the sidenav. Defaults to 'over'.
+| opened | boolean | Whether or not the sidenav is opened. Use this binding to open/close the sidenav. Defaults to 'false'.
+| sidenavWidth | string | Sets the 'width' of the sidenav in either 'px' or '%'. Defaults to '320px'.
+
+
+## Usage
+
+`[td-sidenav-content]` is used to include content in the main sidenav.
+
+Example for Main Layout:
+
+```html
+<td-layout [mode]="side" [opened]="true" [sidenavWidth]="257px">
+  <div td-sidenav-content>
+   .. more sidenav content
+  </div>
+  .. main content
+</td-layout>
+```
+
+To toggle/close/open the main sidenav from child layouts/components, you can use the `[tdLayoutToggle]`, `[tdLayoutClose]` or `[tdLayoutOpen]` directives on any element and its click event will trigger the sidenav action.
+
+Example:
+
+```html
+<button md-icon-button [tdLayoutToggle]="true"> // or tdLayoutOpen / tdLayoutClose
+  <md-icon>menu</md-icon>
+</button>
+```
+
+To disable the sidenav action, just set the input to false.
+
+```html
+<button md-icon-button [tdLayoutToggle]="false">
+  <md-icon>menu</md-icon>
+</button>
+```
+
 ## Installation
 
 This component can be installed as npm package.
@@ -20,7 +62,7 @@ Import the **[CovalentLayoutModule]** in your NgModule:
 import { CovalentLayoutModule } from '@covalent/core';
 @NgModule({
   imports: [
-    CovalentLayoutModule, // or CovalentCoreModule
+    CovalentLayoutModule,
     ...
   ],
   ...
@@ -47,7 +89,7 @@ See [theming](https://teradata.github.io/covalent/#/docs/theme) in the covalent 
 | icon | string | icon name to be displayed before the title
 | logo | string | logo icon name to be displayed before the title. If [icon] is set, then this will not be shown.
 | color | string | optional sidenav toolbar color.
-| navigationRoute | string | route for the icon, logo, and sidenavTitle. Defaults to '/'.
+| navigationRoute | string | option to set the combined route for the icon, logo, and sidenavTitle.
 | backgroundUrl | SafeResourceUrl | image to be displayed as the background of the toolbar. URL used will be sanitized, but it should be always from a trusted source to avoid XSS.
 | name | string | string to be displayed as part of the navigation drawer sublabel. if [email] is not set, then [name] will be the toggle menu text.
 | email | string | string to be displayed as part of the navigation drawer sublabel in the [toggle] menu text. if [email] and [name] are not set, then the toggle menu is not rendered.
@@ -63,7 +105,7 @@ Example for Main Layout / Navigation Drawer Combo:
 
 ```html
 <td-layout>
-  <td-navigation-drawer sidenavTitle="title" logo="logo" icon="icon" name="name" password="password" color="color"  navigationRoute="/">
+  <td-navigation-drawer sidenavTitle="title" logo="logo" icon="icon" name="name" password="password" color="color" navigationRoute="/">
     .. main drawer content
     <div td-navigation-drawer-menu>
       .. menu drawer content

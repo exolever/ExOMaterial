@@ -396,33 +396,73 @@ button[md-icon-button].md-icon-button-mini {
   line-height: 24px;
   width: 24px; }
 
-body .mat-card {
+html .mat-card {
   padding: 0;
   margin: 0px; }
-  body .mat-card md-card-header {
+  html .mat-card md-card-header {
     height: auto; }
-  body .mat-card [md-card-avatar] {
+  html .mat-card [md-card-avatar] {
     font-size: 40px;
     line-height: 40px;
     height: 40px;
     width: 40px;
     margin: 16px 0 0 15px;
     border-radius: 50%; }
-  body .mat-card [md-card-image] {
-    width: 100%;
+  html .mat-card .mat-card-image {
+    width: 100%; }
+  html .mat-card .mat-card-image,
+  html .mat-card .mat-card-lg-image,
+  html .mat-card .mat-card-md-image,
+  html .mat-card .mat-card-sm-image,
+  html .mat-card .mat-card-title-group {
     margin: 0; }
-  body .mat-card md-card-title {
+  html .mat-card md-card-title {
     padding-top: 16px;
     padding-left: 16px;
     padding-right: 16px; }
-  body .mat-card md-card-subtitle {
+  html .mat-card md-card-subtitle {
     padding-left: 16px;
     padding-right: 16px; }
-  body .mat-card md-card-content {
+  html .mat-card md-card-content {
     padding: 16px; }
-  body .mat-card .mat-card-actions:last-child, body .mat-card .mat-card .mat-card-actions:last-child {
+  html .mat-card .mat-card-actions, html .mat-card .mat-card .mat-card-actions {
     padding: 8px;
     margin: 0; }
+  html .mat-card .mat-card-actions:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 8px; }
+
+html:not([dir='rtl']) .mat-card-title-group .mat-card-image:last-child,
+html:not([dir='rtl']) .mat-card-title-group .mat-card-lg-image:last-child,
+html:not([dir='rtl']) .mat-card-title-group .mat-card-md-image:last-child,
+html:not([dir='rtl']) .mat-card-title-group .mat-card-sm-image:last-child {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px; }
+
+html:not([dir='rtl']) .mat-card .mat-card-image:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px; }
+
+html:not([dir='rtl']) .mat-card .mat-card-lg-image:first-child,
+html:not([dir='rtl']) .mat-card .mat-card-md-image:first-child,
+html:not([dir='rtl']) .mat-card .mat-card-sm-image:first-child {
+  border-top-left-radius: 2px; }
+
+html[dir='rtl'] .mat-card-title-group .mat-card-image:last-child,
+html[dir='rtl'] .mat-card-title-group .mat-card-lg-image:last-child,
+html[dir='rtl'] .mat-card-title-group .mat-card-md-image:last-child,
+html[dir='rtl'] .mat-card-title-group .mat-card-sm-image:last-child {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px; }
+
+html[dir='rtl'] .mat-card .mat-card-image:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px; }
+
+html[dir='rtl'] .mat-card .mat-card-lg-image:first-child,
+html[dir='rtl'] .mat-card .mat-card-md-image:first-child,
+html[dir='rtl'] .mat-card .mat-card-sm-image:first-child {
+  border-top-right-radius: 2px; }
 
 .md-card-colored[href]:hover, .md-card-colored[ng-reflect-href]:hover {
   cursor: pointer;
@@ -628,6 +668,9 @@ md-sidenav {
     md-sidenav .mat-list-item-content md-icon bdo[dir=ltr] {
       direction: ltr;
       unicode-bidi: bidi-override; }
+
+.tc-inherit {
+  color: inherit !important; }
 
 .tc-red-50 {
   color: #ffebee !important; }
@@ -4336,26 +4379,32 @@ md-sidenav {
   [flex] {
     flex: 1 1 0%; } }
 
+[flex="grow"],
 [flex-grow] {
   flex: 1 1 100%;
   box-sizing: border-box; }
 
+[flex="initial"],
 [flex-initial] {
   flex: 0 1 auto;
   box-sizing: border-box; }
 
+[flex="auto"],
 [flex-auto] {
   flex: 1 1 auto;
   box-sizing: border-box; }
 
+[flex="none"],
 [flex-none] {
   flex: 0 0 auto;
   box-sizing: border-box; }
 
+[flex="noshrink"],
 [flex-noshrink] {
   flex: 1 0 auto;
   box-sizing: border-box; }
 
+[flex="nogrow"],
 [flex-nogrow] {
   flex: 0 1 auto;
   box-sizing: border-box; }
@@ -5104,21 +5153,27 @@ md-sidenav {
     flex: 1 1 0%; } }
 
 @media (max-width: 599px) {
+  [flex-xs="grow"],
   [flex-xs-grow] {
     flex: 1 1 100%;
     box-sizing: border-box; }
+  [flex-xs="initial"],
   [flex-xs-initial] {
     flex: 0 1 auto;
     box-sizing: border-box; }
+  [flex-xs="auto"],
   [flex-xs-auto] {
     flex: 1 1 auto;
     box-sizing: border-box; }
+  [flex-xs="none"],
   [flex-xs-none] {
     flex: 0 0 auto;
     box-sizing: border-box; }
+  [flex-xs="noshrink"],
   [flex-xs-noshrink] {
     flex: 1 0 auto;
     box-sizing: border-box; }
+  [flex-xs="nogrow"],
   [flex-xs-nogrow] {
     flex: 0 1 auto;
     box-sizing: border-box; }
@@ -5738,21 +5793,27 @@ md-sidenav {
     flex: 1 1 0%; } }
 
 @media (min-width: 600px) {
+  [flex-gt-xs="grow"],
   [flex-gt-xs-grow] {
     flex: 1 1 100%;
     box-sizing: border-box; }
+  [flex-gt-xs="initial"],
   [flex-gt-xs-initial] {
     flex: 0 1 auto;
     box-sizing: border-box; }
+  [flex-gt-xs="auto"],
   [flex-gt-xs-auto] {
     flex: 1 1 auto;
     box-sizing: border-box; }
+  [flex-gt-xs="none"],
   [flex-gt-xs-none] {
     flex: 0 0 auto;
     box-sizing: border-box; }
+  [flex-gt-xs="noshrink"],
   [flex-gt-xs-noshrink] {
     flex: 1 0 auto;
     box-sizing: border-box; }
+  [flex-gt-xs="nogrow"],
   [flex-gt-xs-nogrow] {
     flex: 0 1 auto;
     box-sizing: border-box; }
@@ -6376,21 +6437,27 @@ md-sidenav {
     flex: 1 1 0%; } }
 
 @media (min-width: 600px) and (max-width: 599px) {
+  [flex-sm="grow"],
   [flex-sm-grow] {
     flex: 1 1 100%;
     box-sizing: border-box; }
+  [flex-sm="initial"],
   [flex-sm-initial] {
     flex: 0 1 auto;
     box-sizing: border-box; }
+  [flex-sm="auto"],
   [flex-sm-auto] {
     flex: 1 1 auto;
     box-sizing: border-box; }
+  [flex-sm="none"],
   [flex-sm-none] {
     flex: 0 0 auto;
     box-sizing: border-box; }
+  [flex-sm="noshrink"],
   [flex-sm-noshrink] {
     flex: 1 0 auto;
     box-sizing: border-box; }
+  [flex-sm="nogrow"],
   [flex-sm-nogrow] {
     flex: 0 1 auto;
     box-sizing: border-box; }
@@ -7010,21 +7077,27 @@ md-sidenav {
     flex: 1 1 0%; } }
 
 @media (min-width: 600px) {
+  [flex-gt-sm="grow"],
   [flex-gt-sm-grow] {
     flex: 1 1 100%;
     box-sizing: border-box; }
+  [flex-gt-sm="initial"],
   [flex-gt-sm-initial] {
     flex: 0 1 auto;
     box-sizing: border-box; }
+  [flex-gt-sm="auto"],
   [flex-gt-sm-auto] {
     flex: 1 1 auto;
     box-sizing: border-box; }
+  [flex-gt-sm="none"],
   [flex-gt-sm-none] {
     flex: 0 0 auto;
     box-sizing: border-box; }
+  [flex-gt-sm="noshrink"],
   [flex-gt-sm-noshrink] {
     flex: 1 0 auto;
     box-sizing: border-box; }
+  [flex-gt-sm="nogrow"],
   [flex-gt-sm-nogrow] {
     flex: 0 1 auto;
     box-sizing: border-box; }
@@ -7648,21 +7721,27 @@ md-sidenav {
     flex: 1 1 0%; } }
 
 @media (min-width: 600px) and (max-width: 959px) {
+  [flex-md="grow"],
   [flex-md-grow] {
     flex: 1 1 100%;
     box-sizing: border-box; }
+  [flex-md="initial"],
   [flex-md-initial] {
     flex: 0 1 auto;
     box-sizing: border-box; }
+  [flex-md="auto"],
   [flex-md-auto] {
     flex: 1 1 auto;
     box-sizing: border-box; }
+  [flex-md="none"],
   [flex-md-none] {
     flex: 0 0 auto;
     box-sizing: border-box; }
+  [flex-md="noshrink"],
   [flex-md-noshrink] {
     flex: 1 0 auto;
     box-sizing: border-box; }
+  [flex-md="nogrow"],
   [flex-md-nogrow] {
     flex: 0 1 auto;
     box-sizing: border-box; }
@@ -8282,21 +8361,27 @@ md-sidenav {
     flex: 1 1 0%; } }
 
 @media (min-width: 960px) {
+  [flex-gt-md="grow"],
   [flex-gt-md-grow] {
     flex: 1 1 100%;
     box-sizing: border-box; }
+  [flex-gt-md="initial"],
   [flex-gt-md-initial] {
     flex: 0 1 auto;
     box-sizing: border-box; }
+  [flex-gt-md="auto"],
   [flex-gt-md-auto] {
     flex: 1 1 auto;
     box-sizing: border-box; }
+  [flex-gt-md="none"],
   [flex-gt-md-none] {
     flex: 0 0 auto;
     box-sizing: border-box; }
+  [flex-gt-md="noshrink"],
   [flex-gt-md-noshrink] {
     flex: 1 0 auto;
     box-sizing: border-box; }
+  [flex-gt-md="nogrow"],
   [flex-gt-md-nogrow] {
     flex: 0 1 auto;
     box-sizing: border-box; }
@@ -8920,21 +9005,27 @@ md-sidenav {
     flex: 1 1 0%; } }
 
 @media (min-width: 960px) and (max-width: 1279px) {
+  [flex-lg="grow"],
   [flex-lg-grow] {
     flex: 1 1 100%;
     box-sizing: border-box; }
+  [flex-lg="initial"],
   [flex-lg-initial] {
     flex: 0 1 auto;
     box-sizing: border-box; }
+  [flex-lg="auto"],
   [flex-lg-auto] {
     flex: 1 1 auto;
     box-sizing: border-box; }
+  [flex-lg="none"],
   [flex-lg-none] {
     flex: 0 0 auto;
     box-sizing: border-box; }
+  [flex-lg="noshrink"],
   [flex-lg-noshrink] {
     flex: 1 0 auto;
     box-sizing: border-box; }
+  [flex-lg="nogrow"],
   [flex-lg-nogrow] {
     flex: 0 1 auto;
     box-sizing: border-box; }
@@ -9554,21 +9645,27 @@ md-sidenav {
     flex: 1 1 0%; } }
 
 @media (min-width: 1280px) {
+  [flex-gt-lg="grow"],
   [flex-gt-lg-grow] {
     flex: 1 1 100%;
     box-sizing: border-box; }
+  [flex-gt-lg="initial"],
   [flex-gt-lg-initial] {
     flex: 0 1 auto;
     box-sizing: border-box; }
+  [flex-gt-lg="auto"],
   [flex-gt-lg-auto] {
     flex: 1 1 auto;
     box-sizing: border-box; }
+  [flex-gt-lg="none"],
   [flex-gt-lg-none] {
     flex: 0 0 auto;
     box-sizing: border-box; }
+  [flex-gt-lg="noshrink"],
   [flex-gt-lg-noshrink] {
     flex: 1 0 auto;
     box-sizing: border-box; }
+  [flex-gt-lg="nogrow"],
   [flex-gt-lg-nogrow] {
     flex: 0 1 auto;
     box-sizing: border-box; }
@@ -10186,21 +10283,27 @@ md-sidenav {
     flex: 1 1 0%; } }
 
 @media (min-width: 1280px) {
+  [flex-xl="grow"],
   [flex-xl-grow] {
     flex: 1 1 100%;
     box-sizing: border-box; }
+  [flex-xl="initial"],
   [flex-xl-initial] {
     flex: 0 1 auto;
     box-sizing: border-box; }
+  [flex-xl="auto"],
   [flex-xl-auto] {
     flex: 1 1 auto;
     box-sizing: border-box; }
+  [flex-xl="none"],
   [flex-xl-none] {
     flex: 0 0 auto;
     box-sizing: border-box; }
+  [flex-xl="noshrink"],
   [flex-xl-noshrink] {
     flex: 1 0 auto;
     box-sizing: border-box; }
+  [flex-xl="nogrow"],
   [flex-xl-nogrow] {
     flex: 0 1 auto;
     box-sizing: border-box; }
@@ -10616,9 +10719,6 @@ md-sidenav {
     display: none; }
   [hide-xl]:not([show-xl]):not([show-gt-lg]):not([show]) {
     display: none; } }
-
-[flex="none"] {
-  flex: none; }
 
 md-list md-list-item [md-list-avatar],
 md-list a[md-list-item] [md-list-avatar],
@@ -11705,3 +11805,6 @@ body .text-truncate {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+
+body .text-nodecoration {
+  text-decoration: none; }

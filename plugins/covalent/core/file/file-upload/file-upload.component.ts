@@ -1,17 +1,24 @@
 import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy, ContentChild, ChangeDetectorRef } from '@angular/core';
 
+import { ICanDisable, mixinDisabled } from '../../common/common.module';
+
 import { TdFileInputComponent, TdFileInputLabelDirective } from '../file-input/file-input.component';
+
+export class TdFileUploadBase {}
+
+/* tslint:disable-next-line */
+export const _TdFileUploadMixinBase = mixinDisabled(TdFileUploadBase);
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'td-file-upload',
+  inputs: ['disabled'],
   styleUrls: ['./file-upload.component.scss'],
   templateUrl: './file-upload.component.html',
 })
-export class TdFileUploadComponent {
+export class TdFileUploadComponent extends _TdFileUploadMixinBase implements ICanDisable {
 
   private _multiple: boolean = false;
-  private _disabled: boolean = false;
 
   files: FileList | File;
 
@@ -55,21 +62,6 @@ export class TdFileUploadComponent {
   @Input('accept') accept: string;
 
   /**
-   * disabled?: boolean
-   * Disables [TdFileUploadComponent] and clears selected/dropped files.
-   */
-  @Input('disabled')
-  set disabled(disabled: boolean) {
-    if (disabled) {
-      this.cancel();
-    }
-    this._disabled = disabled;
-  }
-  get disabled(): boolean {
-    return this._disabled;
-  }
-
-  /**
    * select?: function
    * Event emitted when a file is selecte.
    * Emits a [File | FileList] object.
@@ -83,8 +75,14 @@ export class TdFileUploadComponent {
    */
   @Output('upload') onUpload: EventEmitter<File | FileList> = new EventEmitter<File | FileList>();
 
-  constructor(private _changeDetectorRef: ChangeDetectorRef) {
+  /**
+   * cancel?: function
+   * Event emitted when cancel button is clicked.
+   */
+  @Output('cancel') onCancel: EventEmitter<void> = new EventEmitter<void>();
 
+  constructor(private _changeDetectorRef: ChangeDetectorRef) {
+    super();
   }
 
   /**
@@ -111,6 +109,14 @@ export class TdFileUploadComponent {
    */
   cancel(): void {
     this.files = undefined;
+    this.onCancel.emit(undefined);
     this._changeDetectorRef.markForCheck();
+  }
+
+  /** Method executed when the disabled value changes */
+  onDisabledChange(v: boolean): void {
+    if (v) {
+      this.cancel();
+    }
   }
 }
