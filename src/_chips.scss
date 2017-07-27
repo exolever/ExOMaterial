@@ -16,20 +16,6 @@ td-chips{
     }
 }
 
-.chip {
-   padding: 6px 10px;
-   border-radius: 24px;
-   margin-left: 5px;
-   margin-right: 5px;
-   font-weight: $weight-semibold;
-   text-align: center;
-   background-color: mat-color($mat-blue-grey, 50);
-   color: mat-color($mat-blue-grey, 400);
-   text-transform: capitalize;
-   @include md-caption();
-   @include text-truncate();
-}
-
 .mat-chip{
     margin-bottom: 10px !important;
     color: mat-color($mat-blue-grey, 600) !important;
