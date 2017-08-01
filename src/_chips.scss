@@ -16,19 +16,20 @@ td-chips{
     }
 }
 
-.mat-chip{
+
+.mat-chip:not(.mat-basic-chip), td-chips .mat-basic-chip{
     margin-bottom: 10px !important;
-    color: mat-color($mat-blue-grey, 600) !important;
-    background-color: mat-color($mat-blue-grey, 50) !important;
+    color: mat-color($mat-blue-grey, 600);
+    background-color: mat-color($mat-blue-grey, 50);
     text-transform: capitalize;
     md-icon.td-chip-removal{
-        color: mat-color($foreground, 'disabled') !important;
+        color: mat-color($foreground, 'disabled');
     }
     &.outlined{
-        background-color: transparent !important;
+        background-color: transparent;
         border: 1px solid;
         border-color: mat-color($mat-blue-grey, 300);
-        color: mat-color($mat-blue-grey, 500) !important;
+        color: mat-color($mat-blue-grey, 500);
         @include md-body-1();
         font-size: $body-font-size-base !important;
     }
