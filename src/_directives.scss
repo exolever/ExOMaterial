@@ -1,0 +1,28 @@
+.highlight-edition{
+  .hover{
+    cursor: pointer;
+    &.default-theme{
+      background-color: mat-color($mat-light-blue, 50);
+      color: mat-color($primary);
+    }
+    &.dark-theme{
+      background-color: mat-color($mat-light-blue, 300, 0.7);
+      color: white;
+      .mat-icon.mat-accent{
+        color: white;
+      }
+    }
+  }
+  .edit-icon {
+    font-size: 16px;
+  }
+  &.default-icon-position {
+      position: relative;
+      padding-right: 20px;
+      .edit-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+  }
+}

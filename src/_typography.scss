@@ -18,7 +18,10 @@
 .md-subhead-3{
     @include md-subhead-3();
 }
-
+.md-title-light {
+    @include md-title();
+    font-weight: $weight-light;
+}
 .md-link{
     color: mat-color($mat-blue, 700);
     font-weight: $weight-bold;
