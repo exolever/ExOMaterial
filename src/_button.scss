@@ -7,7 +7,7 @@
 }
 
 .mat-button {
-    &:not(.mat-primary):not(.mat-accent){
+    &:not(.mat-primary):not(.mat-accent):not(.mat-custom){
         color: mat-color($foreground, 'secondary-text');
         &:hover{
             $base-color: mat-color($foreground, 'secondary-text');
