@@ -417,11 +417,13 @@ export class TdChipsComponent extends _TdChipsMixinBase implements ControlValueA
      * to rerender the next list and at the correct spot
      */
     this._closeAutocomplete();
+    /*
     Observable.timer(this.debounce).toPromise().then(() => {
       this.setFocusedState();
       this._setFirstOptionActive();
       this._openAutocomplete();
     });
+    */
 
     this.inputControl.setValue('');
     // check if value is already part of the model

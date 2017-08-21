@@ -7,7 +7,7 @@
 }
 
 .mat-button {
-    &:not(.mat-primary):not(.mat-accent){
+    &:not(.mat-primary):not(.mat-accent):not(.mat-custom){
         color: mat-color($foreground, 'secondary-text');
         &:hover{
             $base-color: mat-color($foreground, 'secondary-text');
@@ -48,5 +48,14 @@
     }
     &.linkedin{
         background-color: #0077B5;
+    }
+    &.twitter{
+        background-color: mat-color($mat-light-blue, 300);
+    }
+    &.facebook{
+        background-color: mat-color($mat-blue, 900);
+    }
+    &.medium{
+        background-color: mat-color($mat-green, A400);
     }
 }
