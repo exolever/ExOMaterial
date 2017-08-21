@@ -46,6 +46,7 @@
 .chips-container{
     .mat-input-container{
         margin-bottom: 0px;
+        padding-bottom: 0px;
     }
     .chips-help.mat-hint, .mat-input-error{
          margin-top: 10px;
@@ -64,7 +65,8 @@
 }
 
 .mat-input-wrapper, .datepicker-wrapper {
-    margin-bottom: 0px !important;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 .mat-input-container{
     .mat-input-placeholder:not(.not-transform-text)::first-letter,

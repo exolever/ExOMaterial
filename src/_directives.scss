@@ -15,6 +15,9 @@
   }
   .edit-icon {
     font-size: 16px;
+    &.dark-theme{
+      color: white;
+    }
   }
   &.default-icon-position {
       position: relative;
