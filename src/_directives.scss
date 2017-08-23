@@ -1,6 +1,9 @@
 .highlight-edition{
   .hover{
     cursor: pointer;
+    &.mat-chip{
+      border: 1px solid transparent;
+    }
     &.default-theme{
       background-color: mat-color($mat-light-blue, 50);
       color: mat-color($primary);
