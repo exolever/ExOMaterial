@@ -32,6 +32,10 @@ td-chips{
         color: mat-color($mat-blue-grey, 500);
         @include md-body-1();
         font-size: $body-font-size-base !important;
+        &.disabled{
+            color: mat-color($foreground, 'disabled');
+            border-color: mat-color($foreground, 'disabled');
+        }
     }
 }
 .chips-help{
