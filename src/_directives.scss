@@ -4,11 +4,11 @@
     &.mat-chip{
       border: 1px solid transparent;
     }
-    &.default-theme:not(.edit-icon){
+    &.default-theme:not(.edit-icon):not(.insert-edition-icon){
       background-color: mat-color($mat-light-blue, 50);
       color: mat-color($primary);
     }
-    &.dark-theme:not(.edit-icon){
+    &.dark-theme:not(.edit-icon):not(.insert-edition-icon){
       background-color: mat-color($mat-light-blue, 300, 0.7);
       color: white;
       .mat-icon.mat-accent{
