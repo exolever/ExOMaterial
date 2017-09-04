@@ -19,6 +19,7 @@
   .edit-icon {
     font-size: 16px;
     cursor: pointer;
+    color: mat-color($primary);
     &.dark-theme{
       color: white;
     }
