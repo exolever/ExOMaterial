@@ -59,3 +59,21 @@
         background-color: mat-color($mat-green, A400);
     }
 }
+
+
+
+.mat-raised-button.mat-primary[disabled], 
+.mat-raised-button.mat-accent[disabled],
+.mat-raised-button.mat-warn[disabled],
+.mat-raised-button[disabled][disabled],
+.mat-fab.mat-primary[disabled],
+.mat-fab.mat-accent[disabled],
+.mat-fab.mat-warn[disabled],
+.mat-fab[disabled][disabled],
+.mat-mini-fab.mat-primary[disabled],
+.mat-mini-fab.mat-accent[disabled],
+.mat-mini-fab.mat-warn[disabled],
+.mat-mini-fab[disabled][disabled]{
+    background-color: mat-color($mat-blue-grey, 50);
+}
+
