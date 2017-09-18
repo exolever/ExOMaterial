@@ -16,6 +16,10 @@ td-chips{
     }
 }
 
+.mat-chip {
+        border: 1px solid transparent;
+}
+
 
 .mat-chip:not(.mat-basic-chip), td-chips .mat-basic-chip{
     margin-bottom: 10px !important;
@@ -30,7 +34,9 @@ td-chips{
         border: 1px solid;
         border-color: mat-color($mat-blue-grey, 300);
         color: mat-color($mat-blue-grey, 500);
-        @include md-body-1();
+        font-family: $font-family;
+        font-weight: $weight-regular;
+        letter-spacing: 0.010em;        
         font-size: $body-font-size-base !important;
         &.disabled{
             color: mat-color($foreground, 'disabled');
