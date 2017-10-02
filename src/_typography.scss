@@ -15,19 +15,6 @@
     font-weight: $weight-black;
 }
 
-.md-subhead-3{
-    @include md-subhead-3();
-}
-.md-title-light {
-    @include md-title();
-    font-weight: $weight-light;
-}
-.md-link{
-    color: mat-color($mat-blue, 700);
-    font-weight: $weight-bold;
-    cursor: pointer;
-    text-decoration: none;
-}
 .capitalize{
     text-transform: capitalize;
 }
@@ -39,4 +26,36 @@
 }
 .text-lower{
     text-transform: lowercase;
+}
+
+// CUSTOM TIPOGRAPHY
+.md-subhead-3{
+    @include md-subhead-3();
+}
+
+.md-title-light {
+  @include md-title();
+  font-weight: $weight-light;
+}
+
+.md-title-regular {
+  @include md-title();
+  font-weight: $weight-regular;
+}
+
+.md-headline-semibold {
+  @include md-headline();
+  font-weight: $weight-semibold;
+}
+
+.md-subhead-semibold {
+  @include md-subhead();
+  font-weight: $weight-semibold;
+}
+
+.md-link{
+  color: mat-color($mat-blue, 700);
+  font-weight: $weight-bold;
+  cursor: pointer;
+  text-decoration: none;
 }
