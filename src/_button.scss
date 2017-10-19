@@ -6,6 +6,12 @@
     }
 }
 
+.mat-raised-button {
+    &:not(.mat-primary):not(.mat-accent):not(.mat-custom){
+        background-color: mat-color($mat-blue-grey, 50);
+    }
+}
+
 .mat-button {
     &:not(.mat-primary):not(.mat-accent):not(.mat-custom){
         color: mat-color($foreground, 'secondary-text');
