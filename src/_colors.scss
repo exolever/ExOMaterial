@@ -14,6 +14,10 @@
     color: mat-color($foreground, 'disabled-text');
 }
 
+.foreground-disabled{
+    color: mat-color($foreground, 'disabled');
+}
+
 .foreground-divider{
     color: mat-color($foreground, 'divider');
 }
@@ -45,6 +49,10 @@
     color: mat-color($dark-foreground, 'text');
 }
 
+.dark-foreground-disabled{
+    color: mat-color($dark-foreground, 'disabled');
+}
+
 .dark-foreground-disabled-text{
     color: mat-color($dark-foreground, 'disabled-text');
 }
@@ -60,4 +68,5 @@
 .dark-accent-color{
     color: mat-color($dark-accent);
 }
+
 
