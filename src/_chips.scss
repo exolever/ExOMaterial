@@ -17,7 +17,7 @@ td-chips{
 }
 
 .mat-chip {
-        border: 1px solid transparent;
+    border: 1px solid transparent;
 }
 
 
@@ -26,6 +26,7 @@ td-chips{
     color: mat-color($mat-blue-grey, 600);
     background-color: mat-color($mat-blue-grey, 50);
     text-transform: capitalize;
+    font-weight: $weight-semibold;
     md-icon.td-chip-removal{
         color: mat-color($foreground, 'disabled');
     }
@@ -35,9 +36,10 @@ td-chips{
         border-color: mat-color($mat-blue-grey, 300);
         color: mat-color($mat-blue-grey, 500);
         font-family: $font-family;
-        font-weight: $weight-regular;
-        letter-spacing: 0.010em;        
-        font-size: $body-font-size-base !important;
+        letter-spacing: 0.010em;    
+        &:not(.regular) {
+            font-size: $body-font-size-base !important;
+        }
         &.disabled{
             color: mat-color($foreground, 'disabled');
             border-color: mat-color($foreground, 'disabled');
@@ -47,3 +49,4 @@ td-chips{
 .chips-help{
     text-transform: capitalize;
 }
+
