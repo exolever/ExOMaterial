@@ -8,10 +8,10 @@
   position: relative;
   top: 24px;
   left: -12px; }
-  /deep/ [dir='rtl'] .td-file-upload-cancel {
+  ::ng-deep [dir='rtl'] .td-file-upload-cancel {
     right: -12px;
     left: 0; }
-  .td-file-upload-cancel md-icon {
+  .td-file-upload-cancel mat-icon {
     border-radius: 12px;
     vertical-align: baseline; }
 
@@ -22,3 +22,5 @@
   border-radius: 3px; }
   .drop-zone * {
     pointer-events: none; }
+
+/*# sourceMappingURL=file-upload.component.css.map */

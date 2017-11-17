@@ -7,7 +7,7 @@
 Properties:
 
 | Name | Type | Description |
-| --- | --- | --- |
+| --- | --- | 650--- |
 | `color?` | `'primary', 'accent' or 'warn'` | Sets the theme color of the notification tip. Defaults to 'warn'
 | `notifications?` | `number or boolean` | Number for the notification count. Shows number if the input is a positive number or its no count state if boolean 'true'
 | `positionX?` | `TdNotificationCountPositionX or 'before', 'after' or 'center'` | Sets the X position of the notification tip. Defaults to 'after' if it has content, else 'center'.
@@ -35,7 +35,7 @@ Example for HTML count usage:
 
 ```html
 <td-notification-count positionX="after" positionY="top" [notifications]="1">
-  <md-icon>notifications<md-icon>
+  <mat-icon>notifications<mat-icon>
 </td-notification-count>
 ```
 
@@ -43,7 +43,7 @@ Example for HTML count usage:
 
 ```html
 <td-notification-count positionX="after" positionY="top" [notifications]="true">
-  <md-icon>notifications<md-icon>
+  <mat-icon>notifications<mat-icon>
 </td-notification-count>
 ```
 

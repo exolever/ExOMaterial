@@ -6,7 +6,7 @@
 ## API Summary
 
 | Name | Type | Description |
-| --- | --- | --- |
+| --- | --- | 650--- |
 | mode | 'over', 'side' or 'push' | The mode or styling of the sidenav. Defaults to 'over'.
 | opened | boolean | Whether or not the sidenav is opened. Use this binding to open/close the sidenav. Defaults to 'false'.
 | sidenavWidth | string | Sets the 'width' of the sidenav in either 'px' or '%'. Defaults to '320px'.
@@ -32,16 +32,16 @@ To toggle/close/open the main sidenav from child layouts/components, you can use
 Example:
 
 ```html
-<button md-icon-button [tdLayoutToggle]="true"> // or tdLayoutOpen / tdLayoutClose
-  <md-icon>menu</md-icon>
+<button mat-icon-button [tdLayoutToggle]="true"> // or tdLayoutOpen / tdLayoutClose
+  <mat-icon>menu</mat-icon>
 </button>
 ```
 
 To disable the sidenav action, just set the input to false.
 
 ```html
-<button md-icon-button [tdLayoutToggle]="false">
-  <md-icon>menu</md-icon>
+<button mat-icon-button [tdLayoutToggle]="false">
+  <mat-icon>menu</mat-icon>
 </button>
 ```
 
@@ -84,7 +84,7 @@ See [theming](https://teradata.github.io/covalent/#/docs/theme) in the covalent 
 ## API Summary
 
 | Name | Type | Description |
-| --- | --- | --- |
+| --- | --- | 650--- |
 | sidenavTitle | string | Title set in toolbar.
 | icon | string | icon name to be displayed before the title
 | logo | string | logo icon name to be displayed before the title. If [icon] is set, then this will not be shown.

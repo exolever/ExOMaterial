@@ -1,6 +1,6 @@
-md-list md-list-item [md-list-avatar],
-md-list a[md-list-item] [md-list-avatar],
-md-nav-list md-list-item [md-list-avatar],
-md-nav-list a[md-list-item] [md-list-avatar] {
+mat-list mat-list-item [matListAvatar],
+mat-list a[mat-list-item] [matListAvatar],
+mat-nav-list mat-list-item [matListAvatar],
+mat-nav-list a[mat-list-item] [matListAvatar] {
     min-width: 40px;
 }

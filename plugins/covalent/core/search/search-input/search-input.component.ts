@@ -1,10 +1,11 @@
 import { Component, ViewChild, OnInit, Input, Output, EventEmitter, Optional } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { FormControl } from '@angular/forms';
-import { Dir } from '@angular/cdk';
-import { MdInputDirective } from '@angular/material';
-import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/skip';
+import { Dir } from '@angular/cdk/bidi';
+import { MatInput } from '@angular/material';
+
+import { debounceTime } from 'rxjs/operators/debounceTime';
+import { skip } from 'rxjs/operators/skip';
 
 @Component({
   selector: 'td-search-input',
@@ -31,7 +32,7 @@ import 'rxjs/add/operator/skip';
 })
 export class TdSearchInputComponent implements OnInit {
 
-  @ViewChild(MdInputDirective) _input: MdInputDirective;
+  @ViewChild(MatInput) _input: MatInput;
 
   value: string;
 
@@ -52,6 +53,13 @@ export class TdSearchInputComponent implements OnInit {
    * Placeholder for the underlying input component.
    */
   @Input('placeholder') placeholder: string;
+
+  /**
+   * clearIcon?: string
+   * The icon used to clear the search input.
+   * Defaults to 'cancel' icon.
+   */
+  @Input('clearIcon') clearIcon: string = 'cancel';
 
   /**
    * searchDebounce: function($event)
@@ -88,12 +96,12 @@ export class TdSearchInputComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this._input._ngControl.valueChanges
-      .skip(1) // skip first change when value is set to undefined
-      .debounceTime(this.debounce)
-      .subscribe((value: string) => {
-        this._searchTermChanged(value);
-      });
+    this._input.ngControl.valueChanges.pipe(
+      skip(1), // skip first change when value is set to undefined
+      debounceTime(this.debounce),
+    ).subscribe((value: string) => {
+      this._searchTermChanged(value);
+    });
   }
 
   /**

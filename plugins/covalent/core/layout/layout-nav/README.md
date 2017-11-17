@@ -6,7 +6,7 @@
 ## API Summary
 
 | Name | Type | Description |
-| --- | --- | --- |
+| --- | --- | 650--- |
 | toolbarTitle | string | Title set in toolbar.
 | icon | string | icon name to be displayed before the title
 | logo | string | logo icon name to be displayed before the title. If [icon] is set, then this will not be shown.
@@ -26,8 +26,8 @@ Example for Nav Layout:
 
 ```html
 <td-layout-nav toolbarTitle="title" logo="logo" icon="icon" color="primary" navigationRoute="/">
-  <button md-icon-button td-menu-button> // can use `[tdLayoutToggle]` to toggle main sidenav
-    <md-icon>menu</md-icon>
+  <button mat-icon-button td-menu-button> // can use `[tdLayoutToggle]` to toggle main sidenav
+    <mat-icon>menu</mat-icon>
   </button>
   <div td-toolbar-content>
     .. main toolbar content

@@ -10,7 +10,7 @@ But you can also set a `color` from our lib and it can be applied in the compone
 Properties:
 
 | Name | Type | Description |
-| --- | --- | --- |
+| --- | --- | 650--- |
 | `label?` | `string` | Sets the label of the message.
 | `sublabel?` | `string` | Sets the sublabel of the message.
 | `icon?` | `string` | The icon to be displayed before the title. Defaults to `info_outline` icon
@@ -42,8 +42,8 @@ Example for HTML usage:
 
 ```html
 <td-message #message label="Label" sublabel="Sublabel goes here" icon="warning" color="primary | blue | red" [opened]="true">
-  <button td-message-actions md-button>View More</button>
-  <button td-message-actions md-button (click)="message.close()">Close</button>
+  <button td-message-actions mat-button>View More</button>
+  <button td-message-actions mat-button (click)="message.close()">Close</button>
   // .. body goes here
 </td-message>  
 ```
