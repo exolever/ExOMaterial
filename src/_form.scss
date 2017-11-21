@@ -1,80 +1,80 @@
 .mat-hint{
-    @include md-caption();
-    color: mat-color($foreground, 'secondary-text');
-    &.primary-color {
-        color: mat-color($primary);
-    }
+  @include md-caption();
+  color: mat-color($foreground, 'secondary-text');
+  &.primary-color {
+    color: mat-color($primary);
+  }
 }
-.mat-input-error{
-    @include md-caption();
+.mat-error{
+  @include md-caption();
 }
 
 .datepicker-container.has-error .md2-datepicker-input{
-    border-color: mat-color($mat-red, A200);
-    color: mat-color($mat-red, A200);
+  border-color: mat-color($mat-red, A200);
+  color: mat-color($mat-red, A200);
 }
 
 .datepicker-container.has-error md2-datepicker:focus:not(.md2-datepicker-disabled) .md2-datepicker-input {
-    border-color: mat-color($mat-red, A200) !important;
-    color: mat-color($mat-red, A200) !important;
+  border-color: mat-color($mat-red, A200) !important;
+  color: mat-color($mat-red, A200) !important;
 }
 
 
 .mat-input-container.ng-invalid.has-error, 
 .chips-container.has-error {
-    .mat-input-underline{
-        background-color: mat-color($mat-red, A200) !important;
-    }
+  .mat-input-underline{
+    background-color: mat-color($mat-red, A200) !important;
+  }
 }
 
 .mat-input-container.ng-invalid.has-error .mat-focused,
 .chips-container.has-error .mat-focused {
-    color: mat-color($mat-red, A200);
+  color: mat-color($mat-red, A200);
 }
 
 .mat-input-container.ng-invalid.has-error .mat-input-ripple,
 .chips-container.has-error .mat-input-ripple {
-    background-color: mat-color($mat-red, A200);
+  background-color: mat-color($mat-red, A200);
 }
 
 
 // Margin in container of field
 .mat-input-container, .datepicker-container, .chips-container {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .chips-container{
-    .mat-input-container{
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-    }
-    .chips-help.mat-hint, .mat-input-error{
-         margin-top: 10px;
-    }
+  .mat-input-container{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .chips-help.mat-hint, .mat-error{
+    margin-top: 10px;
+  }
 }
 
 // Fix problem with multiline in md-hint / md-errors
 .mat-input-subscript-wrapper{
-    position: relative !important;
-    margin-top: 10px !important;
-    font-size: 1em !important;
+  position: relative !important;
+  margin-top: 10px !important;
+  font-size: 1em !important;
 }
 .mat-input-underline{
-    position: relative !important;
-    bottom: 0;
+  position: relative !important;
+  bottom: 0;
 }
 
 .mat-input-wrapper, .datepicker-wrapper {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 .mat-input-container{
-    .mat-input-placeholder:not(.not-transform-text)::first-letter,
-    .mat-hint:not(.not-transform-text)::first-letter,
-    .md2-datepicker-placeholder:not(.not-transform-text)::first-letter
-    .mat-input-element:not(.not-transform-text)::first-letter,
-    {
-        text-transform: uppercase;
-    }
+  .mat-input-placeholder:not(.not-transform-text)::first-letter,
+  .mat-hint:not(.not-transform-text)::first-letter,
+  .md2-datepicker-placeholder:not(.not-transform-text)::first-letter
+  .mat-input-element:not(.not-transform-text)::first-letter,
+  {
+    text-transform: uppercase;
+  }
 }
 
