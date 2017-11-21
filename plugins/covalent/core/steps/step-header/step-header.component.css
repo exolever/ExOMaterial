@@ -53,7 +53,7 @@
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none; }
-    .td-step-header .td-circle md-icon, .td-step-header .td-triangle md-icon {
+    .td-step-header .td-circle mat-icon, .td-step-header .td-triangle mat-icon {
       color: white; }
   .td-step-header .td-complete {
     font-size: 0; }

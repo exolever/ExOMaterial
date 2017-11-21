@@ -1,8 +1,8 @@
-md-icon {
+mat-icon {
     color: mat-color($foreground, icon);
 }
 
-md-icon.mat-list-avatar{
+mat-icon.mat-list-avatar{
     &.mat-primary{
         background-color: mat-color($primary, 0.26) !important;
     }
@@ -19,13 +19,13 @@ md-icon.mat-list-avatar{
 }
 
 
-md-icon.md-16 {
+mat-icon.md-16 {
   font-size: 16px;
   height: 16px;
   width: 16px; 
 }
 
-md-icon.md-14 {
+mat-icon.md-14 {
   font-size: 14px;
   height: 14px;
   width: 14px; 

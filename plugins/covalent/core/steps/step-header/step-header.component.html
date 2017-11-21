@@ -1,32 +1,26 @@
-<div class="td-step-header"
-      [class.mat-disabled]="disabled"
-      matRipple
-      [matRippleDisabled]="disabled || disableRipple"
-      [tabIndex]="disabled ? -1 : 0"
-      flex>
-  <div class="td-step-header-content"
-        layout="row"
-        layout-align="start center"
-        flex>
-    <div class="td-circle"
-        [class.mat-inactive]="(!active && !isComplete()) || disabled"
-        [class.mat-active]="active && !disabled"
-        *ngIf="!isRequired() && !isComplete()">
+<div class="td-step-header" [class.mat-disabled]="disabled" matRipple [matRippleDisabled]="disabled || disableRipple" [tabIndex]="disabled ? -1 : 0"
+  flex>
+  <div class="td-step-header-content" layout="row" layout-align="start center" flex>
+    <div class="td-circle" [class.mat-inactive]="(!active && !isComplete()) || disabled" [class.mat-active]="active && !disabled"
+      *ngIf="!isRequired() && !isComplete()">
       <span *ngIf="(active || !isComplete())">{{number || ''}}</span>
     </div>
     <div class="td-complete" *ngIf="isComplete()">
       <mat-icon class="mat-complete">room</mat-icon>
     </div>
-    <div class="td-triangle"
-        [class.mat-inactive]="(!active && !isComplete()) || disabled"
-        [class.mat-active]="active && !disabled"
-        *ngIf="isRequired() && !isComplete()">
+    <div class="td-triangle" [class.mat-inactive]="(!active && !isComplete()) || disabled" [class.mat-active]="active && !disabled"
+      *ngIf="isRequired() && !isComplete()">
       <mat-icon class="mat-warn">done</mat-icon>
 
 
     </div>
-    <div class="td-step-sublabel">
-      <ng-content select="[td-step-header-sublabel]"></ng-content>
+    <div class="td-step-label-wrapper" [class.mat-inactive]="(!active && !isComplete()) || disabled" [class.mat-warn]="isRequired() && !disabled">
+      <div class="md-body-2 td-step-label">
+        <ng-content select="[td-step-header-label]"></ng-content>
+      </div>
+      <div class="md-caption td-step-sublabel">
+        <ng-content select="[td-step-header-sublabel]"></ng-content>
+      </div>
     </div>
 
     <span flex></span>
