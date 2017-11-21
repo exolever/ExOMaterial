@@ -1,16 +1,16 @@
-[md-menu-item]{
+[mat-menu-item]{
     font-size: $body-font-size-base;
     font-family: $font-family;
     &.menu-title{
         color: mat-color($foreground, secondary-text);
         @include md-body-2();
-        md-icon{
+        mat-icon{
             font-size: $body-font-size-base;
         }
     }
     &.active{
         color: mat-color($primary);
-        md-icon{
+        mat-icon{
              color: mat-color($primary);
         }
     }
