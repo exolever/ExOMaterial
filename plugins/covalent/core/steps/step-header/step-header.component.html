@@ -15,7 +15,7 @@
       <span *ngIf="(active || !isComplete())">{{number || ''}}</span>
     </div>
     <div class="td-complete" *ngIf="isComplete()">
-      <mat-icon class="mat-complete">room</md-icon>
+      <mat-icon class="mat-complete">room</mat-icon>
     </div>
     <div class="td-triangle"
         [class.mat-inactive]="(!active && !isComplete()) || disabled"
