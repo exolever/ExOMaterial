@@ -1,36 +1,36 @@
 .weight-semibold{
-    font-weight: $weight-semibold;
+  font-weight: $weight-semibold;
 }
 .weight-light{
-    font-weight: $weight-light;
+  font-weight: $weight-light;
 }
 .weight-regular{
-    font-weight: $weight-regular;
+  font-weight: $weight-regular;
 }
 .weight-bold{
-    font-weight: $weight-bold;
+  font-weight: $weight-bold;
 }
 
 .weight-black{
-    font-weight: $weight-black;
+  font-weight: $weight-black;
 }
 
 .capitalize{
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 .upper-first-letter::first-letter{
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .text-upper{
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .text-lower{
-    text-transform: lowercase;
+  text-transform: lowercase;
 }
 
 // CUSTOM TIPOGRAPHY
 .md-subhead-3{
-    @include md-subhead-3();
+  @include md-subhead-3();
 }
 
 .md-title-light {

@@ -3,11 +3,11 @@ mat-card-title-group > div:first-child{
 }
 .mat-card md-card-content {
   @media (min-width: $screen-md-min){
-      padding: 24px !important;
+    padding: 24px !important;
   }
 }
 .mat-card md-card-title {
     @media (min-width: $screen-md-min){
-        padding: 24px 24px 0px 24px !important;
+      padding: 24px 24px 0px 24px !important;
     }
 }

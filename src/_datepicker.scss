@@ -1,43 +1,43 @@
 .md2-datepicker-header{
-    background-color:  mat-color($primary)!important;
+  background-color:  mat-color($primary)!important;
 }
 .md2-calendar-date.md2-calendar-date-selected,
 .md2-calendar-date.md2-calendar-date-selected:hover,
 .md2-clock-cell.md2-clock-cell-selected{
-    color: white !important;
-    background-color:  mat-color($primary)!important;
+  color: white !important;
+  background-color:  mat-color($primary)!important;
 }
 
 .md2-calendar-date.md2-calendar-date-today{
-    background:none !important;
-    color: mat-color($primary)!important;
-    border: 0 !important;
+  background:none !important;
+  color: mat-color($primary)!important;
+  border: 0 !important;
 }
 
 .md2-datepicker-actions .md2-button{
-    color: mat-color($primary) !important;
+  color: mat-color($primary) !important;
+  &:hover{
+    background-color: rgba(33, 150, 243, 0.12) !important;
+  }
+  &:first-child {  // Cancel button
+    color: mat-color($foreground, 'secondary-text')!important;
     &:hover{
-        background-color: rgba(33, 150, 243, 0.12) !important;
+      background-color: rgba(38, 50, 56, 0.12) !important;
     }
-    &:first-child {  // Cancel button
-        color: mat-color($foreground, 'secondary-text')!important;
-        &:hover{
-            background-color: rgba(38, 50, 56, 0.12) !important;
-        }
-    }
+  }
 }
 .md2-datepicker-input.md2-datepicker-input-focused {
-    color:  mat-color($primary) !important;
-    border-color:  mat-color($primary) !important;
+  color:  mat-color($primary) !important;
+  border-color:  mat-color($primary) !important;
 }
 
 .datepicker-container {
-    position: relative;
-    .datepicker-wrapper {
-        padding-bottom: 10px;
-    }
-    .mat-hint {
-        left: 33px;
-    }
+  position: relative;
+  .datepicker-wrapper {
+    padding-bottom: 10px;
+  }
+  .mat-hint {
+    left: 33px;
+  }
 }
 

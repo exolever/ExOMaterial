@@ -33,6 +33,9 @@ td-chips{
   &:focus {
     box-shadow: none !important;
   }
+  &.pointer {
+    cursor: pointer;
+  }
   &.outlined{
     background-color: transparent;
     border: 1px solid;

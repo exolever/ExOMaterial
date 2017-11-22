@@ -3,70 +3,70 @@
 }
 
 .foreground-icon{
-    color: mat-color($foreground, 'icon') !important;
+  color: mat-color($foreground, 'icon') !important;
 }
 
 .foreground-text{
-    color: mat-color($foreground, 'text');
+  color: mat-color($foreground, 'text');
 }
 
 .foreground-disabled-text{
-    color: mat-color($foreground, 'disabled-text');
+  color: mat-color($foreground, 'disabled-text');
 }
 
 .foreground-disabled{
-    color: mat-color($foreground, 'disabled');
+  color: mat-color($foreground, 'disabled');
 }
 
 .foreground-divider{
-    color: mat-color($foreground, 'divider');
+  color: mat-color($foreground, 'divider');
 }
 
 .primary-color{
-    color: mat-color($primary);
+  color: mat-color($primary);
 }
 
 .accent-color{
-    color: mat-color($accent);
+  color: mat-color($accent);
 }
 
 .error-color{
-    color: mat-color($mat-red, A200);
+  color: mat-color($mat-red, A200);
 }
 
 /*** 
-     DARK THEME
+  DARK THEME
 ***/
 .dark-foreground-secondary-text{
-    color: mat-color($dark-foreground, 'secondary-text');
+  color: mat-color($dark-foreground, 'secondary-text');
 }
 
 .dark-foreground-icon{
-    color: mat-color($dark-foreground, 'icon') !important;
+  color: mat-color($dark-foreground, 'icon') !important;
 }
 
 .dark-foreground-text{
-    color: mat-color($dark-foreground, 'text');
+  color: mat-color($dark-foreground, 'text');
 }
 
 .dark-foreground-disabled{
-    color: mat-color($dark-foreground, 'disabled');
+  color: mat-color($dark-foreground, 'disabled');
 }
 
 .dark-foreground-disabled-text{
-    color: mat-color($dark-foreground, 'disabled-text');
+  color: mat-color($dark-foreground, 'disabled-text');
 }
 
 .dark-foreground-divider{
-    color: mat-color($dark-foreground, 'divider');
+  color: mat-color($dark-foreground, 'divider');
 }
 
 .dark-primary-color{
-    color: mat-color($dark-primary);
+  color: mat-color($dark-primary);
 }
 
 .dark-accent-color{
-    color: mat-color($dark-accent);
+  color: mat-color($dark-accent);
 }
 
 

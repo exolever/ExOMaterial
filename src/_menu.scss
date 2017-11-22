@@ -1,21 +1,21 @@
 [mat-menu-item]{
-    font-size: $body-font-size-base;
-    font-family: $font-family;
-    &.menu-title{
-        color: mat-color($foreground, secondary-text);
-        @include md-body-2();
-        mat-icon{
-            font-size: $body-font-size-base;
-        }
+  font-size: $body-font-size-base;
+  font-family: $font-family;
+  &.menu-title{
+    color: mat-color($foreground, secondary-text);
+    @include md-body-2();
+    mat-icon{
+      font-size: $body-font-size-base;
     }
-    &.active{
-        color: mat-color($primary);
-        mat-icon{
-             color: mat-color($primary);
-        }
+  }
+  &.active{
+    color: mat-color($primary);
+    mat-icon{
+      color: mat-color($primary);
     }
+  }
 }
 
 .mat-select-panel {
-    max-height: 265px !important;
+  max-height: 265px !important;
 }

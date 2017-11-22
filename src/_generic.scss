@@ -1,23 +1,23 @@
 //Useful class
 .pointer{
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 .line-breaker{
-    white-space: pre-line;
+  white-space: pre-line;
 }
 
 .mat-hint{
-    @include md-caption();
-    color: mat-color($foreground, 'secondary-text');
-    div.error{
-        color: mat-color($mat-red, A200);
-    }
+  @include md-caption();
+  color: mat-color($foreground, 'secondary-text');
+  div.error{
+    color: mat-color($mat-red, A200);
+  }
 }
 .mat-option{
-    font-family: "Open Sans"
+  font-family: "Open Sans"
 }

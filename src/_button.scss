@@ -1,69 +1,69 @@
 .mat-button, .mat-raised-button{
-    text-transform: uppercase;
-    font-weight: $weight-semibold !important;
-    &:not(.outlined){
-        box-shadow: none !important;
-    }
+  text-transform: uppercase;
+  font-weight: $weight-semibold !important;
+  &:not(.outlined){
+    box-shadow: none !important;
+  }
 }
 
 .mat-raised-button {
-    &:not(.mat-primary):not(.mat-accent):not(.mat-custom){
-        background-color: mat-color($mat-blue-grey, 50);
-    }
+  &:not(.mat-primary):not(.mat-accent):not(.mat-custom){
+    background-color: mat-color($mat-blue-grey, 50);
+  }
 }
 
 .mat-button {
-    &:not(.mat-primary):not(.mat-accent):not(.mat-custom){
-        color: mat-color($foreground, 'secondary-text');
-        &:hover{
-            $base-color: mat-color($foreground, 'secondary-text');
-            background-color: transparent;
-        }
+  &:not(.mat-primary):not(.mat-accent):not(.mat-custom){
+    color: mat-color($foreground, 'secondary-text');
+    &:hover{
+      $base-color: mat-color($foreground, 'secondary-text');
+      background-color: transparent;
     }
+  }
 }
 
 .mat-button.outlined{
+  &:hover{
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    color: white;
+  }
+  &.mat-primary{
+    box-shadow: 0 0 0 1px mat-color($primary) inset;
     &:hover{
-        -webkit-transition-duration: 0.2s; /* Safari */
-        transition-duration: 0.2s;
-        color: white;
+      background-color: mat-color($primary);
     }
-    &.mat-primary{
-        box-shadow: 0 0 0 1px mat-color($primary) inset;
-        &:hover{
-            background-color: mat-color($primary);
-        }
-    }&.mat-accent{
-        box-shadow: 0 0 0 1px mat-color($accent) inset;
-        &:hover{
-            background-color: mat-color($accent);
-        }
+  }&.mat-accent{
+    box-shadow: 0 0 0 1px mat-color($accent) inset;
+    &:hover{
+      background-color: mat-color($accent);
     }
+  }
 }
 
 .mat-button.social-network{
-    .mat-icon{
-        width: auto;
-        height: auto;
-        font-size: 2em;
-    }
-    label{
-        color: white;
-        padding-left: 20px;
-        font-weight: $weight-bold;
-    }
-    &.linkedin{
-        background-color: #0077B5;
-    }
-    &.twitter{
-        background-color: mat-color($mat-light-blue, 300);
-    }
-    &.facebook{
-        background-color: mat-color($mat-blue, 900);
-    }
-    &.medium{
-        background-color: mat-color($mat-green, A400);
-    }
+  .mat-icon{
+    width: auto;
+    height: auto;
+    font-size: 2em;
+  }
+  label{
+    color: white;
+    padding-left: 20px;
+    font-weight: $weight-bold;
+  }
+  &.linkedin{
+    background-color: #0077B5;
+  }
+  &.twitter{
+    background-color: mat-color($mat-light-blue, 300);
+  }
+  &.facebook{
+    background-color: mat-color($mat-blue, 900);
+  }
+  &.medium{
+    background-color: mat-color($mat-green, A400);
+  }
 }
 
 
@@ -80,6 +80,6 @@
 .mat-mini-fab.mat-accent[disabled],
 .mat-mini-fab.mat-warn[disabled],
 .mat-mini-fab[disabled][disabled]{
-    background-color: mat-color($mat-blue-grey, 50);
+  background-color: mat-color($mat-blue-grey, 50);
 }
 

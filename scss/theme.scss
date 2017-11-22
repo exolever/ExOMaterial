@@ -15,8 +15,8 @@
 
 // Custom dark theme
 .exo-dark-theme {
-    @include angular-material-theme($exo-dark-theme);
-    @include covalent-theme($exo-dark-theme);
+  @include angular-material-theme($exo-dark-theme);
+  @include covalent-theme($exo-dark-theme);
 }
 
 html, body {

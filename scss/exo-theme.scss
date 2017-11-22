@@ -9,21 +9,20 @@ $exo-app-warn:    mat-palette($mat-red);
 
 // Overwrite the light theme
 $mat-light-theme-foreground: (
-    base:            rgba(38, 50, 56, 100),
-    divider:         rgba(38, 50, 56, 0.12),
-    dividers:        rgba(38, 50, 56, 0.12),
-    disabled:        rgba(38, 50, 56, 0.38),
-    disabled-button: rgba(38, 50, 56, 0.38),
-    disabled-text:   rgba(38, 50, 56, 0.38),
-    hint-text:       rgba(38, 50, 56, 0.38),
-    secondary-text:  rgba(38, 50, 56, 0.64),
-    icon:            rgba(38, 50, 56, 0.64),
-    icons:           rgba(38, 50, 56, 0.64),
-    text:            rgba(38, 50, 56, 100),
-    slider-off:        rgba(black, 0.26),
-    slider-min:        rgba(38, 50, 56, 100),
-    slider-off-active: rgba(black, 0.38)
-    
+  base:            rgba(38, 50, 56, 100),
+  divider:         rgba(38, 50, 56, 0.12),
+  dividers:        rgba(38, 50, 56, 0.12),
+  disabled:        rgba(38, 50, 56, 0.38),
+  disabled-button: rgba(38, 50, 56, 0.38),
+  disabled-text:   rgba(38, 50, 56, 0.38),
+  hint-text:       rgba(38, 50, 56, 0.38),
+  secondary-text:  rgba(38, 50, 56, 0.64),
+  icon:            rgba(38, 50, 56, 0.64),
+  icons:           rgba(38, 50, 56, 0.64),
+  text:            rgba(38, 50, 56, 100),
+  slider-off:        rgba(black, 0.26),
+  slider-min:        rgba(38, 50, 56, 100),
+  slider-off-active: rgba(black, 0.38)
 );
 
 

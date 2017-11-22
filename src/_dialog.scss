@@ -42,3 +42,8 @@ mat-dialog-content{
   margin: -24px -24px 0px -24px !important ;
   background-color: mat-color($mat-blue-grey, 50);
 }
+
+
+.full-screen-panel {
+  max-width: 100vw !important;
+}

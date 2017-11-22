@@ -1,34 +1,34 @@
 .bar-chart{
+  .label{
+    @include md-subhead();
+    padding-bottom: 10px;
+  }
+  .mat-progress-bar-fill::after{
+    background-color: mat-color($mat-blue-grey, 300);
+  }
+  &.high-level{
     .label{
-        @include md-subhead();
-        padding-bottom: 10px;
+      color: mat-color($primary);
     }
     .mat-progress-bar-fill::after{
-        background-color: mat-color($mat-blue-grey, 300);
+      background-color: mat-color($primary);
     }
-    &.high-level{
-        .label{
-            color: mat-color($primary);
-        }
-        .mat-progress-bar-fill::after{
-            background-color: mat-color($primary);
-        }
+  }
+  &.medium-level{
+    .label{
+      color: mat-color($foreground, 'text');
     }
-    &.medium-level{
-        .label{
-            color: mat-color($foreground, 'text');
-        }
+  }
+  &.low-level{
+    .label{
+      color: mat-color($foreground, 'secondary-text');
     }
-    &.low-level{
-        .label{
-            color: mat-color($foreground, 'secondary-text');
-        }
+  }
+  
+  .mat-progress-bar{
+    margin-bottom: 30px;
+    .mat-progress-bar-buffer{
+      background-color: mat-color($mat-blue-grey, 50);
     }
-    
-    .mat-progress-bar{
-        margin-bottom: 30px;
-        .mat-progress-bar-buffer{
-            background-color: mat-color($mat-blue-grey, 50);
-        }
-    }
+  }
 }
