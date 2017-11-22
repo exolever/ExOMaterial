@@ -1,52 +1,54 @@
 td-chips{
-    padding: 0px !important; 
-    .mat-input-wrapper {
-        margin-bottom: 0px;
-    }
-    .mat-input-underline{
-        border-color: mat-color($foreground, divider) !important;
-    }
+  padding: 0px !important; 
+  .mat-input-wrapper {
+    margin-bottom: 0px;
+  }
+  .mat-input-underline{
+    border-color: mat-color($foreground, divider) !important;
+  }
 }
 
 
 .chips-container {
-    position: relative;
-    .chips-wrapper {
-        padding-bottom: 15px;
-    }
+  position: relative;
+  .chips-wrapper {
+    padding-bottom: 15px;
+  }
 }
 
 .mat-chip {
-    border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 
 
 .mat-chip:not(.mat-basic-chip), td-chips .mat-basic-chip{
-    margin-bottom: 10px !important;
-    color: mat-color($mat-blue-grey, 600);
-    background-color: mat-color($mat-blue-grey, 50);
-    text-transform: capitalize;
-    font-weight: $weight-semibold;
-    md-icon.td-chip-removal{
-        color: mat-color($foreground, 'disabled');
+  margin-bottom: 10px !important;
+  color: mat-color($mat-blue-grey, 600);
+  background-color: mat-color($mat-blue-grey, 50);
+  text-transform: capitalize;
+  font-weight: $weight-semibold;
+  mat-icon.td-chip-removal{
+    color: mat-color($foreground, 'disabled');
+  }
+  &:focus {
+    box-shadow: none !important;
+  }
+  &.outlined{
+    background-color: transparent;
+    border: 1px solid;
+    border-color: mat-color($mat-blue-grey, 300);
+    color: mat-color($mat-blue-grey, 500);
+    font-family: $font-family;
+    letter-spacing: 0.010em;    
+    &:not(.regular) {
+      font-size: $body-font-size-base !important;
     }
-    &.outlined{
-        background-color: transparent;
-        border: 1px solid;
-        border-color: mat-color($mat-blue-grey, 300);
-        color: mat-color($mat-blue-grey, 500);
-        font-family: $font-family;
-        letter-spacing: 0.010em;    
-        &:not(.regular) {
-            font-size: $body-font-size-base !important;
-        }
-        &.disabled{
-            color: mat-color($foreground, 'disabled');
-            border-color: mat-color($foreground, 'disabled');
-        }
+    &.disabled{
+      color: mat-color($foreground, 'disabled');
+      border-color: mat-color($foreground, 'disabled');
     }
+  }
 }
 .chips-help{
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
-

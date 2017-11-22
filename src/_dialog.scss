@@ -1,45 +1,44 @@
 .mat-dialog-title {
-    color: mat-color($foreground, 'secondary-text');
-    @include md-headline-2();
-    font-size: $headline-font-size-base !important;
-    font-weight: $weight-light !important;
-    z-index: 1;
-    md-icon {
-        cursor: pointer;
-    }
+  color: mat-color($foreground, 'secondary-text');
+  @include md-headline-2();
+  font-size: $headline-font-size-base !important;
+  font-weight: $weight-light !important;
+  z-index: 1;
+  mat-icon {
+    cursor: pointer;
+  }
 }
 
 mat-dialog-content{
-    padding: 16px !important;
-    @media (min-width: $screen-sm-min){
-        padding:24px !important;
-    }
+  padding: 16px !important;
+  @media (min-width: $screen-sm-min){
+    padding:24px !important;
+  }
 }
 
 .mat-dialog-actions {
-    padding: 8px !important;
-    background-color: mat-color($mat-grey, 50);
-    margin-left: -24px;
-    margin-right: -24px;
-    min-height: 24px;
-    button{
-        margin-left: 8px;
-        &:not(.mat-primary):not(.mat-accent):not(.mat-success){
-            color: mat-color($foreground, 'secondary-text');
-        }
+  padding: 8px !important;
+  background-color: mat-color($mat-grey, 50);
+  margin-left: -24px;
+  margin-right: -24px;
+  min-height: 24px;
+  button{
+    margin-left: 8px;
+    &:not(.mat-primary):not(.mat-accent):not(.mat-success){
+      color: mat-color($foreground, 'secondary-text');
     }
-    
+  }
 }
 
 .mat-dialog-container{
-    min-width: 80vw !important;
-    @media (min-width: $screen-sm-min){ // XS
-        max-width: 600px !important;
-        min-width: 350px !important;
-    }
+  min-width: 80vw !important;
+  @media (min-width: $screen-sm-min){ // XS
+    max-width: 600px !important;
+    min-width: 350px !important;
+  }
 }
 
 .dark-header {
-    margin: -24px -24px 0px -24px !important ;
-    background-color: mat-color($mat-blue-grey, 50);
+  margin: -24px -24px 0px -24px !important ;
+  background-color: mat-color($mat-blue-grey, 50);
 }
