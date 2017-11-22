@@ -3,6 +3,7 @@
     cursor: pointer;
     &.mat-chip{
       border: 1px solid transparent;
+      cursor: pointer;
     }
     &.default-theme:not(.edit-icon):not(.insert-edition-icon){
       background-color: mat-color($mat-light-blue, 50);
