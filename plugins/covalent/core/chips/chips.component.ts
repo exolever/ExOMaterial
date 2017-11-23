@@ -351,6 +351,7 @@ export class TdChipsComponent extends _TdChipsMixinBase implements ControlValueA
         break;
       case ENTER:
         event.preventDefault();
+        event.stopPropagation();
         break;
       default:
         // default
@@ -452,7 +453,7 @@ export class TdChipsComponent extends _TdChipsMixinBase implements ControlValueA
     toPromise.call(timer(this.debounce)).then(() => {
       this.setFocusedState();
       this._setFirstOptionActive();
-      this._openAutocomplete();
+      // this._openAutocomplete();
     });
 
     this.inputControl.setValue('');
