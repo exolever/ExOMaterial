@@ -23,6 +23,9 @@
 }
 
 .mat-button.outlined{
+  .mat-button-focus-overlay {
+    background-color: transparent;
+  }
   &:hover{
     -webkit-transition-duration: 0.2s; /* Safari */
     transition-duration: 0.2s;
