@@ -349,6 +349,9 @@ export class TdChipsComponent extends _TdChipsMixinBase implements ControlValueA
           this.focus();
         }
         break;
+      case ENTER:
+        event.preventDefault();
+        break;
       default:
         // default
     }
