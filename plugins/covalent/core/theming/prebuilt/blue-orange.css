@@ -50,9 +50,6 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
-/************
- * Headings
- ************/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
@@ -61,99 +58,90 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
-.md-display-4 {
-  font-family: Lato, Roboto, "Helvetica Neue", sans-serif;
-  font-size: 124px;
-  font-weight: 400;
-  letter-spacing: -0.010em;
-  line-height: 124px; }
-
-.md-display-3 {
-  font-family: Lato, Roboto, "Helvetica Neue", sans-serif;
-  font-size: 72px;
-  font-weight: 400;
-  letter-spacing: -0.005em;
-  line-height: 72px; }
-
-.md-display-2 {
-  font-family: Lato, Roboto, "Helvetica Neue", sans-serif;
-  font-size: 50px;
-  font-weight: 400;
-  line-height: 64px; }
-
-.md-display-1 {
-  font-family: Lato, Roboto, "Helvetica Neue", sans-serif;
-  font-size: 34px;
-  font-weight: 400;
-  line-height: 40px; }
-
-.md-headline {
-  font-family: Lato, Roboto, "Helvetica Neue", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 32px; }
-
-.md-headline-2 {
-  font-family: Lato, Roboto, "Helvetica Neue", sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 32px; }
-
-.md-title {
-  font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 0.005em; }
-
-.md-subhead {
-  font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.010em;
-  line-height: 24px; }
-
-.md-subhead-2 {
-  font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0.010em;
-  line-height: 24px; }
-
-/************
- * Body Copy
- ************/
-.md-body-1 {
-  font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.010em;
-  line-height: 24px; }
-
-.md-body-2 {
-  font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.010em;
-  line-height: 24px; }
-
-.md-body-3 {
-  font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  letter-spacing: 0.010em;
-  line-height: 24px; }
-
-.md-caption {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.020em;
-  font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif; }
-
-.md-button {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.010em;
-  font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif; }
+body {
+  /************
+  * Headings
+  ************/
+  /************
+  * Body Copy
+  ************/ }
+  body .md-display-4 {
+    font-family: Lato, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 124px;
+    font-weight: 400;
+    letter-spacing: -0.010em;
+    line-height: 124px; }
+  body .md-display-3 {
+    font-family: Lato, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    line-height: 72px; }
+  body .md-display-2 {
+    font-family: Lato, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 64px; }
+  body .md-display-1 {
+    font-family: Lato, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40px; }
+  body .md-headline {
+    font-family: Lato, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px; }
+  body .md-headline-2 {
+    font-family: Lato, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px; }
+  body .md-title {
+    font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.005em; }
+  body .md-subhead {
+    font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.010em;
+    line-height: 24px; }
+  body .md-subhead-2 {
+    font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.010em;
+    line-height: 24px; }
+  body .md-body-1 {
+    font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.010em;
+    line-height: 24px; }
+  body .md-body-2 {
+    font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.010em;
+    line-height: 24px; }
+  body .md-body-3 {
+    font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.010em;
+    line-height: 24px; }
+  body .md-caption {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.020em;
+    font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif; }
+  body .md-button {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.010em;
+    font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif; }
 
 /************
  * Defaults
@@ -493,7 +481,8 @@ input.mat-input-element {
 
 .mat-menu-item {
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 400; }
 
 .mat-paginator,
 .mat-paginator-page-size .mat-select-trigger {
@@ -1056,7 +1045,8 @@ input.mat-input-element {
     color: rgba(0, 0, 0, 0.38); }
 
 :not(.mat-calendar-body-disabled):hover > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected),
-.cdk-keyboard-focused .mat-calendar-body-active > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected) {
+.cdk-keyboard-focused .mat-calendar-body-active > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected),
+.cdk-program-focused .mat-calendar-body-active > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected) {
   background-color: rgba(0, 0, 0, 0.04); }
 
 .mat-calendar-body-selected {
@@ -1103,9 +1093,6 @@ input.mat-input-element {
   .mat-expansion-panel-header[aria-disabled='true'] .mat-expansion-panel-header-description {
     color: inherit; }
 
-.mat-form-field {
-  width: 200px; }
-
 .mat-form-field-placeholder {
   color: rgba(0, 0, 0, 0.54); }
 
@@ -1124,11 +1111,12 @@ input.mat-input-element {
 
 .mat-form-field-underline {
   background-color: rgba(0, 0, 0, 0.42); }
-  .mat-form-field-underline.mat-disabled {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.42)), color-stop(33%, rgba(0, 0, 0, 0.42)), color-stop(0%, transparent));
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
-    background-size: 4px 1px;
-    background-repeat: repeat-x; }
+
+.mat-form-field-disabled .mat-form-field-underline {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.42)), color-stop(33%, rgba(0, 0, 0, 0.42)), color-stop(0%, transparent));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.42) 33%, transparent 0%);
+  background-size: 4px 1px;
+  background-repeat: repeat-x; }
 
 .mat-form-field-ripple {
   background-color: #1976d2; }
@@ -1556,6 +1544,9 @@ input.mat-input-element {
 .mat-tab-group.mat-background-primary .mat-tab-header-pagination-disabled .mat-tab-header-pagination-chevron, .mat-tab-nav-bar.mat-background-primary .mat-tab-header-pagination-disabled .mat-tab-header-pagination-chevron {
   border-color: rgba(255, 255, 255, 0.4); }
 
+.mat-tab-group.mat-background-primary .mat-ripple-element, .mat-tab-nav-bar.mat-background-primary .mat-ripple-element {
+  background-color: rgba(255, 255, 255, 0.12); }
+
 .mat-tab-group.mat-background-accent .mat-tab-label:focus, .mat-tab-group.mat-background-accent .mat-tab-link:focus, .mat-tab-nav-bar.mat-background-accent .mat-tab-label:focus, .mat-tab-nav-bar.mat-background-accent .mat-tab-link:focus {
   background-color: rgba(255, 209, 128, 0.3); }
 
@@ -1573,6 +1564,9 @@ input.mat-input-element {
 .mat-tab-group.mat-background-accent .mat-tab-header-pagination-disabled .mat-tab-header-pagination-chevron, .mat-tab-nav-bar.mat-background-accent .mat-tab-header-pagination-disabled .mat-tab-header-pagination-chevron {
   border-color: rgba(255, 255, 255, 0.4); }
 
+.mat-tab-group.mat-background-accent .mat-ripple-element, .mat-tab-nav-bar.mat-background-accent .mat-ripple-element {
+  background-color: rgba(255, 255, 255, 0.12); }
+
 .mat-tab-group.mat-background-warn .mat-tab-label:focus, .mat-tab-group.mat-background-warn .mat-tab-link:focus, .mat-tab-nav-bar.mat-background-warn .mat-tab-label:focus, .mat-tab-nav-bar.mat-background-warn .mat-tab-link:focus {
   background-color: rgba(255, 205, 210, 0.3); }
 
@@ -1589,6 +1583,9 @@ input.mat-input-element {
 
 .mat-tab-group.mat-background-warn .mat-tab-header-pagination-disabled .mat-tab-header-pagination-chevron, .mat-tab-nav-bar.mat-background-warn .mat-tab-header-pagination-disabled .mat-tab-header-pagination-chevron {
   border-color: rgba(255, 255, 255, 0.4); }
+
+.mat-tab-group.mat-background-warn .mat-ripple-element, .mat-tab-nav-bar.mat-background-warn .mat-ripple-element {
+  background-color: rgba(255, 255, 255, 0.12); }
 
 .mat-toolbar {
   background: whitesmoke;
